@@ -26,3 +26,17 @@ C:\Users\yunusgunduz\Desktop\2023MUYGCS\obj\Debug\2023MUYGCS.csproj.GenerateReso
 C:\Users\yunusgunduz\Desktop\2023MUYGCS\obj\Debug\2023MUYGCS.csproj.CoreCompileInputs.cache
 C:\Users\yunusgunduz\Desktop\2023MUYGCS\obj\Debug\2023MUYGCS.exe
 C:\Users\yunusgunduz\Desktop\2023MUYGCS\obj\Debug\2023MUYGCS.pdb
+C:\Users\yunusgunduz\Desktop\2023GCSgsb\bin\Debug\2023MUYGCS.exe.config
+C:\Users\yunusgunduz\Desktop\2023GCSgsb\bin\Debug\2023MUYGCS.exe
+C:\Users\yunusgunduz\Desktop\2023GCSgsb\bin\Debug\2023MUYGCS.pdb
+C:\Users\yunusgunduz\Desktop\2023GCSgsb\obj\Debug\2023MUYGCS.csproj.AssemblyReference.cache
+C:\Users\yunusgunduz\Desktop\2023GCSgsb\obj\Debug\2023MUYGCS.csproj.SuggestedBindingRedirects.cache
+C:\Users\yunusgunduz\Desktop\2023GCSgsb\obj\Debug\_2023MUYGCS.Form1.resources
+C:\Users\yunusgunduz\Desktop\2023GCSgsb\obj\Debug\_2023MUYGCS.Form2.resources
+C:\Users\yunusgunduz\Desktop\2023GCSgsb\obj\Debug\_2023MUYGCS.Form3.resources
+C:\Users\yunusgunduz\Desktop\2023GCSgsb\obj\Debug\_2023MUYGCS.Form4.resources
+C:\Users\yunusgunduz\Desktop\2023GCSgsb\obj\Debug\_2023MUYGCS.Properties.Resources.resources
+C:\Users\yunusgunduz\Desktop\2023GCSgsb\obj\Debug\2023MUYGCS.csproj.GenerateResource.cache
+C:\Users\yunusgunduz\Desktop\2023GCSgsb\obj\Debug\2023MUYGCS.csproj.CoreCompileInputs.cache
+C:\Users\yunusgunduz\Desktop\2023GCSgsb\obj\Debug\2023MUYGCS.exe
+C:\Users\yunusgunduz\Desktop\2023GCSgsb\obj\Debug\2023MUYGCS.pdb

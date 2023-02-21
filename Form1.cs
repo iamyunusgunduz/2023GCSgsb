@@ -19,7 +19,7 @@ namespace _2023MUYGCS
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            Console.WriteLine("Form1 calisti");
         }
     }
 }
