@@ -29,6 +29,8 @@ namespace _2023MUYGCS.model
         public string takimNo;
         public string tasiyiciInisHizi;
 
+        public string tarih;
+        public string saat;
 
        
     }

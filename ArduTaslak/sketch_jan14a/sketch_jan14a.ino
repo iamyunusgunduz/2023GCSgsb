@@ -4,15 +4,16 @@ void setup() {
 Serial.begin(115200);
 }
 int paketNo = 0 ;
+int basinc1 = 100;
+int basinc2 = 50 ;
 void loop() {
   
-Serial.print("<");
-Serial.print(paketNo);Serial.print(">,"); //paketNo
+Serial.print("<");Serial.print(paketNo);Serial.print(">,"); //paketNo
 Serial.print("<1>,");//uydu statüsü
-Serial.print("<00000>,");//hata kod
+Serial.print("<01010>,");//hata kod
 Serial.print("<19/08/2021,03/42/2>,");//zaman
-Serial.print("<8870>,");//basınc1
-Serial.print("<9514>,");//basınc2
+Serial.print("<");Serial.print(basinc1);Serial.print(">,");//basınc1
+Serial.print("<");Serial.print(basinc2);Serial.print(">,"); //basınc2
 Serial.print("<196>,");//yükseklik1
 Serial.print("<179>,");//yükseklik2
 Serial.print("<3>,");//irtifa farkı
@@ -28,5 +29,7 @@ Serial.print("<0.03>,");//yaw
 Serial.print("<1412>,");//takım no
 Serial.println("<3>");//tasiyici inis hizi
 delay(1000);
+basinc1++;
+basinc2 = basinc2 + 50;
 paketNo++;
 }

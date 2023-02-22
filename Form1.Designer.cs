@@ -30,6 +30,22 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tableLayoutPanelMain = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanelChartTelemetri = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanelTelemetri = new System.Windows.Forms.TableLayoutPanel();
@@ -74,13 +90,6 @@
             this.labelPaketNoVALUE = new System.Windows.Forms.Label();
             this.labelPaketNoText = new System.Windows.Forms.Label();
             this.tableLayoutPanelChart = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.labelGraphBasinc1 = new System.Windows.Forms.Label();
             this.labelGraphBasinc2 = new System.Windows.Forms.Label();
             this.labelGraphYukseklik2 = new System.Windows.Forms.Label();
@@ -88,7 +97,6 @@
             this.labelGraphGYinisHizi = new System.Windows.Forms.Label();
             this.labelGraphYukseklik1 = new System.Windows.Forms.Label();
             this.labelGraphSicaklik = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.labelGraphPilGerilimi = new System.Windows.Forms.Label();
             this.tableLayoutPanelDataAndARAS = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -144,18 +152,18 @@
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.chartBasinc1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartBasinc2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartYukseklik1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartYukseklik2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartIrtifaFarki = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartInisGizi = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartSicaklik = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartPilGerilimi = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tableLayoutPanelMain.SuspendLayout();
             this.tableLayoutPanelChartTelemetri.SuspendLayout();
             this.tableLayoutPanelTelemetri.SuspendLayout();
             this.tableLayoutPanelChart.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.tableLayoutPanelDataAndARAS.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -175,6 +183,14 @@
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartBasinc1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartBasinc2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartYukseklik1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartYukseklik2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartIrtifaFarki)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartInisGizi)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartSicaklik)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartPilGerilimi)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanelMain
@@ -833,13 +849,13 @@
             this.tableLayoutPanelChart.ColumnCount = 2;
             this.tableLayoutPanelChart.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanelChart.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanelChart.Controls.Add(this.pictureBox13, 1, 7);
-            this.tableLayoutPanelChart.Controls.Add(this.pictureBox10, 0, 7);
-            this.tableLayoutPanelChart.Controls.Add(this.pictureBox9, 1, 5);
-            this.tableLayoutPanelChart.Controls.Add(this.pictureBox8, 0, 5);
-            this.tableLayoutPanelChart.Controls.Add(this.pictureBox7, 1, 3);
-            this.tableLayoutPanelChart.Controls.Add(this.pictureBox6, 0, 3);
-            this.tableLayoutPanelChart.Controls.Add(this.pictureBox5, 1, 1);
+            this.tableLayoutPanelChart.Controls.Add(this.chartPilGerilimi, 1, 7);
+            this.tableLayoutPanelChart.Controls.Add(this.chartSicaklik, 0, 7);
+            this.tableLayoutPanelChart.Controls.Add(this.chartInisGizi, 1, 5);
+            this.tableLayoutPanelChart.Controls.Add(this.chartIrtifaFarki, 0, 5);
+            this.tableLayoutPanelChart.Controls.Add(this.chartYukseklik2, 1, 3);
+            this.tableLayoutPanelChart.Controls.Add(this.chartYukseklik1, 0, 3);
+            this.tableLayoutPanelChart.Controls.Add(this.chartBasinc2, 1, 1);
             this.tableLayoutPanelChart.Controls.Add(this.labelGraphBasinc1, 0, 0);
             this.tableLayoutPanelChart.Controls.Add(this.labelGraphBasinc2, 1, 0);
             this.tableLayoutPanelChart.Controls.Add(this.labelGraphYukseklik2, 1, 2);
@@ -847,8 +863,8 @@
             this.tableLayoutPanelChart.Controls.Add(this.labelGraphGYinisHizi, 1, 4);
             this.tableLayoutPanelChart.Controls.Add(this.labelGraphYukseklik1, 0, 2);
             this.tableLayoutPanelChart.Controls.Add(this.labelGraphSicaklik, 0, 6);
-            this.tableLayoutPanelChart.Controls.Add(this.pictureBox4, 0, 1);
             this.tableLayoutPanelChart.Controls.Add(this.labelGraphPilGerilimi, 1, 6);
+            this.tableLayoutPanelChart.Controls.Add(this.chartBasinc1, 0, 1);
             this.tableLayoutPanelChart.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanelChart.Location = new System.Drawing.Point(4, 5);
             this.tableLayoutPanelChart.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -865,90 +881,6 @@
             this.tableLayoutPanelChart.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
             this.tableLayoutPanelChart.Size = new System.Drawing.Size(1307, 776);
             this.tableLayoutPanelChart.TabIndex = 1;
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
-            this.pictureBox13.Location = new System.Drawing.Point(657, 622);
-            this.pictureBox13.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(646, 149);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox13.TabIndex = 25;
-            this.pictureBox13.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(4, 622);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(645, 149);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 24;
-            this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(657, 429);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(646, 145);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 23;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(4, 429);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(645, 145);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 22;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(657, 236);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(646, 145);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 21;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(4, 236);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(645, 145);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 20;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(657, 43);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(646, 145);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 19;
-            this.pictureBox5.TabStop = false;
             // 
             // labelGraphBasinc1
             // 
@@ -1040,18 +972,6 @@
             this.labelGraphSicaklik.TabIndex = 17;
             this.labelGraphSicaklik.Text = "SICAKLIK 0.0 (C°)";
             this.labelGraphSicaklik.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(4, 43);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(645, 145);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 18;
-            this.pictureBox4.TabStop = false;
             // 
             // labelGraphPilGerilimi
             // 
@@ -1154,7 +1074,7 @@
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(1391, 237);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 33;
             this.pictureBox3.TabStop = false;
             // 
@@ -1557,7 +1477,7 @@
             // comboBoxPortName
             // 
             this.comboBoxPortName.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.comboBoxPortName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBoxPortName.Dock = System.Windows.Forms.DockStyle.Top;
             this.comboBoxPortName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBoxPortName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Millimeter, ((byte)(162)));
             this.comboBoxPortName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
@@ -1896,6 +1816,133 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // chartBasinc1
+            // 
+            chartArea8.Name = "ChartArea1";
+            this.chartBasinc1.ChartAreas.Add(chartArea8);
+            this.chartBasinc1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chartBasinc1.Location = new System.Drawing.Point(3, 41);
+            this.chartBasinc1.Name = "chartBasinc1";
+            this.chartBasinc1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
+            series8.ChartArea = "ChartArea1";
+            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series8.Name = "basinc1";
+            this.chartBasinc1.Series.Add(series8);
+            this.chartBasinc1.Size = new System.Drawing.Size(647, 149);
+            this.chartBasinc1.TabIndex = 26;
+            this.chartBasinc1.Text = "chart1";
+            // 
+            // chartBasinc2
+            // 
+            chartArea7.Name = "ChartArea1";
+            this.chartBasinc2.ChartAreas.Add(chartArea7);
+            this.chartBasinc2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chartBasinc2.Location = new System.Drawing.Point(656, 41);
+            this.chartBasinc2.Name = "chartBasinc2";
+            this.chartBasinc2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
+            series7.ChartArea = "ChartArea1";
+            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series7.Name = "basinc2";
+            this.chartBasinc2.Series.Add(series7);
+            this.chartBasinc2.Size = new System.Drawing.Size(648, 149);
+            this.chartBasinc2.TabIndex = 27;
+            this.chartBasinc2.Text = "chart2";
+            // 
+            // chartYukseklik1
+            // 
+            chartArea6.Name = "ChartArea1";
+            this.chartYukseklik1.ChartAreas.Add(chartArea6);
+            this.chartYukseklik1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chartYukseklik1.Location = new System.Drawing.Point(3, 234);
+            this.chartYukseklik1.Name = "chartYukseklik1";
+            this.chartYukseklik1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
+            series6.ChartArea = "ChartArea1";
+            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series6.Name = "yukseklik1";
+            this.chartYukseklik1.Series.Add(series6);
+            this.chartYukseklik1.Size = new System.Drawing.Size(647, 149);
+            this.chartYukseklik1.TabIndex = 28;
+            this.chartYukseklik1.Text = "chart3";
+            // 
+            // chartYukseklik2
+            // 
+            chartArea5.Name = "ChartArea1";
+            this.chartYukseklik2.ChartAreas.Add(chartArea5);
+            this.chartYukseklik2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chartYukseklik2.Location = new System.Drawing.Point(656, 234);
+            this.chartYukseklik2.Name = "chartYukseklik2";
+            this.chartYukseklik2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
+            series5.ChartArea = "ChartArea1";
+            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series5.Name = "yukseklik2";
+            this.chartYukseklik2.Series.Add(series5);
+            this.chartYukseklik2.Size = new System.Drawing.Size(648, 149);
+            this.chartYukseklik2.TabIndex = 29;
+            this.chartYukseklik2.Text = "chart4";
+            // 
+            // chartIrtifaFarki
+            // 
+            chartArea4.Name = "ChartArea1";
+            this.chartIrtifaFarki.ChartAreas.Add(chartArea4);
+            this.chartIrtifaFarki.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chartIrtifaFarki.Location = new System.Drawing.Point(3, 427);
+            this.chartIrtifaFarki.Name = "chartIrtifaFarki";
+            this.chartIrtifaFarki.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series4.Name = "irtifaFarki";
+            this.chartIrtifaFarki.Series.Add(series4);
+            this.chartIrtifaFarki.Size = new System.Drawing.Size(647, 149);
+            this.chartIrtifaFarki.TabIndex = 30;
+            this.chartIrtifaFarki.Text = "chart5";
+            // 
+            // chartInisGizi
+            // 
+            chartArea3.Name = "ChartArea1";
+            this.chartInisGizi.ChartAreas.Add(chartArea3);
+            this.chartInisGizi.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chartInisGizi.Location = new System.Drawing.Point(656, 427);
+            this.chartInisGizi.Name = "chartInisGizi";
+            this.chartInisGizi.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series3.Name = "inisHizi";
+            this.chartInisGizi.Series.Add(series3);
+            this.chartInisGizi.Size = new System.Drawing.Size(648, 149);
+            this.chartInisGizi.TabIndex = 31;
+            this.chartInisGizi.Text = "chart6";
+            // 
+            // chartSicaklik
+            // 
+            chartArea2.Name = "ChartArea1";
+            this.chartSicaklik.ChartAreas.Add(chartArea2);
+            this.chartSicaklik.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chartSicaklik.Location = new System.Drawing.Point(3, 620);
+            this.chartSicaklik.Name = "chartSicaklik";
+            this.chartSicaklik.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SemiTransparent;
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series2.Name = "sicaklik";
+            this.chartSicaklik.Series.Add(series2);
+            this.chartSicaklik.Size = new System.Drawing.Size(647, 153);
+            this.chartSicaklik.TabIndex = 32;
+            this.chartSicaklik.Text = "chart7";
+            // 
+            // chartPilGerilimi
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chartPilGerilimi.ChartAreas.Add(chartArea1);
+            this.chartPilGerilimi.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chartPilGerilimi.Location = new System.Drawing.Point(656, 620);
+            this.chartPilGerilimi.Name = "chartPilGerilimi";
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.Name = "pilGerilimi";
+            this.chartPilGerilimi.Series.Add(series1);
+            this.chartPilGerilimi.Size = new System.Drawing.Size(648, 153);
+            this.chartPilGerilimi.TabIndex = 33;
+            this.chartPilGerilimi.Text = "chart8";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -1915,20 +1962,11 @@
             this.tableLayoutPanelTelemetri.PerformLayout();
             this.tableLayoutPanelChart.ResumeLayout(false);
             this.tableLayoutPanelChart.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.tableLayoutPanelDataAndARAS.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tableLayoutPanel7.ResumeLayout(false);
-            this.tableLayoutPanel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.tableLayoutPanel8.ResumeLayout(false);
             this.tableLayoutPanel10.ResumeLayout(false);
@@ -1946,6 +1984,14 @@
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartBasinc1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartBasinc2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartYukseklik1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartYukseklik2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartIrtifaFarki)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartInisGizi)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartSicaklik)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartPilGerilimi)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1999,13 +2045,6 @@
         private System.Windows.Forms.Label labelGraphGYinisHizi;
         private System.Windows.Forms.Label labelGraphYukseklik1;
         private System.Windows.Forms.Label labelGraphSicaklik;
-        private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelSolkisim;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelSerial;
         private System.Windows.Forms.Label label1;
@@ -2054,7 +2093,6 @@
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.Label labelGraphPilGerilimi;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel12;
         private System.Windows.Forms.Button button28;
@@ -2066,6 +2104,14 @@
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.ComboBox comboBoxPortName;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartPilGerilimi;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartSicaklik;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartInisGizi;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartIrtifaFarki;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartYukseklik2;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartYukseklik1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartBasinc2;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartBasinc1;
     }
 }
 

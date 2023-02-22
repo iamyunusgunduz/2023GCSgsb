@@ -129,6 +129,10 @@ namespace _2023MUYGCS
                         telemetri.uyduStatu = gelenTelemetriVeriDizisi[1];
                         telemetri.hataKodu = gelenTelemetriVeriDizisi[2];
                         telemetri.gondermeSaati = gelenTelemetriVeriDizisi[3] +", "+ gelenTelemetriVeriDizisi[4];
+                  
+                        telemetri.tarih = gelenTelemetriVeriDizisi[3];
+                        telemetri.saat = gelenTelemetriVeriDizisi[4];
+
                         telemetri.basinc1 = gelenTelemetriVeriDizisi[5];
                         telemetri.basinc2 = gelenTelemetriVeriDizisi[6];
                         telemetri.yukseklik1 = gelenTelemetriVeriDizisi[7];
@@ -158,12 +162,25 @@ namespace _2023MUYGCS
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
+            try
+            {
+                if (_serialPort != null)
+                {
+                    _serialPort.Close();
+                }
+
              
-                _serialPort.Close();
                 _continue = false;
                 readThread.Join();
-            timer1.Stop();
-            timer1.Enabled = false;
+                timer1.Stop();
+                timer1.Enabled = false;
+            }
+            catch (Exception err)
+            {
+
+                Console.WriteLine("Hata"+err);
+            }
+            
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -199,6 +216,25 @@ namespace _2023MUYGCS
             labelGraphGYinisHizi.Text = "GÖREV YÜKÜ İNİŞ HIZI : " + telemetri.inisHizi + " (m/s)";
             labelGraphSicaklik.Text = "SICAKLIK" + telemetri.sicaklik + " °C";
             labelGraphPilGerilimi.Text = "PİL GERİLİMİ" + telemetri.pilGerilimi + " V";
+            if(telemetri.saat != null)
+            {
+                grafikCizdir();
+            }
+        
+
+
+        }
+
+        private void grafikCizdir()
+        {
+            this.chartBasinc1.Series["basinc1"].Points.AddXY(telemetri.saat, 2);
+            this.chartBasinc2.Series["basinc2"].Points.AddXY(telemetri.saat, 2);
+            this.chartYukseklik1.Series["yukseklik1"].Points.AddXY(telemetri.saat, 2);
+            this.chartYukseklik2.Series["yukseklik2"].Points.AddXY(telemetri.saat, 2);
+            this.chartIrtifaFarki.Series["irtifaFarki"].Points.AddXY(telemetri.saat, 2);
+            this.chartInisGizi.Series["inisHizi"].Points.AddXY(telemetri.saat, 2);
+            this.chartSicaklik.Series["sicaklik"].Points.AddXY(telemetri.saat, 2);
+            this.chartPilGerilimi.Series["pilGerilimi"].Points.AddXY(telemetri.saat, 2);
         }
     }
 }
