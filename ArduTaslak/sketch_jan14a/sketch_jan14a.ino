@@ -1,12 +1,14 @@
 void setup() {
   // put your setup code here, to run once:
+
 Serial.begin(115200);
 }
-
+int paketNo = 0 ;
 void loop() {
   
-Serial.print("<1>,");//paketNo
-Serial.print("<0>,");//uydu statüsü
+Serial.print("<");
+Serial.print(paketNo);Serial.print(">,"); //paketNo
+Serial.print("<1>,");//uydu statüsü
 Serial.print("<00000>,");//hata kod
 Serial.print("<19/08/2021,03/42/2>,");//zaman
 Serial.print("<8870>,");//basınc1
@@ -23,7 +25,8 @@ Serial.print("<725.2>,");//gps1 altitude
 Serial.print("<10.96>,");//pitch
 Serial.print("<0.31>,");//roll
 Serial.print("<0.03>,");//yaw
-Serial.println("<1412>");//takım no,
+Serial.print("<1412>,");//takım no
+Serial.println("<3>");//tasiyici inis hizi
 delay(1000);
-
+paketNo++;
 }
