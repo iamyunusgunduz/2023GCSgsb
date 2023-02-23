@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO.Ports;
 using System.Threading;
+using System.IO;
 
 namespace _2023MUYGCS
 {
@@ -20,9 +21,11 @@ namespace _2023MUYGCS
 
        static TelemetriVerileriModel telemetri = new TelemetriVerileriModel();
         static bool _continue;
+        static bool  csvVeriKaydedilsinmi = false;
+       public static string title;
         static SerialPort _serialPort;
         Thread readThread = new Thread(Read);
-
+     
         public Form1()
         {
             InitializeComponent();
@@ -30,6 +33,7 @@ namespace _2023MUYGCS
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            CheckForIllegalCrossThreadCalls = false;
             porAdiGetir();
             
 
@@ -56,7 +60,16 @@ namespace _2023MUYGCS
                 Console.WriteLine("   {0}", s);
                 comboBoxPortName.Items.Add(s);
             }
-            comboBoxPortName.SelectedIndex = 0;
+            try
+            {
+                comboBoxPortName.SelectedIndex = 0;
+            }
+            catch (Exception err)
+            {
+
+                Console.WriteLine("Hata " + err);
+            }
+           
            
         }
 
@@ -81,7 +94,7 @@ namespace _2023MUYGCS
                     }
                    
                     buttonSerialPortBaglanti.ForeColor = Color.Red;
-                    buttonSerialPortBaglanti.Text = "Baglantiyi kes";
+                    buttonSerialPortBaglanti.Text = "Durdur";
                     timer1.Start();
                 }
                 catch (Exception err)
@@ -118,10 +131,13 @@ namespace _2023MUYGCS
                 try
                 {
                     gelenTelemetriVerisi = _serialPort.ReadLine();
+                    title = gelenTelemetriVerisi;
                     Console.WriteLine(gelenTelemetriVerisi);
                   string gelenTelemetriVerisiRemoveBuyuktur = gelenTelemetriVerisi.Replace('>',' ');
                     string gelenTelemetriVerisiRemoveKucuktur = gelenTelemetriVerisiRemoveBuyuktur.Replace('<', ' ');
-                    if (!gelenTelemetriVerisiRemoveKucuktur.Contains('?') || !gelenTelemetriVerisiRemoveKucuktur.Contains('#'))
+                    try
+                    {
+                        if (!gelenTelemetriVerisiRemoveKucuktur.Contains('?') || !gelenTelemetriVerisiRemoveKucuktur.Contains('#'))
                     {
                         string[] gelenTelemetriVeriDizisi = gelenTelemetriVerisiRemoveKucuktur.Split(',');
 
@@ -149,7 +165,34 @@ namespace _2023MUYGCS
                         telemetri.yaw = gelenTelemetriVeriDizisi[18];
                         telemetri.takimNo = gelenTelemetriVeriDizisi[19];
                         telemetri.tasiyiciInisHizi = gelenTelemetriVeriDizisi[20];
+
+                            if (csvVeriKaydedilsinmi)
+                            {
+                                try
+                                {
+                                 StringBuilder csvContent = new StringBuilder();
+
+                                    csvContent.AppendLine(gelenTelemetriVerisiRemoveKucuktur);
+                                    string csvPath = "TMUY2023_243868_TLM.csv";
+                                    File.AppendAllText(csvPath, csvContent.ToString());
+                                }
+                                catch (Exception err)
+                                {
+
+                                    Console.WriteLine("Hata "+err);
+                                }
+                            }
+                            
+                           
+
+                        }
                     }
+                    catch (Exception)
+                    {
+
+                        throw;
+                    }
+                    
                    
 
                 }
@@ -171,9 +214,14 @@ namespace _2023MUYGCS
 
              
                 _continue = false;
-                readThread.Join();
+                if (readThread.ThreadState == ThreadState.Suspended)
+                {
+                    readThread.Resume();
+                }
+               
                 timer1.Stop();
                 timer1.Enabled = false;
+                Application.Exit();
             }
             catch (Exception err)
             {
@@ -185,56 +233,143 @@ namespace _2023MUYGCS
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            // sagdaki labeller
-            labelPaketNoVALUE.Text = telemetri.paketNo;
-         labelUyduStatusuVALUE.Text = telemetri.uyduStatu;
-          labelHataKoduVALUE.Text = telemetri.hataKodu ;
-          labelGondermeSaatiVALUE.Text = telemetri.gondermeSaati ;
-          labelBasinc1GYVALUE.Text = telemetri.basinc1 + " (Pa)";
-         labelBasinc2TVALUE.Text  = telemetri.basinc2 + " (Pa)";
-            labelYukseklik1GYVALUE.Text   = telemetri.yukseklik1 + " m";
-            labelYukseklik2TVALUE.Text= telemetri.yukseklik2 + " m";
-            labelIrtifaFarkiVALUE.Text = telemetri.irtifaFarki + " m";
-            labelGYinisHiziVALUE.Text = telemetri.inisHizi + " (m/s)";
-            labelSicaklikVALUE.Text = telemetri.sicaklik + " °C";
-            labelPilGerilimiVALUE.Text = telemetri.pilGerilimi + " V";
-            labelGps1LatGYVALUE.Text =  telemetri.gps1Lat ;
-            labelGps1LongGYVALUE.Text  = telemetri.gps1Long ;
-        labelGps1AltGYVALUE.Text  =  telemetri.gps1Alt + " m";
-            labelPitchVALUE.Text  = telemetri.pitch + " °";
-            labelRollVALUE.Text  = telemetri.roll + " °";
-            labelYawVALUE.Text =  telemetri.yaw + " °";
-            labelTakimNoVALUE.Text  = telemetri.takimNo ;
-         labelTinisHiziVALUE.Text  = telemetri.tasiyiciInisHizi + " (m/s)";
-
-            // label grafik ustundekiler
-            labelGraphBasinc1.Text = "BASINÇ-1 (GÖREV YÜKÜ) : "+ telemetri.basinc1 + "(Pa)";
-            labelGraphBasinc2.Text = "BASINÇ-2 (TAŞIYICI) : " + telemetri.basinc2 + "(Pa)";
-            labelGraphYukseklik1.Text = "YÜKSEKLİK-1 (GÖREV YÜKÜ) : "+ telemetri.yukseklik1 + " m";
-            labelGraphYukseklik2.Text = "YÜKSEKLİK-2 (TAŞIYICI) :" + telemetri.yukseklik2 + " m";
-            labelGraphIrtifaFarki.Text = "İRTİFA FARKI : " + telemetri.irtifaFarki + " m";
-            labelGraphGYinisHizi.Text = "GÖREV YÜKÜ İNİŞ HIZI : " + telemetri.inisHizi + " (m/s)";
-            labelGraphSicaklik.Text = "SICAKLIK" + telemetri.sicaklik + " °C";
-            labelGraphPilGerilimi.Text = "PİL GERİLİMİ" + telemetri.pilGerilimi + " V";
-            if(telemetri.saat != null)
+            this.Text = " Model uydu takımı Yer istasyonu :  " + title;
+            if (_continue)
             {
-                grafikCizdir();
+                GrafikCizdir();
+                // sagdaki labeller
+                labelPaketNoVALUE.Text = telemetri.paketNo;
+                labelUyduStatusuVALUE.Text = telemetri.uyduStatu;
+                labelHataKoduVALUE.Text = telemetri.hataKodu;
+                labelGondermeSaatiVALUE.Text = telemetri.gondermeSaati;
+                labelBasinc1GYVALUE.Text = telemetri.basinc1 + " (Pa)";
+                labelBasinc2TVALUE.Text = telemetri.basinc2 + " (Pa)";
+                labelYukseklik1GYVALUE.Text = telemetri.yukseklik1 + " m";
+                labelYukseklik2TVALUE.Text = telemetri.yukseklik2 + " m";
+                labelIrtifaFarkiVALUE.Text = telemetri.irtifaFarki + " m";
+                labelGYinisHiziVALUE.Text = telemetri.inisHizi + " (m/s)";
+                labelSicaklikVALUE.Text = telemetri.sicaklik + " °C";
+                labelPilGerilimiVALUE.Text = telemetri.pilGerilimi + " V";
+                labelGps1LatGYVALUE.Text = telemetri.gps1Lat;
+                labelGps1LongGYVALUE.Text = telemetri.gps1Long;
+                labelGps1AltGYVALUE.Text = telemetri.gps1Alt + " m";
+                labelPitchVALUE.Text = telemetri.pitch + " °";
+                labelRollVALUE.Text = telemetri.roll + " °";
+                labelYawVALUE.Text = telemetri.yaw + " °";
+                labelTakimNoVALUE.Text = telemetri.takimNo;
+                labelTinisHiziVALUE.Text = telemetri.tasiyiciInisHizi + " (m/s)";
+
+                // label grafik ustundekiler
+                labelGraphBasinc1.Text = "BASINÇ-1 (GÖREV YÜKÜ) : " + telemetri.basinc1 + "(Pa)";
+                labelGraphBasinc2.Text = "BASINÇ-2 (TAŞIYICI) : " + telemetri.basinc2 + "(Pa)";
+                labelGraphYukseklik1.Text = "YÜKSEKLİK-1 (GÖREV YÜKÜ) : " + telemetri.yukseklik1 + " m";
+                labelGraphYukseklik2.Text = "YÜKSEKLİK-2 (TAŞIYICI) :" + telemetri.yukseklik2 + " m";
+                labelGraphIrtifaFarki.Text = "İRTİFA FARKI : " + telemetri.irtifaFarki + " m";
+                labelGraphGYinisHizi.Text = "GÖREV YÜKÜ İNİŞ HIZI : " + telemetri.inisHizi + " (m/s)";
+                labelGraphSicaklik.Text = "SICAKLIK" + telemetri.sicaklik + " °C";
+                labelGraphPilGerilimi.Text = "PİL GERİLİMİ" + telemetri.pilGerilimi + " V";
+
+                string[] satir = {telemetri.paketNo,
+                                telemetri.uyduStatu,
+                                telemetri.hataKodu,
+                                telemetri.gondermeSaati,
+                                telemetri.basinc1,
+                                telemetri.basinc2,
+                                telemetri.yukseklik1,
+                                telemetri.yukseklik2,
+                                telemetri.irtifaFarki,
+                                telemetri.inisHizi,
+                                telemetri.sicaklik,
+                                telemetri.pilGerilimi,
+                                telemetri.gps1Lat,
+                                telemetri.gps1Long,
+                                telemetri.gps1Alt,
+                                telemetri.pitch,
+                                telemetri.roll,
+                                telemetri.yaw,
+                                telemetri.takimNo,
+                                telemetri.tasiyiciInisHizi
+            };
+
+                var eklenenSatir = new ListViewItem(satir);
+
+
+                        if(telemetri.gondermeSaati != null)
+                {
+                    listView1.Items.Add(eklenenSatir);
+                    listView1.Items[listView1.Items.Count - 1].EnsureVisible();
+                }
+                   
+                  
+                 
+
+
             }
-        
 
 
         }
 
-        private void grafikCizdir()
+       public void GrafikCizdir()
         {
-            this.chartBasinc1.Series["basinc1"].Points.AddXY(telemetri.saat, 2);
-            this.chartBasinc2.Series["basinc2"].Points.AddXY(telemetri.saat, 2);
-            this.chartYukseklik1.Series["yukseklik1"].Points.AddXY(telemetri.saat, 2);
-            this.chartYukseklik2.Series["yukseklik2"].Points.AddXY(telemetri.saat, 2);
-            this.chartIrtifaFarki.Series["irtifaFarki"].Points.AddXY(telemetri.saat, 2);
-            this.chartInisGizi.Series["inisHizi"].Points.AddXY(telemetri.saat, 2);
-            this.chartSicaklik.Series["sicaklik"].Points.AddXY(telemetri.saat, 2);
-            this.chartPilGerilimi.Series["pilGerilimi"].Points.AddXY(telemetri.saat, 2);
+            if (telemetri.gondermeSaati != null)
+            {
+                this.chartBasinc1.Series["basinc1"].Points.AddXY(telemetri.saat, 2);
+                this.chartBasinc2.Series["basinc2"].Points.AddXY(telemetri.saat, 2);
+                this.chartYukseklik1.Series["yukseklik1"].Points.AddXY(telemetri.saat, 2);
+                this.chartYukseklik2.Series["yukseklik2"].Points.AddXY(telemetri.saat, 2);
+                this.chartIrtifaFarki.Series["irtifaFarki"].Points.AddXY(telemetri.saat, 2);
+                this.chartInisGizi.Series["inisHizi"].Points.AddXY(telemetri.saat, 2);
+                this.chartSicaklik.Series["sicaklik"].Points.AddXY(telemetri.saat, 2);
+                this.chartPilGerilimi.Series["pilGerilimi"].Points.AddXY(telemetri.saat, 2);
+            }
+        
+           
+        }
+
+        private void buttonManuelAyril_Click(object sender, EventArgs e)
+        {
+            _serialPort.Write("A");
+            Console.WriteLine("A");
+        }
+
+        private void buttonYer2_Click(object sender, EventArgs e)
+        {
+            Console.WriteLine("Yer2");
+        }
+
+        private void buttonBuzzer_Click(object sender, EventArgs e)
+        {
+            _serialPort.Write("B");
+            Console.WriteLine("B");
+        }
+
+        private void buttonCsvTemizle_Click(object sender, EventArgs e)
+        {
+            if (File.Exists("TMUY2023_243868_TLM.csv"))
+            {
+                MessageBox.Show("Veriler silindi , listeleyebilirsiniz !");
+                File.Delete("TMUY2023_243868_TLM.csv");
+
+               
+            }
+            else { MessageBox.Show("Dosya mevcut değil."); }
+            StringBuilder csvContent = new StringBuilder();
+
+            string ilkSatir = "Paket No,Uydu Statu,Hata Kodu, Tarih, Saat, Basinc1, Basinc2, Yukseklik1, Yukseklik2, Irtifa Farki, InisHizi, Sicaklik, PilGerilimi," +
+                 " GpsLatitude, GpsLongitude, GpsAltitude, Pitch, Roll, Yaw, Takim No, Tasiyici Inis Hizi";
+            csvContent.AppendLine(ilkSatir);
+            string csvPath = "TMUY2023_243868_TLM.csv";
+            File.AppendAllText(csvPath, csvContent.ToString());
+        }
+
+        private void buttonCsvKaydet_Click(object sender, EventArgs e)
+        {
+            csvVeriKaydedilsinmi = true;
+        }
+
+        private void buttonCsvDurdur_Click(object sender, EventArgs e)
+        {
+            csvVeriKaydedilsinmi = false;
         }
     }
 }
