@@ -11,6 +11,9 @@ using System.Windows.Forms;
 using System.IO.Ports;
 using System.Threading;
 using System.IO;
+using AForge.Video.DirectShow;
+using AForge.Video;
+using Accord.Video.FFMPEG;
 
 namespace _2023MUYGCS
 {
@@ -18,8 +21,8 @@ namespace _2023MUYGCS
     public partial class Form1 : Form
     {
 
-
-       static TelemetriVerileriModel telemetri = new TelemetriVerileriModel();
+        private System.Diagnostics.Stopwatch stopWatch = null;
+        static TelemetriVerileriModel telemetri = new TelemetriVerileriModel();
         static bool _continue;
         static bool  csvVeriKaydedilsinmi = false;
        public static string title;
@@ -35,9 +38,10 @@ namespace _2023MUYGCS
         {
             CheckForIllegalCrossThreadCalls = false;
             porAdiGetir();
-            
+   
 
-
+            VideoCaptureDevices = new FilterInfoCollection(FilterCategory.VideoInputDevice);
+            captureDevice = new VideoCaptureDeviceForm();
 
 
         }
@@ -211,8 +215,8 @@ namespace _2023MUYGCS
                 {
                     _serialPort.Close();
                 }
+                CloseCurrentVideoSource();
 
-             
                 _continue = false;
                 if (readThread.ThreadState == ThreadState.Suspended)
                 {
@@ -230,7 +234,99 @@ namespace _2023MUYGCS
             }
             
         }
+        private void OpenVideoSource(IVideoSource source)
+        {
+            // set busy cursor
+            this.Cursor = Cursors.WaitCursor;
 
+            // stop current video source
+            CloseCurrentVideoSource();
+
+            // start new video source
+            videoSourcePlayer1.VideoSource = source;
+            videoSourcePlayer1.Start();
+
+            // reset stop watch
+            stopWatch = null;
+
+            // start timer
+            timerKamera.Start();
+
+            this.Cursor = Cursors.Default;
+        }
+
+        // Close video source if it is running
+        private void CloseCurrentVideoSource()
+        {
+            if (videoSourcePlayer1.VideoSource != null)
+            {
+                videoSourcePlayer1.SignalToStop();
+
+                // wait ~ 3 seconds
+                for (int i = 0; i < 30; i++)
+                {
+                    if (!videoSourcePlayer1.IsRunning)
+                        break;
+                    System.Threading.Thread.Sleep(100);
+                }
+
+                if (videoSourcePlayer1.IsRunning)
+                {
+                    videoSourcePlayer1.Stop();
+                }
+
+                videoSourcePlayer1.VideoSource = null;
+            }
+        }
+        private FilterInfoCollection VideoCaptureDevices;
+
+        private VideoCaptureDevice FinalVideo = null;
+        private VideoCaptureDeviceForm captureDevice;
+
+        private Bitmap video;
+        //private AVIWriter AVIwriter = new AVIWriter();
+        public VideoFileWriter FileWriter = new VideoFileWriter();
+        private SaveFileDialog saveAvi;
+        private void videoSourcePlayer1_NewFrame(object sender, ref Bitmap image)
+        {
+            DateTime now = DateTime.Now;
+            Graphics g = Graphics.FromImage(image);
+
+            // paint current time
+            SolidBrush brush = new SolidBrush(Color.Red);
+            g.DrawString(now.ToString(), this.Font, brush, new PointF(5, 5));
+            brush.Dispose();
+
+            g.Dispose();
+        }
+         
+      
+
+
+        void FinalVideo_NewFrame(object sender, NewFrameEventArgs eventArgs)
+        {
+            if (buttonRecStop.Text == "Kaydı durdur")
+            {
+
+
+                video = (Bitmap)eventArgs.Frame.Clone();
+
+                //AVIwriter.Quality = 0;
+                FileWriter.WriteVideoFrame(video);
+                //AVIwriter.AddFrame(video);
+            }
+            else //Stop
+            {
+                video = (Bitmap)eventArgs.Frame.Clone();
+
+            }
+        }
+
+  
+
+       
+        string fileNamesHowDialog = "yunusVıdeo";
+         
         private void timer1_Tick(object sender, EventArgs e)
         {
             this.Text = " Model uydu takımı Yer istasyonu :  " + title;
@@ -370,6 +466,114 @@ namespace _2023MUYGCS
         private void buttonCsvDurdur_Click(object sender, EventArgs e)
         {
             csvVeriKaydedilsinmi = false;
+        }
+
+        private void timerKamera_Tick(object sender, EventArgs e)
+        {
+            IVideoSource videoSource = videoSourcePlayer1.VideoSource;
+
+            if (videoSource != null)
+            {
+                // get number of frames since the last timer tick
+                int framesReceived = videoSource.FramesReceived;
+
+                if (stopWatch == null)
+                {
+                    stopWatch = new System.Diagnostics.Stopwatch();
+                    stopWatch.Start();
+                }
+                else
+                {
+                    stopWatch.Stop();
+
+                    float fps = 1000.0f * framesReceived / stopWatch.ElapsedMilliseconds;
+
+
+                    stopWatch.Reset();
+                    stopWatch.Start();
+                }
+            }
+        }
+
+        private void buttonRecStart_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonRecSave_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonRecStart_Click_1(object sender, EventArgs e)
+        {
+            captureDevice = new VideoCaptureDeviceForm();
+            buttonRecStop.Enabled = true;
+            if (captureDevice.ShowDialog(this) == DialogResult.OK)
+            {
+                // create video source
+                FinalVideo = captureDevice.VideoDevice;
+
+                // open it
+                OpenVideoSource(FinalVideo);
+                FinalVideo.NewFrame += new NewFrameEventHandler(FinalVideo_NewFrame);
+                FinalVideo.Start();
+            }
+        }
+
+        private void buttonRecSave_Click_1(object sender, EventArgs e)
+        {
+            if (buttonRecStop.Text == "Kamerayı durdur")
+            {
+                saveAvi = new SaveFileDialog();
+                saveAvi.Filter = "Avi Files (*.avi)|*.avi";
+                if (saveAvi.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    int h = captureDevice.VideoDevice.VideoResolution.FrameSize.Height;
+                    int w = captureDevice.VideoDevice.VideoResolution.FrameSize.Width;
+                    FileWriter.Open(saveAvi.FileName, w, h, 25, VideoCodec.Default, 5000000);
+                    FileWriter.WriteVideoFrame(video);
+
+                    buttonRecStop.Text = "Kaydı durdur";
+                }
+            }
+        }
+
+        private void buttonRecStop_Click(object sender, EventArgs e)
+        {
+            if (buttonRecStop.Text == "Kaydı durdur")
+            {
+                buttonRecStop.Text = "Kamerayı durdur";
+                if (FinalVideo == null)
+                { return; }
+                if (FinalVideo.IsRunning)
+                {
+                    //this.FinalVideo.Stop();
+                    FileWriter.Close();
+                    //this.AVIwriter.Close();
+
+                }
+                MessageBox.Show("video kaydedildi");
+            }
+            else
+            {
+                this.FinalVideo.Stop();
+                FileWriter.Close();
+                //this.AVIwriter.Close();
+
+            }
+        }
+
+        private void buttonOpenFile_Click(object sender, EventArgs e)
+        {
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                // create video source
+                FileVideoSource fileSource = new FileVideoSource(openFileDialog1.FileName);
+
+                // open it
+                OpenVideoSource(fileSource);
+            }
         }
     }
 }
