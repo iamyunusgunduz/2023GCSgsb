@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea33 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series33 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea34 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series34 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea35 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series35 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea36 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series36 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea37 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series37 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea38 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series38 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea39 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series39 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea40 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series40 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tableLayoutPanelMain = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanelChartTelemetri = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanelTelemetri = new System.Windows.Forms.TableLayoutPanel();
@@ -130,11 +130,11 @@
             this.tasiyiciInisHizi = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
-            this.button23 = new System.Windows.Forms.Button();
-            this.button24 = new System.Windows.Forms.Button();
-            this.button25 = new System.Windows.Forms.Button();
-            this.button26 = new System.Windows.Forms.Button();
-            this.button27 = new System.Windows.Forms.Button();
+            this.buttonHKA4 = new System.Windows.Forms.Button();
+            this.buttonHKA5 = new System.Windows.Forms.Button();
+            this.buttonHKA3 = new System.Windows.Forms.Button();
+            this.buttonHKA1 = new System.Windows.Forms.Button();
+            this.buttonHKA2 = new System.Windows.Forms.Button();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
             this.button18 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
@@ -142,11 +142,11 @@
             this.button21 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
+            this.buttonHKR4 = new System.Windows.Forms.Button();
+            this.buttonHKR5 = new System.Windows.Forms.Button();
+            this.buttonHKR3 = new System.Windows.Forms.Button();
+            this.buttonHKR1 = new System.Windows.Forms.Button();
+            this.buttonHKR2 = new System.Windows.Forms.Button();
             this.tableLayoutPanelSolkisim = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanelSerial = new System.Windows.Forms.TableLayoutPanel();
             this.buttonBuzzer = new System.Windows.Forms.Button();
@@ -173,14 +173,14 @@
             this.tableLayoutPanelSolAltKisim = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
+            this.buttonOpenFile = new System.Windows.Forms.Button();
+            this.buttonRecStop = new System.Windows.Forms.Button();
+            this.buttonRecSave = new System.Windows.Forms.Button();
+            this.buttonRecStart = new System.Windows.Forms.Button();
             this.videoSourcePlayer1 = new AForge.Controls.VideoSourcePlayer();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.timerKamera = new System.Windows.Forms.Timer(this.components);
-            this.buttonRecStart = new System.Windows.Forms.Button();
-            this.buttonRecSave = new System.Windows.Forms.Button();
-            this.buttonRecStop = new System.Windows.Forms.Button();
-            this.buttonOpenFile = new System.Windows.Forms.Button();
             this.tableLayoutPanelMain.SuspendLayout();
             this.tableLayoutPanelChartTelemetri.SuspendLayout();
             this.tableLayoutPanelTelemetri.SuspendLayout();
@@ -903,111 +903,111 @@
             // 
             // chartPilGerilimi
             // 
-            chartArea33.Name = "ChartArea1";
-            this.chartPilGerilimi.ChartAreas.Add(chartArea33);
+            chartArea1.Name = "ChartArea1";
+            this.chartPilGerilimi.ChartAreas.Add(chartArea1);
             this.chartPilGerilimi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartPilGerilimi.Location = new System.Drawing.Point(656, 598);
             this.chartPilGerilimi.Name = "chartPilGerilimi";
-            series33.ChartArea = "ChartArea1";
-            series33.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series33.Name = "pilGerilimi";
-            this.chartPilGerilimi.Series.Add(series33);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.Name = "pilGerilimi";
+            this.chartPilGerilimi.Series.Add(series1);
             this.chartPilGerilimi.Size = new System.Drawing.Size(648, 148);
             this.chartPilGerilimi.TabIndex = 33;
             this.chartPilGerilimi.Text = "chart8";
             // 
             // chartSicaklik
             // 
-            chartArea34.Name = "ChartArea1";
-            this.chartSicaklik.ChartAreas.Add(chartArea34);
+            chartArea2.Name = "ChartArea1";
+            this.chartSicaklik.ChartAreas.Add(chartArea2);
             this.chartSicaklik.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartSicaklik.Location = new System.Drawing.Point(3, 598);
             this.chartSicaklik.Name = "chartSicaklik";
             this.chartSicaklik.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SemiTransparent;
-            series34.ChartArea = "ChartArea1";
-            series34.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series34.Name = "sicaklik";
-            this.chartSicaklik.Series.Add(series34);
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series2.Name = "sicaklik";
+            this.chartSicaklik.Series.Add(series2);
             this.chartSicaklik.Size = new System.Drawing.Size(647, 148);
             this.chartSicaklik.TabIndex = 32;
             this.chartSicaklik.Text = "chart7";
             // 
             // chartInisGizi
             // 
-            chartArea35.Name = "ChartArea1";
-            this.chartInisGizi.ChartAreas.Add(chartArea35);
+            chartArea3.Name = "ChartArea1";
+            this.chartInisGizi.ChartAreas.Add(chartArea3);
             this.chartInisGizi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartInisGizi.Location = new System.Drawing.Point(656, 412);
             this.chartInisGizi.Name = "chartInisGizi";
             this.chartInisGizi.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series35.ChartArea = "ChartArea1";
-            series35.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series35.Name = "inisHizi";
-            this.chartInisGizi.Series.Add(series35);
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series3.Name = "inisHizi";
+            this.chartInisGizi.Series.Add(series3);
             this.chartInisGizi.Size = new System.Drawing.Size(648, 143);
             this.chartInisGizi.TabIndex = 31;
             this.chartInisGizi.Text = "chart6";
             // 
             // chartIrtifaFarki
             // 
-            chartArea36.Name = "ChartArea1";
-            this.chartIrtifaFarki.ChartAreas.Add(chartArea36);
+            chartArea4.Name = "ChartArea1";
+            this.chartIrtifaFarki.ChartAreas.Add(chartArea4);
             this.chartIrtifaFarki.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartIrtifaFarki.Location = new System.Drawing.Point(3, 412);
             this.chartIrtifaFarki.Name = "chartIrtifaFarki";
             this.chartIrtifaFarki.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
-            series36.ChartArea = "ChartArea1";
-            series36.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series36.Name = "irtifaFarki";
-            this.chartIrtifaFarki.Series.Add(series36);
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series4.Name = "irtifaFarki";
+            this.chartIrtifaFarki.Series.Add(series4);
             this.chartIrtifaFarki.Size = new System.Drawing.Size(647, 143);
             this.chartIrtifaFarki.TabIndex = 30;
             this.chartIrtifaFarki.Text = "chart5";
             // 
             // chartYukseklik2
             // 
-            chartArea37.Name = "ChartArea1";
-            this.chartYukseklik2.ChartAreas.Add(chartArea37);
+            chartArea5.Name = "ChartArea1";
+            this.chartYukseklik2.ChartAreas.Add(chartArea5);
             this.chartYukseklik2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartYukseklik2.Location = new System.Drawing.Point(656, 226);
             this.chartYukseklik2.Name = "chartYukseklik2";
             this.chartYukseklik2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series37.ChartArea = "ChartArea1";
-            series37.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series37.Name = "yukseklik2";
-            this.chartYukseklik2.Series.Add(series37);
+            series5.ChartArea = "ChartArea1";
+            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series5.Name = "yukseklik2";
+            this.chartYukseklik2.Series.Add(series5);
             this.chartYukseklik2.Size = new System.Drawing.Size(648, 143);
             this.chartYukseklik2.TabIndex = 29;
             this.chartYukseklik2.Text = "chart4";
             // 
             // chartYukseklik1
             // 
-            chartArea38.Name = "ChartArea1";
-            this.chartYukseklik1.ChartAreas.Add(chartArea38);
+            chartArea6.Name = "ChartArea1";
+            this.chartYukseklik1.ChartAreas.Add(chartArea6);
             this.chartYukseklik1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartYukseklik1.Location = new System.Drawing.Point(3, 226);
             this.chartYukseklik1.Name = "chartYukseklik1";
             this.chartYukseklik1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series38.ChartArea = "ChartArea1";
-            series38.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series38.Name = "yukseklik1";
-            this.chartYukseklik1.Series.Add(series38);
+            series6.ChartArea = "ChartArea1";
+            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series6.Name = "yukseklik1";
+            this.chartYukseklik1.Series.Add(series6);
             this.chartYukseklik1.Size = new System.Drawing.Size(647, 143);
             this.chartYukseklik1.TabIndex = 28;
             this.chartYukseklik1.Text = "chart3";
             // 
             // chartBasinc2
             // 
-            chartArea39.Name = "ChartArea1";
-            this.chartBasinc2.ChartAreas.Add(chartArea39);
+            chartArea7.Name = "ChartArea1";
+            this.chartBasinc2.ChartAreas.Add(chartArea7);
             this.chartBasinc2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartBasinc2.Location = new System.Drawing.Point(656, 40);
             this.chartBasinc2.Name = "chartBasinc2";
             this.chartBasinc2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
-            series39.ChartArea = "ChartArea1";
-            series39.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series39.Name = "basinc2";
-            this.chartBasinc2.Series.Add(series39);
+            series7.ChartArea = "ChartArea1";
+            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series7.Name = "basinc2";
+            this.chartBasinc2.Series.Add(series7);
             this.chartBasinc2.Size = new System.Drawing.Size(648, 143);
             this.chartBasinc2.TabIndex = 27;
             this.chartBasinc2.Text = "chart2";
@@ -1119,16 +1119,16 @@
             // 
             // chartBasinc1
             // 
-            chartArea40.Name = "ChartArea1";
-            this.chartBasinc1.ChartAreas.Add(chartArea40);
+            chartArea8.Name = "ChartArea1";
+            this.chartBasinc1.ChartAreas.Add(chartArea8);
             this.chartBasinc1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartBasinc1.Location = new System.Drawing.Point(3, 40);
             this.chartBasinc1.Name = "chartBasinc1";
             this.chartBasinc1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
-            series40.ChartArea = "ChartArea1";
-            series40.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series40.Name = "basinc1";
-            this.chartBasinc1.Series.Add(series40);
+            series8.ChartArea = "ChartArea1";
+            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series8.Name = "basinc1";
+            this.chartBasinc1.Series.Add(series8);
             this.chartBasinc1.Size = new System.Drawing.Size(647, 143);
             this.chartBasinc1.TabIndex = 26;
             this.chartBasinc1.Text = "chart1";
@@ -1331,11 +1331,11 @@
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel11.Controls.Add(this.button23, 0, 0);
-            this.tableLayoutPanel11.Controls.Add(this.button24, 0, 0);
-            this.tableLayoutPanel11.Controls.Add(this.button25, 0, 0);
-            this.tableLayoutPanel11.Controls.Add(this.button26, 0, 0);
-            this.tableLayoutPanel11.Controls.Add(this.button27, 0, 0);
+            this.tableLayoutPanel11.Controls.Add(this.buttonHKA4, 0, 0);
+            this.tableLayoutPanel11.Controls.Add(this.buttonHKA5, 0, 0);
+            this.tableLayoutPanel11.Controls.Add(this.buttonHKA3, 0, 0);
+            this.tableLayoutPanel11.Controls.Add(this.buttonHKA1, 0, 0);
+            this.tableLayoutPanel11.Controls.Add(this.buttonHKA2, 0, 0);
             this.tableLayoutPanel11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel11.Location = new System.Drawing.Point(1040, 111);
             this.tableLayoutPanel11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -1346,81 +1346,81 @@
             this.tableLayoutPanel11.Size = new System.Drawing.Size(1012, 49);
             this.tableLayoutPanel11.TabIndex = 38;
             // 
-            // button23
+            // buttonHKA4
             // 
-            this.button23.BackColor = System.Drawing.Color.Black;
-            this.button23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button23.ForeColor = System.Drawing.Color.YellowGreen;
-            this.button23.Location = new System.Drawing.Point(610, 5);
-            this.button23.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(194, 39);
-            this.button23.TabIndex = 74;
-            this.button23.Text = "Görev yükü konum verisi alınma durumu";
-            this.button23.UseVisualStyleBackColor = false;
+            this.buttonHKA4.BackColor = System.Drawing.Color.Black;
+            this.buttonHKA4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonHKA4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonHKA4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.buttonHKA4.ForeColor = System.Drawing.Color.YellowGreen;
+            this.buttonHKA4.Location = new System.Drawing.Point(610, 5);
+            this.buttonHKA4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonHKA4.Name = "buttonHKA4";
+            this.buttonHKA4.Size = new System.Drawing.Size(194, 39);
+            this.buttonHKA4.TabIndex = 74;
+            this.buttonHKA4.Text = "Görev yükü konum verisi alınma durumu";
+            this.buttonHKA4.UseVisualStyleBackColor = false;
             // 
-            // button24
+            // buttonHKA5
             // 
-            this.button24.BackColor = System.Drawing.Color.Black;
-            this.button24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button24.ForeColor = System.Drawing.Color.YellowGreen;
-            this.button24.Location = new System.Drawing.Point(812, 5);
-            this.button24.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(196, 39);
-            this.button24.TabIndex = 73;
-            this.button24.Text = " Ayrılmanın gerçekleşme durumu";
-            this.button24.UseVisualStyleBackColor = false;
+            this.buttonHKA5.BackColor = System.Drawing.Color.Black;
+            this.buttonHKA5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonHKA5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonHKA5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.buttonHKA5.ForeColor = System.Drawing.Color.YellowGreen;
+            this.buttonHKA5.Location = new System.Drawing.Point(812, 5);
+            this.buttonHKA5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonHKA5.Name = "buttonHKA5";
+            this.buttonHKA5.Size = new System.Drawing.Size(196, 39);
+            this.buttonHKA5.TabIndex = 73;
+            this.buttonHKA5.Text = " Ayrılmanın gerçekleşme durumu";
+            this.buttonHKA5.UseVisualStyleBackColor = false;
             // 
-            // button25
+            // buttonHKA3
             // 
-            this.button25.BackColor = System.Drawing.Color.Black;
-            this.button25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button25.ForeColor = System.Drawing.Color.YellowGreen;
-            this.button25.Location = new System.Drawing.Point(408, 5);
-            this.button25.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(194, 39);
-            this.button25.TabIndex = 72;
-            this.button25.Text = "Taşıyıcı basınç verisi alınma durumu";
-            this.button25.UseVisualStyleBackColor = false;
+            this.buttonHKA3.BackColor = System.Drawing.Color.Black;
+            this.buttonHKA3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonHKA3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonHKA3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.buttonHKA3.ForeColor = System.Drawing.Color.YellowGreen;
+            this.buttonHKA3.Location = new System.Drawing.Point(408, 5);
+            this.buttonHKA3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonHKA3.Name = "buttonHKA3";
+            this.buttonHKA3.Size = new System.Drawing.Size(194, 39);
+            this.buttonHKA3.TabIndex = 72;
+            this.buttonHKA3.Text = "Taşıyıcı basınç verisi alınma durumu";
+            this.buttonHKA3.UseVisualStyleBackColor = false;
             // 
-            // button26
+            // buttonHKA1
             // 
-            this.button26.AutoSize = true;
-            this.button26.BackColor = System.Drawing.Color.Black;
-            this.button26.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button26.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button26.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button26.ForeColor = System.Drawing.Color.YellowGreen;
-            this.button26.Location = new System.Drawing.Point(4, 5);
-            this.button26.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(194, 39);
-            this.button26.TabIndex = 71;
-            this.button26.Text = " Taşıyıcı iniş hızı  12-14 m/s  durumu";
-            this.button26.UseVisualStyleBackColor = false;
+            this.buttonHKA1.AutoSize = true;
+            this.buttonHKA1.BackColor = System.Drawing.Color.Black;
+            this.buttonHKA1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonHKA1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonHKA1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.buttonHKA1.ForeColor = System.Drawing.Color.YellowGreen;
+            this.buttonHKA1.Location = new System.Drawing.Point(4, 5);
+            this.buttonHKA1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonHKA1.Name = "buttonHKA1";
+            this.buttonHKA1.Size = new System.Drawing.Size(194, 39);
+            this.buttonHKA1.TabIndex = 71;
+            this.buttonHKA1.Text = " Taşıyıcı iniş hızı  12-14 m/s  durumu";
+            this.buttonHKA1.UseVisualStyleBackColor = false;
             // 
-            // button27
+            // buttonHKA2
             // 
-            this.button27.BackColor = System.Drawing.Color.Black;
-            this.button27.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button27.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button27.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button27.ForeColor = System.Drawing.Color.YellowGreen;
-            this.button27.Location = new System.Drawing.Point(206, 5);
-            this.button27.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(194, 39);
-            this.button27.TabIndex = 70;
-            this.button27.Text = "Görev yükü iniş hızı 6-8 m/s durumu";
-            this.button27.UseVisualStyleBackColor = false;
+            this.buttonHKA2.BackColor = System.Drawing.Color.Black;
+            this.buttonHKA2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonHKA2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonHKA2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.buttonHKA2.ForeColor = System.Drawing.Color.YellowGreen;
+            this.buttonHKA2.Location = new System.Drawing.Point(206, 5);
+            this.buttonHKA2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonHKA2.Name = "buttonHKA2";
+            this.buttonHKA2.Size = new System.Drawing.Size(194, 39);
+            this.buttonHKA2.TabIndex = 70;
+            this.buttonHKA2.Text = "Görev yükü iniş hızı 6-8 m/s durumu";
+            this.buttonHKA2.UseVisualStyleBackColor = false;
             // 
             // tableLayoutPanel10
             // 
@@ -1527,11 +1527,11 @@
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel8.Controls.Add(this.button14, 0, 0);
-            this.tableLayoutPanel8.Controls.Add(this.button13, 0, 0);
-            this.tableLayoutPanel8.Controls.Add(this.button12, 0, 0);
-            this.tableLayoutPanel8.Controls.Add(this.button11, 0, 0);
-            this.tableLayoutPanel8.Controls.Add(this.button10, 0, 0);
+            this.tableLayoutPanel8.Controls.Add(this.buttonHKR4, 0, 0);
+            this.tableLayoutPanel8.Controls.Add(this.buttonHKR5, 0, 0);
+            this.tableLayoutPanel8.Controls.Add(this.buttonHKR3, 0, 0);
+            this.tableLayoutPanel8.Controls.Add(this.buttonHKR1, 0, 0);
+            this.tableLayoutPanel8.Controls.Add(this.buttonHKR2, 0, 0);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel8.Location = new System.Drawing.Point(1040, 60);
             this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -1541,75 +1541,80 @@
             this.tableLayoutPanel8.Size = new System.Drawing.Size(1012, 41);
             this.tableLayoutPanel8.TabIndex = 37;
             // 
-            // button14
+            // buttonHKR4
             // 
-            this.button14.BackColor = System.Drawing.Color.Green;
-            this.button14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button14.Location = new System.Drawing.Point(610, 5);
-            this.button14.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(194, 31);
-            this.button14.TabIndex = 64;
-            this.button14.Text = "0";
-            this.button14.UseVisualStyleBackColor = false;
+            this.buttonHKR4.BackColor = System.Drawing.Color.Green;
+            this.buttonHKR4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonHKR4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonHKR4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.buttonHKR4.ForeColor = System.Drawing.Color.Black;
+            this.buttonHKR4.Location = new System.Drawing.Point(610, 5);
+            this.buttonHKR4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonHKR4.Name = "buttonHKR4";
+            this.buttonHKR4.Size = new System.Drawing.Size(194, 31);
+            this.buttonHKR4.TabIndex = 64;
+            this.buttonHKR4.Text = "0";
+            this.buttonHKR4.UseVisualStyleBackColor = false;
             // 
-            // button13
+            // buttonHKR5
             // 
-            this.button13.BackColor = System.Drawing.Color.Green;
-            this.button13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button13.Location = new System.Drawing.Point(812, 5);
-            this.button13.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(196, 31);
-            this.button13.TabIndex = 63;
-            this.button13.Text = "0";
-            this.button13.UseVisualStyleBackColor = false;
+            this.buttonHKR5.BackColor = System.Drawing.Color.Green;
+            this.buttonHKR5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonHKR5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonHKR5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.buttonHKR5.ForeColor = System.Drawing.Color.Black;
+            this.buttonHKR5.Location = new System.Drawing.Point(812, 5);
+            this.buttonHKR5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonHKR5.Name = "buttonHKR5";
+            this.buttonHKR5.Size = new System.Drawing.Size(196, 31);
+            this.buttonHKR5.TabIndex = 63;
+            this.buttonHKR5.Text = "0";
+            this.buttonHKR5.UseVisualStyleBackColor = false;
             // 
-            // button12
+            // buttonHKR3
             // 
-            this.button12.BackColor = System.Drawing.Color.Green;
-            this.button12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button12.Location = new System.Drawing.Point(408, 5);
-            this.button12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(194, 31);
-            this.button12.TabIndex = 62;
-            this.button12.Text = "0";
-            this.button12.UseVisualStyleBackColor = false;
+            this.buttonHKR3.BackColor = System.Drawing.Color.Green;
+            this.buttonHKR3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonHKR3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonHKR3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.buttonHKR3.ForeColor = System.Drawing.Color.Black;
+            this.buttonHKR3.Location = new System.Drawing.Point(408, 5);
+            this.buttonHKR3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonHKR3.Name = "buttonHKR3";
+            this.buttonHKR3.Size = new System.Drawing.Size(194, 31);
+            this.buttonHKR3.TabIndex = 62;
+            this.buttonHKR3.Text = "0";
+            this.buttonHKR3.UseVisualStyleBackColor = false;
             // 
-            // button11
+            // buttonHKR1
             // 
-            this.button11.BackColor = System.Drawing.Color.Green;
-            this.button11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button11.Location = new System.Drawing.Point(4, 5);
-            this.button11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(194, 31);
-            this.button11.TabIndex = 61;
-            this.button11.Text = "0";
-            this.button11.UseVisualStyleBackColor = false;
+            this.buttonHKR1.BackColor = System.Drawing.Color.Green;
+            this.buttonHKR1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonHKR1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonHKR1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.buttonHKR1.ForeColor = System.Drawing.Color.Black;
+            this.buttonHKR1.Location = new System.Drawing.Point(4, 5);
+            this.buttonHKR1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonHKR1.Name = "buttonHKR1";
+            this.buttonHKR1.Size = new System.Drawing.Size(194, 31);
+            this.buttonHKR1.TabIndex = 61;
+            this.buttonHKR1.Text = "0";
+            this.buttonHKR1.UseVisualStyleBackColor = false;
             // 
-            // button10
+            // buttonHKR2
             // 
-            this.button10.BackColor = System.Drawing.Color.Green;
-            this.button10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button10.Location = new System.Drawing.Point(206, 5);
-            this.button10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(194, 31);
-            this.button10.TabIndex = 60;
-            this.button10.Text = "0";
-            this.button10.UseVisualStyleBackColor = false;
+            this.buttonHKR2.BackColor = System.Drawing.Color.Green;
+            this.buttonHKR2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonHKR2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonHKR2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.buttonHKR2.ForeColor = System.Drawing.Color.Black;
+            this.buttonHKR2.Location = new System.Drawing.Point(206, 5);
+            this.buttonHKR2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonHKR2.Name = "buttonHKR2";
+            this.buttonHKR2.Size = new System.Drawing.Size(194, 31);
+            this.buttonHKR2.TabIndex = 60;
+            this.buttonHKR2.Text = "0";
+            this.buttonHKR2.UseVisualStyleBackColor = false;
             // 
             // tableLayoutPanelSolkisim
             // 
@@ -2021,6 +2026,62 @@
             this.tableLayoutPanel13.Size = new System.Drawing.Size(321, 150);
             this.tableLayoutPanel13.TabIndex = 0;
             // 
+            // buttonOpenFile
+            // 
+            this.buttonOpenFile.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonOpenFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonOpenFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.buttonOpenFile.Location = new System.Drawing.Point(164, 80);
+            this.buttonOpenFile.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonOpenFile.Name = "buttonOpenFile";
+            this.buttonOpenFile.Size = new System.Drawing.Size(153, 65);
+            this.buttonOpenFile.TabIndex = 69;
+            this.buttonOpenFile.Text = "Dosyayı aç";
+            this.buttonOpenFile.UseVisualStyleBackColor = true;
+            this.buttonOpenFile.Click += new System.EventHandler(this.buttonOpenFile_Click);
+            // 
+            // buttonRecStop
+            // 
+            this.buttonRecStop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonRecStop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonRecStop.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.buttonRecStop.Location = new System.Drawing.Point(4, 80);
+            this.buttonRecStop.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonRecStop.Name = "buttonRecStop";
+            this.buttonRecStop.Size = new System.Drawing.Size(152, 65);
+            this.buttonRecStop.TabIndex = 67;
+            this.buttonRecStop.Text = "Kamerayı durdur";
+            this.buttonRecStop.UseVisualStyleBackColor = true;
+            this.buttonRecStop.Click += new System.EventHandler(this.buttonRecStop_Click);
+            // 
+            // buttonRecSave
+            // 
+            this.buttonRecSave.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonRecSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonRecSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.buttonRecSave.Location = new System.Drawing.Point(164, 5);
+            this.buttonRecSave.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonRecSave.Name = "buttonRecSave";
+            this.buttonRecSave.Size = new System.Drawing.Size(153, 65);
+            this.buttonRecSave.TabIndex = 68;
+            this.buttonRecSave.Text = "Kayıt et";
+            this.buttonRecSave.UseVisualStyleBackColor = true;
+            this.buttonRecSave.Click += new System.EventHandler(this.buttonRecSave_Click_1);
+            // 
+            // buttonRecStart
+            // 
+            this.buttonRecStart.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonRecStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonRecStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.buttonRecStart.Location = new System.Drawing.Point(4, 5);
+            this.buttonRecStart.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonRecStart.Name = "buttonRecStart";
+            this.buttonRecStart.Size = new System.Drawing.Size(152, 65);
+            this.buttonRecStart.TabIndex = 66;
+            this.buttonRecStart.Text = "Kameraya bağlan";
+            this.buttonRecStart.UseVisualStyleBackColor = true;
+            this.buttonRecStart.Click += new System.EventHandler(this.buttonRecStart_Click_1);
+            // 
             // videoSourcePlayer1
             // 
             this.videoSourcePlayer1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -2045,62 +2106,6 @@
             // 
             this.timerKamera.Interval = 1000;
             this.timerKamera.Tick += new System.EventHandler(this.timerKamera_Tick);
-            // 
-            // buttonRecStart
-            // 
-            this.buttonRecStart.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonRecStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonRecStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.buttonRecStart.Location = new System.Drawing.Point(4, 5);
-            this.buttonRecStart.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.buttonRecStart.Name = "buttonRecStart";
-            this.buttonRecStart.Size = new System.Drawing.Size(152, 65);
-            this.buttonRecStart.TabIndex = 66;
-            this.buttonRecStart.Text = "Kameraya bağlan";
-            this.buttonRecStart.UseVisualStyleBackColor = true;
-            this.buttonRecStart.Click += new System.EventHandler(this.buttonRecStart_Click_1);
-            // 
-            // buttonRecSave
-            // 
-            this.buttonRecSave.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonRecSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonRecSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.buttonRecSave.Location = new System.Drawing.Point(164, 5);
-            this.buttonRecSave.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.buttonRecSave.Name = "buttonRecSave";
-            this.buttonRecSave.Size = new System.Drawing.Size(153, 65);
-            this.buttonRecSave.TabIndex = 68;
-            this.buttonRecSave.Text = "Kayıt et";
-            this.buttonRecSave.UseVisualStyleBackColor = true;
-            this.buttonRecSave.Click += new System.EventHandler(this.buttonRecSave_Click_1);
-            // 
-            // buttonRecStop
-            // 
-            this.buttonRecStop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonRecStop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonRecStop.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.buttonRecStop.Location = new System.Drawing.Point(4, 80);
-            this.buttonRecStop.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.buttonRecStop.Name = "buttonRecStop";
-            this.buttonRecStop.Size = new System.Drawing.Size(152, 65);
-            this.buttonRecStop.TabIndex = 67;
-            this.buttonRecStop.Text = "Kamerayı durdur";
-            this.buttonRecStop.UseVisualStyleBackColor = true;
-            this.buttonRecStop.Click += new System.EventHandler(this.buttonRecStop_Click);
-            // 
-            // buttonOpenFile
-            // 
-            this.buttonOpenFile.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonOpenFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonOpenFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.buttonOpenFile.Location = new System.Drawing.Point(164, 80);
-            this.buttonOpenFile.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.buttonOpenFile.Name = "buttonOpenFile";
-            this.buttonOpenFile.Size = new System.Drawing.Size(153, 65);
-            this.buttonOpenFile.TabIndex = 69;
-            this.buttonOpenFile.Text = "Dosyayı aç";
-            this.buttonOpenFile.UseVisualStyleBackColor = true;
-            this.buttonOpenFile.Click += new System.EventHandler(this.buttonOpenFile_Click);
             // 
             // Form1
             // 
@@ -2265,17 +2270,17 @@
         private System.Windows.Forms.ColumnHeader tasiyiciInisHizi;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel11;
-        private System.Windows.Forms.Button button23;
-        private System.Windows.Forms.Button button24;
-        private System.Windows.Forms.Button button25;
-        private System.Windows.Forms.Button button26;
-        private System.Windows.Forms.Button button27;
+        private System.Windows.Forms.Button buttonHKA4;
+        private System.Windows.Forms.Button buttonHKA5;
+        private System.Windows.Forms.Button buttonHKA3;
+        private System.Windows.Forms.Button buttonHKA1;
+        private System.Windows.Forms.Button buttonHKA2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button buttonHKR4;
+        private System.Windows.Forms.Button buttonHKR5;
+        private System.Windows.Forms.Button buttonHKR3;
+        private System.Windows.Forms.Button buttonHKR1;
+        private System.Windows.Forms.Button buttonHKR2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
         private System.Windows.Forms.Button button18;
