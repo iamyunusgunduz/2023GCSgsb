@@ -17,6 +17,11 @@ using Accord.Video.FFMPEG;
 using OpenTK;
 using OpenTK.Graphics.OpenGL;
 using OpenTK.Graphics;
+using GMap.NET.MapProviders;
+using GMap.NET;
+using GMap.NET.WindowsForms;
+using GMap.NET.WindowsForms.Markers;
+
 namespace _2023MUYGCS
 {
 
@@ -45,7 +50,8 @@ namespace _2023MUYGCS
         {
             CheckForIllegalCrossThreadCalls = false;
             porAdiGetir();
-
+            gmap.DragButton = MouseButtons.Left;
+            gmap.MapProvider = GMapProviders.GoogleMap;
 
             VideoCaptureDevices = new FilterInfoCollection(FilterCategory.VideoInputDevice);
             captureDevice = new VideoCaptureDeviceForm();
@@ -511,6 +517,56 @@ namespace _2023MUYGCS
                     cz = false;
                 timer1.Start();
                 Zamanlayici.Start();
+
+
+
+                //  ShowCenter
+                try
+                {
+                    gmap.Position = new GMap.NET.PointLatLng(Convert.ToDouble(telemetri.gps1Lat.Replace('.', ',')), Convert.ToDouble(telemetri.gps1Long.Replace('.', ',')));
+                    gmap.ShowCenter = true;
+                    gmap.MinZoom = 0;
+                    gmap.MaxZoom = 24;
+                    gmap.Zoom = 18;
+                }
+                catch (Exception err)
+                {
+
+                    Console.WriteLine("Hata Harita " + err);
+                }
+               
+                /*
+                //  GorevYukuMarker
+                GMapMarker GorevYukuMarker = new GMarkerGoogle(
+                new PointLatLng(Convert.ToDouble(telemetri.gps1Lat), Convert.ToDouble(telemetri.gps1Long)),
+                GMarkerGoogleType.red_small);
+                markersGorevYuku.Markers.Add(GorevYukuMarker);
+                gmap.Overlays.Add(markersGorevYuku);
+                GorevYukuMarker.ToolTipText = "GorevYuku";
+                GorevYukuMarker.ToolTipMode = MarkerTooltipMode.Always;
+                GorevYukuMarker.ToolTip.Fill = Brushes.White;
+                GorevYukuMarker.ToolTip.Foreground = Brushes.Red;
+                GorevYukuMarker.ToolTip.Stroke = Pens.Black;
+                GorevYukuMarker.ToolTip.TextPadding = new Size(9, 2);
+                */
+                if (gmap.Overlays.Count > 1)
+                {
+                    try
+                    {
+                        
+                        gmap.Overlays.Remove(markersGorevYuku);
+                      
+                        gmap.Refresh();
+
+                    }
+
+                    catch (Exception err)
+                    {
+
+                        Console.WriteLine("hATA"+ err);
+                    }
+
+                }
             }
 
 
@@ -848,6 +904,8 @@ namespace _2023MUYGCS
             //GraphicsContext.CurrentContext.VSync = true;
             glControl1.SwapBuffers();
         }
+        GMapOverlay markersGorevYuku = new GMapOverlay("markersGorevYuku");
+
     }
     public class datas
     {

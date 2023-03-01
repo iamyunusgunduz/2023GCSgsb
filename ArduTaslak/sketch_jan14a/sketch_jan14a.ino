@@ -26,8 +26,9 @@ Serial.print("<3>,");//irtifa farkı
 Serial.print("<13>,");//iinş hızı
 Serial.print("<25.2>,");//sıcaklık
 Serial.print("<11.2>,");//pil gerilimi
-Serial.print("<40.5456>,");//gps1 latituda
-Serial.print("<29.31564>,");//gps1 longititude
+// 40.99227422261599, 39.77443049509968
+Serial.print("<40.99227422261599>,");//gps1 latituda
+Serial.print("<39.77443049509968>,");//gps1 longititude
 Serial.print("<725.2>,");//gps1 altitude
 Serial.print("<");Serial.print(pitch);Serial.print(">,");//pitch
 Serial.print("<");Serial.print(roll);Serial.print(">,");//roll

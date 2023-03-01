@@ -115,3 +115,5 @@ C:\Users\yunusgunduz\Desktop\2023GCSgsb\bin\Debug\OpenTK.xml
 C:\Users\yunusgunduz\Desktop\2023GCSgsb\bin\Debug\OpenTK.GLControl.pdb
 C:\Users\yunusgunduz\Desktop\2023GCSgsb\bin\Debug\OpenTK.GLControl.xml
 C:\Users\yunusgunduz\Desktop\2023GCSgsb\obj\Debug\_2023MUYGCS.deneme.resources
+C:\Users\yunusgunduz\Desktop\2023GCSgsb\bin\Debug\GMap.NET.Core.dll
+C:\Users\yunusgunduz\Desktop\2023GCSgsb\bin\Debug\GMap.NET.WindowsForms.dll
