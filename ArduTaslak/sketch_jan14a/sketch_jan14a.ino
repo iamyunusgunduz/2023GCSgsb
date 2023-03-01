@@ -7,6 +7,11 @@ int paketNo = 0 ;
 int basinc1 = 100;
 int basinc2 = 50 ;
 String uyduStatu = "1";
+int pitch = 15;
+int roll = 74;
+int yaw = 94 ;
+
+
 void loop() {
   
 Serial.print("<");Serial.print(paketNo);Serial.print(">,"); //paketNo
@@ -24,13 +29,16 @@ Serial.print("<11.2>,");//pil gerilimi
 Serial.print("<40.5456>,");//gps1 latituda
 Serial.print("<29.31564>,");//gps1 longititude
 Serial.print("<725.2>,");//gps1 altitude
-Serial.print("<15>,");//pitch
-Serial.print("<74>,");//roll
-Serial.print("<94>,");//yaw
+Serial.print("<");Serial.print(pitch);Serial.print(">,");//pitch
+Serial.print("<");Serial.print(roll);Serial.print(">,");//roll
+Serial.print("<");Serial.print(yaw);Serial.print(">,");//yaw
 Serial.print("<1412>,");//takım no
 Serial.println("<3>");//tasiyici inis hizi
 delay(1000);
 basinc1++;
+pitch++;
+roll++;
+yaw++;
 if(basinc1%10 == 0){
   uyduStatu = "1?";
 }else{

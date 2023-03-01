@@ -170,6 +170,7 @@
             this.button31 = new System.Windows.Forms.Button();
             this.button30 = new System.Windows.Forms.Button();
             this.button29 = new System.Windows.Forms.Button();
+            this.glControl1 = new OpenTK.GLControl();
             this.tableLayoutPanelSolAltKisim = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
@@ -181,6 +182,8 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.timerKamera = new System.Windows.Forms.Timer(this.components);
+            this.timerXYZ = new System.Windows.Forms.Timer(this.components);
+            this.Zamanlayici = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanelMain.SuspendLayout();
             this.tableLayoutPanelChartTelemetri.SuspendLayout();
             this.tableLayoutPanelTelemetri.SuspendLayout();
@@ -1889,6 +1892,7 @@
             this.tableLayoutPanel4.ColumnCount = 1;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.40061F));
             this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel1, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.glControl1, 0, 1);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(4, 407);
             this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -1974,6 +1978,19 @@
             this.button29.TabIndex = 66;
             this.button29.Text = "GRAFİK TEMİZLE";
             this.button29.UseVisualStyleBackColor = true;
+            // 
+            // glControl1
+            // 
+            this.glControl1.BackColor = System.Drawing.Color.Black;
+            this.glControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.glControl1.Location = new System.Drawing.Point(5, 122);
+            this.glControl1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.glControl1.Name = "glControl1";
+            this.glControl1.Size = new System.Drawing.Size(317, 219);
+            this.glControl1.TabIndex = 2;
+            this.glControl1.VSync = false;
+            this.glControl1.Load += new System.EventHandler(this.glControl1_Load);
+            this.glControl1.Paint += new System.Windows.Forms.PaintEventHandler(this.glControl1_Paint);
             // 
             // tableLayoutPanelSolAltKisim
             // 
@@ -2106,6 +2123,14 @@
             // 
             this.timerKamera.Interval = 1000;
             this.timerKamera.Tick += new System.EventHandler(this.timerKamera_Tick);
+            // 
+            // timerXYZ
+            // 
+            this.timerXYZ.Tick += new System.EventHandler(this.timerXYZ_Tick);
+            // 
+            // Zamanlayici
+            // 
+            this.Zamanlayici.Tick += new System.EventHandler(this.Zamanlayici_Tick);
             // 
             // Form1
             // 
@@ -2296,6 +2321,9 @@
         private System.Windows.Forms.Button buttonRecStop;
         private System.Windows.Forms.Button buttonRecSave;
         private System.Windows.Forms.Button buttonRecStart;
+        private OpenTK.GLControl glControl1;
+        private System.Windows.Forms.Timer timerXYZ;
+        private System.Windows.Forms.Timer Zamanlayici;
     }
 }
 
