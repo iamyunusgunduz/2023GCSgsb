@@ -6,10 +6,11 @@ Serial.begin(115200);
 int paketNo = 0 ;
 int basinc1 = 100;
 int basinc2 = 50 ;
+String uyduStatu = "1";
 void loop() {
   
 Serial.print("<");Serial.print(paketNo);Serial.print(">,"); //paketNo
-Serial.print("<1>,");//uydu statüsü
+Serial.print("<");Serial.print(uyduStatu);Serial.print(">,"); //uydu statüsü
 Serial.print("<01010>,");//hata kod
 Serial.print("<19/08/2021,03/42/2>,");//zaman
 Serial.print("<");Serial.print(basinc1);Serial.print(">,");//basınc1
@@ -23,13 +24,18 @@ Serial.print("<11.2>,");//pil gerilimi
 Serial.print("<40.5456>,");//gps1 latituda
 Serial.print("<29.31564>,");//gps1 longititude
 Serial.print("<725.2>,");//gps1 altitude
-Serial.print("<10.96>,");//pitch
-Serial.print("<0.31>,");//roll
-Serial.print("<0.03>,");//yaw
+Serial.print("<15>,");//pitch
+Serial.print("<74>,");//roll
+Serial.print("<94>,");//yaw
 Serial.print("<1412>,");//takım no
 Serial.println("<3>");//tasiyici inis hizi
 delay(1000);
 basinc1++;
+if(basinc1%10 == 0){
+  uyduStatu = "1?";
+}else{
+   uyduStatu = "2";
+}
 basinc2 = basinc2 + 50;
 paketNo++;
 }

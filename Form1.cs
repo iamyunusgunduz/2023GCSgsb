@@ -140,10 +140,10 @@ namespace _2023MUYGCS
                     title = gelenTelemetriVerisi;
                     Console.WriteLine(gelenTelemetriVerisi);
                     string gelenTelemetriVerisiRemoveBuyuktur = gelenTelemetriVerisi.Replace('>', ' ');
-                    string gelenTelemetriVerisiRemoveKucuktur = gelenTelemetriVerisiRemoveBuyuktur.Replace('<', ' ');
+                    string gelenTelemetriVerisiRemoveKucuktur = gelenTelemetriVerisiRemoveBuyuktur.Replace('<', ' ').Trim();
                     try
                     {
-                        if (!gelenTelemetriVerisiRemoveKucuktur.Contains('?') || !gelenTelemetriVerisiRemoveKucuktur.Contains('#'))
+                        if (!gelenTelemetriVerisiRemoveKucuktur.Contains('?') && !gelenTelemetriVerisiRemoveKucuktur.Contains('#') && !gelenTelemetriVerisiRemoveKucuktur.Contains('~'))
                         {
                             string[] gelenTelemetriVeriDizisi = gelenTelemetriVerisiRemoveKucuktur.Split(',');
 
