@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea25 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series25 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea26 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series26 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea27 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series27 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea28 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series28 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea29 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series29 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea30 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series30 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea31 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series31 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea32 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series32 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tableLayoutPanelMain = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanelChartTelemetri = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanelTelemetri = new System.Windows.Forms.TableLayoutPanel();
@@ -228,7 +228,7 @@
             this.tableLayoutPanelMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanelMain.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.tableLayoutPanelMain.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanelMain.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanelMain.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanelMain.Name = "tableLayoutPanelMain";
             this.tableLayoutPanelMain.RowCount = 2;
             this.tableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 62.67319F));
@@ -239,14 +239,14 @@
             // tableLayoutPanelChartTelemetri
             // 
             this.tableLayoutPanelChartTelemetri.ColumnCount = 2;
-            this.tableLayoutPanelChartTelemetri.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.53555F));
-            this.tableLayoutPanelChartTelemetri.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.46445F));
+            this.tableLayoutPanelChartTelemetri.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.84931F));
+            this.tableLayoutPanelChartTelemetri.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.15068F));
             this.tableLayoutPanelChartTelemetri.Controls.Add(this.tableLayoutPanelTelemetri, 1, 0);
             this.tableLayoutPanelChartTelemetri.Controls.Add(this.tableLayoutPanelChart, 0, 0);
             this.tableLayoutPanelChartTelemetri.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanelChartTelemetri.ForeColor = System.Drawing.Color.YellowGreen;
             this.tableLayoutPanelChartTelemetri.Location = new System.Drawing.Point(246, 4);
-            this.tableLayoutPanelChartTelemetri.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanelChartTelemetri.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanelChartTelemetri.Name = "tableLayoutPanelChartTelemetri";
             this.tableLayoutPanelChartTelemetri.RowCount = 1;
             this.tableLayoutPanelChartTelemetri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -256,8 +256,8 @@
             // tableLayoutPanelTelemetri
             // 
             this.tableLayoutPanelTelemetri.ColumnCount = 2;
-            this.tableLayoutPanelTelemetri.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanelTelemetri.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tableLayoutPanelTelemetri.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.73196F));
+            this.tableLayoutPanelTelemetri.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.26804F));
             this.tableLayoutPanelTelemetri.Controls.Add(this.labelTinisHiziText, 0, 19);
             this.tableLayoutPanelTelemetri.Controls.Add(this.labelTinisHiziVALUE, 0, 19);
             this.tableLayoutPanelTelemetri.Controls.Add(this.labelTakimNoVALUE, 1, 18);
@@ -300,8 +300,8 @@
             this.tableLayoutPanelTelemetri.Controls.Add(this.labelPaketNoText, 0, 0);
             this.tableLayoutPanelTelemetri.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanelTelemetri.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.tableLayoutPanelTelemetri.Location = new System.Drawing.Point(931, 4);
-            this.tableLayoutPanelTelemetri.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanelTelemetri.Location = new System.Drawing.Point(975, 0);
+            this.tableLayoutPanelTelemetri.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanelTelemetri.Name = "tableLayoutPanelTelemetri";
             this.tableLayoutPanelTelemetri.RowCount = 20;
             this.tableLayoutPanelTelemetri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
@@ -324,7 +324,7 @@
             this.tableLayoutPanelTelemetri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanelTelemetri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanelTelemetri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanelTelemetri.Size = new System.Drawing.Size(525, 512);
+            this.tableLayoutPanelTelemetri.Size = new System.Drawing.Size(485, 520);
             this.tableLayoutPanelTelemetri.TabIndex = 0;
             // 
             // labelTinisHiziText
@@ -333,23 +333,23 @@
             this.labelTinisHiziText.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelTinisHiziText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelTinisHiziText.ForeColor = System.Drawing.Color.YellowGreen;
-            this.labelTinisHiziText.Location = new System.Drawing.Point(4, 475);
-            this.labelTinisHiziText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelTinisHiziText.Location = new System.Drawing.Point(0, 494);
+            this.labelTinisHiziText.Margin = new System.Windows.Forms.Padding(0);
             this.labelTinisHiziText.Name = "labelTinisHiziText";
-            this.labelTinisHiziText.Size = new System.Drawing.Size(307, 37);
+            this.labelTinisHiziText.Size = new System.Drawing.Size(280, 26);
             this.labelTinisHiziText.TabIndex = 59;
-            this.labelTinisHiziText.Text = "Taşıyıcı İniş Hızı";
-            this.labelTinisHiziText.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelTinisHiziText.Text = "İNİŞ HIZI (TAŞIYICI)";
+            this.labelTinisHiziText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelTinisHiziVALUE
             // 
             this.labelTinisHiziVALUE.AutoSize = true;
             this.labelTinisHiziVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelTinisHiziVALUE.ForeColor = System.Drawing.Color.YellowGreen;
-            this.labelTinisHiziVALUE.Location = new System.Drawing.Point(319, 475);
-            this.labelTinisHiziVALUE.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelTinisHiziVALUE.Location = new System.Drawing.Point(280, 494);
+            this.labelTinisHiziVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelTinisHiziVALUE.Name = "labelTinisHiziVALUE";
-            this.labelTinisHiziVALUE.Size = new System.Drawing.Size(202, 37);
+            this.labelTinisHiziVALUE.Size = new System.Drawing.Size(205, 26);
             this.labelTinisHiziVALUE.TabIndex = 58;
             this.labelTinisHiziVALUE.Text = "####";
             this.labelTinisHiziVALUE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -359,10 +359,10 @@
             this.labelTakimNoVALUE.AutoSize = true;
             this.labelTakimNoVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelTakimNoVALUE.ForeColor = System.Drawing.Color.YellowGreen;
-            this.labelTakimNoVALUE.Location = new System.Drawing.Point(319, 450);
-            this.labelTakimNoVALUE.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelTakimNoVALUE.Location = new System.Drawing.Point(280, 468);
+            this.labelTakimNoVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelTakimNoVALUE.Name = "labelTakimNoVALUE";
-            this.labelTakimNoVALUE.Size = new System.Drawing.Size(202, 25);
+            this.labelTakimNoVALUE.Size = new System.Drawing.Size(205, 26);
             this.labelTakimNoVALUE.TabIndex = 37;
             this.labelTakimNoVALUE.Text = "####";
             this.labelTakimNoVALUE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -373,23 +373,23 @@
             this.labelTakimNoText.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelTakimNoText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelTakimNoText.ForeColor = System.Drawing.Color.YellowGreen;
-            this.labelTakimNoText.Location = new System.Drawing.Point(4, 450);
-            this.labelTakimNoText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelTakimNoText.Location = new System.Drawing.Point(0, 468);
+            this.labelTakimNoText.Margin = new System.Windows.Forms.Padding(0);
             this.labelTakimNoText.Name = "labelTakimNoText";
-            this.labelTakimNoText.Size = new System.Drawing.Size(307, 25);
+            this.labelTakimNoText.Size = new System.Drawing.Size(280, 26);
             this.labelTakimNoText.TabIndex = 36;
             this.labelTakimNoText.Text = "TAKIM NO :";
-            this.labelTakimNoText.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelTakimNoText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelYawVALUE
             // 
             this.labelYawVALUE.AutoSize = true;
             this.labelYawVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelYawVALUE.ForeColor = System.Drawing.Color.YellowGreen;
-            this.labelYawVALUE.Location = new System.Drawing.Point(319, 425);
-            this.labelYawVALUE.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelYawVALUE.Location = new System.Drawing.Point(280, 442);
+            this.labelYawVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelYawVALUE.Name = "labelYawVALUE";
-            this.labelYawVALUE.Size = new System.Drawing.Size(202, 25);
+            this.labelYawVALUE.Size = new System.Drawing.Size(205, 26);
             this.labelYawVALUE.TabIndex = 35;
             this.labelYawVALUE.Text = "####";
             this.labelYawVALUE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -400,23 +400,23 @@
             this.labelYawText.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelYawText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelYawText.ForeColor = System.Drawing.Color.YellowGreen;
-            this.labelYawText.Location = new System.Drawing.Point(4, 425);
-            this.labelYawText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelYawText.Location = new System.Drawing.Point(0, 442);
+            this.labelYawText.Margin = new System.Windows.Forms.Padding(0);
             this.labelYawText.Name = "labelYawText";
-            this.labelYawText.Size = new System.Drawing.Size(307, 25);
+            this.labelYawText.Size = new System.Drawing.Size(280, 26);
             this.labelYawText.TabIndex = 34;
             this.labelYawText.Text = "YAW :";
-            this.labelYawText.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelYawText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelRollVALUE
             // 
             this.labelRollVALUE.AutoSize = true;
             this.labelRollVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelRollVALUE.ForeColor = System.Drawing.Color.YellowGreen;
-            this.labelRollVALUE.Location = new System.Drawing.Point(319, 400);
-            this.labelRollVALUE.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelRollVALUE.Location = new System.Drawing.Point(280, 416);
+            this.labelRollVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelRollVALUE.Name = "labelRollVALUE";
-            this.labelRollVALUE.Size = new System.Drawing.Size(202, 25);
+            this.labelRollVALUE.Size = new System.Drawing.Size(205, 26);
             this.labelRollVALUE.TabIndex = 33;
             this.labelRollVALUE.Text = "####";
             this.labelRollVALUE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -427,23 +427,23 @@
             this.labelRollText.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelRollText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelRollText.ForeColor = System.Drawing.Color.YellowGreen;
-            this.labelRollText.Location = new System.Drawing.Point(4, 400);
-            this.labelRollText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelRollText.Location = new System.Drawing.Point(0, 416);
+            this.labelRollText.Margin = new System.Windows.Forms.Padding(0);
             this.labelRollText.Name = "labelRollText";
-            this.labelRollText.Size = new System.Drawing.Size(307, 25);
+            this.labelRollText.Size = new System.Drawing.Size(280, 26);
             this.labelRollText.TabIndex = 32;
             this.labelRollText.Text = "ROLL :";
-            this.labelRollText.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelRollText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelPitchVALUE
             // 
             this.labelPitchVALUE.AutoSize = true;
             this.labelPitchVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelPitchVALUE.ForeColor = System.Drawing.Color.YellowGreen;
-            this.labelPitchVALUE.Location = new System.Drawing.Point(319, 375);
-            this.labelPitchVALUE.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelPitchVALUE.Location = new System.Drawing.Point(280, 390);
+            this.labelPitchVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelPitchVALUE.Name = "labelPitchVALUE";
-            this.labelPitchVALUE.Size = new System.Drawing.Size(202, 25);
+            this.labelPitchVALUE.Size = new System.Drawing.Size(205, 26);
             this.labelPitchVALUE.TabIndex = 31;
             this.labelPitchVALUE.Text = "####";
             this.labelPitchVALUE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -454,23 +454,23 @@
             this.labelPitchText.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelPitchText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelPitchText.ForeColor = System.Drawing.Color.YellowGreen;
-            this.labelPitchText.Location = new System.Drawing.Point(4, 375);
-            this.labelPitchText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelPitchText.Location = new System.Drawing.Point(0, 390);
+            this.labelPitchText.Margin = new System.Windows.Forms.Padding(0);
             this.labelPitchText.Name = "labelPitchText";
-            this.labelPitchText.Size = new System.Drawing.Size(307, 25);
+            this.labelPitchText.Size = new System.Drawing.Size(280, 26);
             this.labelPitchText.TabIndex = 30;
             this.labelPitchText.Text = "PITCH :";
-            this.labelPitchText.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelPitchText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelGps1AltGYVALUE
             // 
             this.labelGps1AltGYVALUE.AutoSize = true;
             this.labelGps1AltGYVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelGps1AltGYVALUE.ForeColor = System.Drawing.Color.YellowGreen;
-            this.labelGps1AltGYVALUE.Location = new System.Drawing.Point(319, 350);
-            this.labelGps1AltGYVALUE.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelGps1AltGYVALUE.Location = new System.Drawing.Point(280, 364);
+            this.labelGps1AltGYVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelGps1AltGYVALUE.Name = "labelGps1AltGYVALUE";
-            this.labelGps1AltGYVALUE.Size = new System.Drawing.Size(202, 25);
+            this.labelGps1AltGYVALUE.Size = new System.Drawing.Size(205, 26);
             this.labelGps1AltGYVALUE.TabIndex = 29;
             this.labelGps1AltGYVALUE.Text = "####";
             this.labelGps1AltGYVALUE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -481,23 +481,23 @@
             this.labelGps1AltGYText.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelGps1AltGYText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelGps1AltGYText.ForeColor = System.Drawing.Color.YellowGreen;
-            this.labelGps1AltGYText.Location = new System.Drawing.Point(4, 350);
-            this.labelGps1AltGYText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelGps1AltGYText.Location = new System.Drawing.Point(0, 364);
+            this.labelGps1AltGYText.Margin = new System.Windows.Forms.Padding(0);
             this.labelGps1AltGYText.Name = "labelGps1AltGYText";
-            this.labelGps1AltGYText.Size = new System.Drawing.Size(307, 25);
+            this.labelGps1AltGYText.Size = new System.Drawing.Size(280, 26);
             this.labelGps1AltGYText.TabIndex = 28;
             this.labelGps1AltGYText.Text = "GPS1 ALTITUDE :";
-            this.labelGps1AltGYText.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelGps1AltGYText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelGps1LongGYVALUE
             // 
             this.labelGps1LongGYVALUE.AutoSize = true;
             this.labelGps1LongGYVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelGps1LongGYVALUE.ForeColor = System.Drawing.Color.YellowGreen;
-            this.labelGps1LongGYVALUE.Location = new System.Drawing.Point(319, 325);
-            this.labelGps1LongGYVALUE.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelGps1LongGYVALUE.Location = new System.Drawing.Point(280, 338);
+            this.labelGps1LongGYVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelGps1LongGYVALUE.Name = "labelGps1LongGYVALUE";
-            this.labelGps1LongGYVALUE.Size = new System.Drawing.Size(202, 25);
+            this.labelGps1LongGYVALUE.Size = new System.Drawing.Size(205, 26);
             this.labelGps1LongGYVALUE.TabIndex = 27;
             this.labelGps1LongGYVALUE.Text = "####";
             this.labelGps1LongGYVALUE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -508,23 +508,23 @@
             this.labelGps1LongGYText.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelGps1LongGYText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelGps1LongGYText.ForeColor = System.Drawing.Color.YellowGreen;
-            this.labelGps1LongGYText.Location = new System.Drawing.Point(4, 325);
-            this.labelGps1LongGYText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelGps1LongGYText.Location = new System.Drawing.Point(0, 338);
+            this.labelGps1LongGYText.Margin = new System.Windows.Forms.Padding(0);
             this.labelGps1LongGYText.Name = "labelGps1LongGYText";
-            this.labelGps1LongGYText.Size = new System.Drawing.Size(307, 25);
+            this.labelGps1LongGYText.Size = new System.Drawing.Size(280, 26);
             this.labelGps1LongGYText.TabIndex = 26;
             this.labelGps1LongGYText.Text = "GPS1 LONGITUDE :";
-            this.labelGps1LongGYText.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelGps1LongGYText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelGps1LatGYVALUE
             // 
             this.labelGps1LatGYVALUE.AutoSize = true;
             this.labelGps1LatGYVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelGps1LatGYVALUE.ForeColor = System.Drawing.Color.YellowGreen;
-            this.labelGps1LatGYVALUE.Location = new System.Drawing.Point(319, 300);
-            this.labelGps1LatGYVALUE.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelGps1LatGYVALUE.Location = new System.Drawing.Point(280, 312);
+            this.labelGps1LatGYVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelGps1LatGYVALUE.Name = "labelGps1LatGYVALUE";
-            this.labelGps1LatGYVALUE.Size = new System.Drawing.Size(202, 25);
+            this.labelGps1LatGYVALUE.Size = new System.Drawing.Size(205, 26);
             this.labelGps1LatGYVALUE.TabIndex = 25;
             this.labelGps1LatGYVALUE.Text = "####";
             this.labelGps1LatGYVALUE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -535,23 +535,23 @@
             this.labelGps1LatGYText.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelGps1LatGYText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelGps1LatGYText.ForeColor = System.Drawing.Color.YellowGreen;
-            this.labelGps1LatGYText.Location = new System.Drawing.Point(4, 300);
-            this.labelGps1LatGYText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelGps1LatGYText.Location = new System.Drawing.Point(0, 312);
+            this.labelGps1LatGYText.Margin = new System.Windows.Forms.Padding(0);
             this.labelGps1LatGYText.Name = "labelGps1LatGYText";
-            this.labelGps1LatGYText.Size = new System.Drawing.Size(307, 25);
+            this.labelGps1LatGYText.Size = new System.Drawing.Size(280, 26);
             this.labelGps1LatGYText.TabIndex = 24;
             this.labelGps1LatGYText.Text = "GPS1 LATITUDE :";
-            this.labelGps1LatGYText.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelGps1LatGYText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelPilGerilimiVALUE
             // 
             this.labelPilGerilimiVALUE.AutoSize = true;
             this.labelPilGerilimiVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelPilGerilimiVALUE.ForeColor = System.Drawing.Color.YellowGreen;
-            this.labelPilGerilimiVALUE.Location = new System.Drawing.Point(319, 275);
-            this.labelPilGerilimiVALUE.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelPilGerilimiVALUE.Location = new System.Drawing.Point(280, 286);
+            this.labelPilGerilimiVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelPilGerilimiVALUE.Name = "labelPilGerilimiVALUE";
-            this.labelPilGerilimiVALUE.Size = new System.Drawing.Size(202, 25);
+            this.labelPilGerilimiVALUE.Size = new System.Drawing.Size(205, 26);
             this.labelPilGerilimiVALUE.TabIndex = 23;
             this.labelPilGerilimiVALUE.Text = "####";
             this.labelPilGerilimiVALUE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -562,23 +562,23 @@
             this.labelPilGerilimiText.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelPilGerilimiText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelPilGerilimiText.ForeColor = System.Drawing.Color.YellowGreen;
-            this.labelPilGerilimiText.Location = new System.Drawing.Point(4, 275);
-            this.labelPilGerilimiText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelPilGerilimiText.Location = new System.Drawing.Point(0, 286);
+            this.labelPilGerilimiText.Margin = new System.Windows.Forms.Padding(0);
             this.labelPilGerilimiText.Name = "labelPilGerilimiText";
-            this.labelPilGerilimiText.Size = new System.Drawing.Size(307, 25);
+            this.labelPilGerilimiText.Size = new System.Drawing.Size(280, 26);
             this.labelPilGerilimiText.TabIndex = 22;
             this.labelPilGerilimiText.Text = "PİL GERİLİMİ :";
-            this.labelPilGerilimiText.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelPilGerilimiText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelSicaklikVALUE
             // 
             this.labelSicaklikVALUE.AutoSize = true;
             this.labelSicaklikVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelSicaklikVALUE.ForeColor = System.Drawing.Color.YellowGreen;
-            this.labelSicaklikVALUE.Location = new System.Drawing.Point(319, 250);
-            this.labelSicaklikVALUE.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelSicaklikVALUE.Location = new System.Drawing.Point(280, 260);
+            this.labelSicaklikVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelSicaklikVALUE.Name = "labelSicaklikVALUE";
-            this.labelSicaklikVALUE.Size = new System.Drawing.Size(202, 25);
+            this.labelSicaklikVALUE.Size = new System.Drawing.Size(205, 26);
             this.labelSicaklikVALUE.TabIndex = 21;
             this.labelSicaklikVALUE.Text = "####";
             this.labelSicaklikVALUE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -589,23 +589,23 @@
             this.labelSicaklikText.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelSicaklikText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelSicaklikText.ForeColor = System.Drawing.Color.YellowGreen;
-            this.labelSicaklikText.Location = new System.Drawing.Point(4, 250);
-            this.labelSicaklikText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelSicaklikText.Location = new System.Drawing.Point(0, 260);
+            this.labelSicaklikText.Margin = new System.Windows.Forms.Padding(0);
             this.labelSicaklikText.Name = "labelSicaklikText";
-            this.labelSicaklikText.Size = new System.Drawing.Size(307, 25);
+            this.labelSicaklikText.Size = new System.Drawing.Size(280, 26);
             this.labelSicaklikText.TabIndex = 20;
             this.labelSicaklikText.Text = "SICAKLIK :";
-            this.labelSicaklikText.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelSicaklikText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelGYinisHiziVALUE
             // 
             this.labelGYinisHiziVALUE.AutoSize = true;
             this.labelGYinisHiziVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelGYinisHiziVALUE.ForeColor = System.Drawing.Color.YellowGreen;
-            this.labelGYinisHiziVALUE.Location = new System.Drawing.Point(319, 225);
-            this.labelGYinisHiziVALUE.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelGYinisHiziVALUE.Location = new System.Drawing.Point(280, 234);
+            this.labelGYinisHiziVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelGYinisHiziVALUE.Name = "labelGYinisHiziVALUE";
-            this.labelGYinisHiziVALUE.Size = new System.Drawing.Size(202, 25);
+            this.labelGYinisHiziVALUE.Size = new System.Drawing.Size(205, 26);
             this.labelGYinisHiziVALUE.TabIndex = 19;
             this.labelGYinisHiziVALUE.Text = "####";
             this.labelGYinisHiziVALUE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -616,23 +616,23 @@
             this.labelGYinisHiziText.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelGYinisHiziText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelGYinisHiziText.ForeColor = System.Drawing.Color.YellowGreen;
-            this.labelGYinisHiziText.Location = new System.Drawing.Point(4, 225);
-            this.labelGYinisHiziText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelGYinisHiziText.Location = new System.Drawing.Point(0, 234);
+            this.labelGYinisHiziText.Margin = new System.Windows.Forms.Padding(0);
             this.labelGYinisHiziText.Name = "labelGYinisHiziText";
-            this.labelGYinisHiziText.Size = new System.Drawing.Size(307, 25);
+            this.labelGYinisHiziText.Size = new System.Drawing.Size(280, 26);
             this.labelGYinisHiziText.TabIndex = 18;
-            this.labelGYinisHiziText.Text = "Görev Yükü İniş Hızı";
-            this.labelGYinisHiziText.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelGYinisHiziText.Text = "İNİŞ HIZI (GÖREV YÜKÜ) :";
+            this.labelGYinisHiziText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelIrtifaFarkiVALUE
             // 
             this.labelIrtifaFarkiVALUE.AutoSize = true;
             this.labelIrtifaFarkiVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelIrtifaFarkiVALUE.ForeColor = System.Drawing.Color.YellowGreen;
-            this.labelIrtifaFarkiVALUE.Location = new System.Drawing.Point(319, 200);
-            this.labelIrtifaFarkiVALUE.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelIrtifaFarkiVALUE.Location = new System.Drawing.Point(280, 208);
+            this.labelIrtifaFarkiVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelIrtifaFarkiVALUE.Name = "labelIrtifaFarkiVALUE";
-            this.labelIrtifaFarkiVALUE.Size = new System.Drawing.Size(202, 25);
+            this.labelIrtifaFarkiVALUE.Size = new System.Drawing.Size(205, 26);
             this.labelIrtifaFarkiVALUE.TabIndex = 17;
             this.labelIrtifaFarkiVALUE.Text = "####";
             this.labelIrtifaFarkiVALUE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -643,23 +643,23 @@
             this.labelIrtifaFarkiText.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelIrtifaFarkiText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelIrtifaFarkiText.ForeColor = System.Drawing.Color.YellowGreen;
-            this.labelIrtifaFarkiText.Location = new System.Drawing.Point(4, 200);
-            this.labelIrtifaFarkiText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelIrtifaFarkiText.Location = new System.Drawing.Point(0, 208);
+            this.labelIrtifaFarkiText.Margin = new System.Windows.Forms.Padding(0);
             this.labelIrtifaFarkiText.Name = "labelIrtifaFarkiText";
-            this.labelIrtifaFarkiText.Size = new System.Drawing.Size(307, 25);
+            this.labelIrtifaFarkiText.Size = new System.Drawing.Size(280, 26);
             this.labelIrtifaFarkiText.TabIndex = 16;
             this.labelIrtifaFarkiText.Text = "İRTİFA FARKI :";
-            this.labelIrtifaFarkiText.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelIrtifaFarkiText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelYukseklik2TVALUE
             // 
             this.labelYukseklik2TVALUE.AutoSize = true;
             this.labelYukseklik2TVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelYukseklik2TVALUE.ForeColor = System.Drawing.Color.YellowGreen;
-            this.labelYukseklik2TVALUE.Location = new System.Drawing.Point(319, 175);
-            this.labelYukseklik2TVALUE.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelYukseklik2TVALUE.Location = new System.Drawing.Point(280, 182);
+            this.labelYukseklik2TVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelYukseklik2TVALUE.Name = "labelYukseklik2TVALUE";
-            this.labelYukseklik2TVALUE.Size = new System.Drawing.Size(202, 25);
+            this.labelYukseklik2TVALUE.Size = new System.Drawing.Size(205, 26);
             this.labelYukseklik2TVALUE.TabIndex = 15;
             this.labelYukseklik2TVALUE.Text = "####";
             this.labelYukseklik2TVALUE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -670,23 +670,23 @@
             this.labelYukseklik2TText.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelYukseklik2TText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelYukseklik2TText.ForeColor = System.Drawing.Color.YellowGreen;
-            this.labelYukseklik2TText.Location = new System.Drawing.Point(4, 175);
-            this.labelYukseklik2TText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelYukseklik2TText.Location = new System.Drawing.Point(0, 182);
+            this.labelYukseklik2TText.Margin = new System.Windows.Forms.Padding(0);
             this.labelYukseklik2TText.Name = "labelYukseklik2TText";
-            this.labelYukseklik2TText.Size = new System.Drawing.Size(307, 25);
+            this.labelYukseklik2TText.Size = new System.Drawing.Size(280, 26);
             this.labelYukseklik2TText.TabIndex = 14;
             this.labelYukseklik2TText.Text = "YÜKSEKLİK-2 (TAŞIYICI) :";
-            this.labelYukseklik2TText.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelYukseklik2TText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelYukseklik1GYVALUE
             // 
             this.labelYukseklik1GYVALUE.AutoSize = true;
             this.labelYukseklik1GYVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelYukseklik1GYVALUE.ForeColor = System.Drawing.Color.YellowGreen;
-            this.labelYukseklik1GYVALUE.Location = new System.Drawing.Point(319, 150);
-            this.labelYukseklik1GYVALUE.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelYukseklik1GYVALUE.Location = new System.Drawing.Point(280, 156);
+            this.labelYukseklik1GYVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelYukseklik1GYVALUE.Name = "labelYukseklik1GYVALUE";
-            this.labelYukseklik1GYVALUE.Size = new System.Drawing.Size(202, 25);
+            this.labelYukseklik1GYVALUE.Size = new System.Drawing.Size(205, 26);
             this.labelYukseklik1GYVALUE.TabIndex = 13;
             this.labelYukseklik1GYVALUE.Text = "####";
             this.labelYukseklik1GYVALUE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -697,23 +697,23 @@
             this.labelYukseklik1GYText.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelYukseklik1GYText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelYukseklik1GYText.ForeColor = System.Drawing.Color.YellowGreen;
-            this.labelYukseklik1GYText.Location = new System.Drawing.Point(4, 150);
-            this.labelYukseklik1GYText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelYukseklik1GYText.Location = new System.Drawing.Point(0, 156);
+            this.labelYukseklik1GYText.Margin = new System.Windows.Forms.Padding(0);
             this.labelYukseklik1GYText.Name = "labelYukseklik1GYText";
-            this.labelYukseklik1GYText.Size = new System.Drawing.Size(307, 25);
+            this.labelYukseklik1GYText.Size = new System.Drawing.Size(280, 26);
             this.labelYukseklik1GYText.TabIndex = 12;
             this.labelYukseklik1GYText.Text = "YÜKSEKLİK-1 (GÖREV YÜKÜ) :";
-            this.labelYukseklik1GYText.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelYukseklik1GYText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelBasinc2TVALUE
             // 
             this.labelBasinc2TVALUE.AutoSize = true;
             this.labelBasinc2TVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelBasinc2TVALUE.ForeColor = System.Drawing.Color.YellowGreen;
-            this.labelBasinc2TVALUE.Location = new System.Drawing.Point(319, 125);
-            this.labelBasinc2TVALUE.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelBasinc2TVALUE.Location = new System.Drawing.Point(280, 130);
+            this.labelBasinc2TVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelBasinc2TVALUE.Name = "labelBasinc2TVALUE";
-            this.labelBasinc2TVALUE.Size = new System.Drawing.Size(202, 25);
+            this.labelBasinc2TVALUE.Size = new System.Drawing.Size(205, 26);
             this.labelBasinc2TVALUE.TabIndex = 11;
             this.labelBasinc2TVALUE.Text = "####";
             this.labelBasinc2TVALUE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -724,23 +724,23 @@
             this.labelBasinc2TText.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelBasinc2TText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelBasinc2TText.ForeColor = System.Drawing.Color.YellowGreen;
-            this.labelBasinc2TText.Location = new System.Drawing.Point(4, 125);
-            this.labelBasinc2TText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelBasinc2TText.Location = new System.Drawing.Point(0, 130);
+            this.labelBasinc2TText.Margin = new System.Windows.Forms.Padding(0);
             this.labelBasinc2TText.Name = "labelBasinc2TText";
-            this.labelBasinc2TText.Size = new System.Drawing.Size(307, 25);
+            this.labelBasinc2TText.Size = new System.Drawing.Size(280, 26);
             this.labelBasinc2TText.TabIndex = 10;
             this.labelBasinc2TText.Text = "BASINÇ-2 (TAŞIYICI) :";
-            this.labelBasinc2TText.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelBasinc2TText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelBasinc1GYVALUE
             // 
             this.labelBasinc1GYVALUE.AutoSize = true;
             this.labelBasinc1GYVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelBasinc1GYVALUE.ForeColor = System.Drawing.Color.YellowGreen;
-            this.labelBasinc1GYVALUE.Location = new System.Drawing.Point(319, 100);
-            this.labelBasinc1GYVALUE.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelBasinc1GYVALUE.Location = new System.Drawing.Point(280, 104);
+            this.labelBasinc1GYVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelBasinc1GYVALUE.Name = "labelBasinc1GYVALUE";
-            this.labelBasinc1GYVALUE.Size = new System.Drawing.Size(202, 25);
+            this.labelBasinc1GYVALUE.Size = new System.Drawing.Size(205, 26);
             this.labelBasinc1GYVALUE.TabIndex = 9;
             this.labelBasinc1GYVALUE.Text = "####";
             this.labelBasinc1GYVALUE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -751,25 +751,25 @@
             this.labelBasinc1GYText.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelBasinc1GYText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelBasinc1GYText.ForeColor = System.Drawing.Color.YellowGreen;
-            this.labelBasinc1GYText.Location = new System.Drawing.Point(4, 100);
-            this.labelBasinc1GYText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelBasinc1GYText.Location = new System.Drawing.Point(0, 104);
+            this.labelBasinc1GYText.Margin = new System.Windows.Forms.Padding(0);
             this.labelBasinc1GYText.Name = "labelBasinc1GYText";
-            this.labelBasinc1GYText.Size = new System.Drawing.Size(307, 25);
+            this.labelBasinc1GYText.Size = new System.Drawing.Size(280, 26);
             this.labelBasinc1GYText.TabIndex = 8;
             this.labelBasinc1GYText.Text = "BASINÇ-1 (GÖREV YÜKÜ) :";
-            this.labelBasinc1GYText.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelBasinc1GYText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelGondermeSaatiVALUE
             // 
             this.labelGondermeSaatiVALUE.AutoSize = true;
             this.labelGondermeSaatiVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelGondermeSaatiVALUE.ForeColor = System.Drawing.Color.YellowGreen;
-            this.labelGondermeSaatiVALUE.Location = new System.Drawing.Point(319, 75);
-            this.labelGondermeSaatiVALUE.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelGondermeSaatiVALUE.Location = new System.Drawing.Point(280, 78);
+            this.labelGondermeSaatiVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelGondermeSaatiVALUE.Name = "labelGondermeSaatiVALUE";
-            this.labelGondermeSaatiVALUE.Size = new System.Drawing.Size(202, 25);
+            this.labelGondermeSaatiVALUE.Size = new System.Drawing.Size(205, 26);
             this.labelGondermeSaatiVALUE.TabIndex = 7;
-            this.labelGondermeSaatiVALUE.Text = "Gün/Ay/Yıl, Saat/Dakika/Saniye";
+            this.labelGondermeSaatiVALUE.Text = "####";
             this.labelGondermeSaatiVALUE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelGondermeSaatiText
@@ -778,23 +778,23 @@
             this.labelGondermeSaatiText.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelGondermeSaatiText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelGondermeSaatiText.ForeColor = System.Drawing.Color.YellowGreen;
-            this.labelGondermeSaatiText.Location = new System.Drawing.Point(4, 75);
-            this.labelGondermeSaatiText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelGondermeSaatiText.Location = new System.Drawing.Point(0, 78);
+            this.labelGondermeSaatiText.Margin = new System.Windows.Forms.Padding(0);
             this.labelGondermeSaatiText.Name = "labelGondermeSaatiText";
-            this.labelGondermeSaatiText.Size = new System.Drawing.Size(307, 25);
+            this.labelGondermeSaatiText.Size = new System.Drawing.Size(280, 26);
             this.labelGondermeSaatiText.TabIndex = 6;
             this.labelGondermeSaatiText.Text = "GÖNDERME SAATİ :";
-            this.labelGondermeSaatiText.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelGondermeSaatiText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelHataKoduVALUE
             // 
             this.labelHataKoduVALUE.AutoSize = true;
             this.labelHataKoduVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelHataKoduVALUE.ForeColor = System.Drawing.Color.YellowGreen;
-            this.labelHataKoduVALUE.Location = new System.Drawing.Point(319, 50);
-            this.labelHataKoduVALUE.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelHataKoduVALUE.Location = new System.Drawing.Point(280, 52);
+            this.labelHataKoduVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelHataKoduVALUE.Name = "labelHataKoduVALUE";
-            this.labelHataKoduVALUE.Size = new System.Drawing.Size(202, 25);
+            this.labelHataKoduVALUE.Size = new System.Drawing.Size(205, 26);
             this.labelHataKoduVALUE.TabIndex = 5;
             this.labelHataKoduVALUE.Text = "####";
             this.labelHataKoduVALUE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -805,23 +805,23 @@
             this.labelHataKoduText.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelHataKoduText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelHataKoduText.ForeColor = System.Drawing.Color.YellowGreen;
-            this.labelHataKoduText.Location = new System.Drawing.Point(4, 50);
-            this.labelHataKoduText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelHataKoduText.Location = new System.Drawing.Point(0, 52);
+            this.labelHataKoduText.Margin = new System.Windows.Forms.Padding(0);
             this.labelHataKoduText.Name = "labelHataKoduText";
-            this.labelHataKoduText.Size = new System.Drawing.Size(307, 25);
+            this.labelHataKoduText.Size = new System.Drawing.Size(280, 26);
             this.labelHataKoduText.TabIndex = 4;
             this.labelHataKoduText.Text = "HATA KODU :";
-            this.labelHataKoduText.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelHataKoduText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelUyduStatusuVALUE
             // 
             this.labelUyduStatusuVALUE.AutoSize = true;
             this.labelUyduStatusuVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelUyduStatusuVALUE.ForeColor = System.Drawing.Color.YellowGreen;
-            this.labelUyduStatusuVALUE.Location = new System.Drawing.Point(319, 25);
-            this.labelUyduStatusuVALUE.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelUyduStatusuVALUE.Location = new System.Drawing.Point(280, 26);
+            this.labelUyduStatusuVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelUyduStatusuVALUE.Name = "labelUyduStatusuVALUE";
-            this.labelUyduStatusuVALUE.Size = new System.Drawing.Size(202, 25);
+            this.labelUyduStatusuVALUE.Size = new System.Drawing.Size(205, 26);
             this.labelUyduStatusuVALUE.TabIndex = 3;
             this.labelUyduStatusuVALUE.Text = "####";
             this.labelUyduStatusuVALUE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -832,23 +832,23 @@
             this.labelUyduStatusuText.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelUyduStatusuText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelUyduStatusuText.ForeColor = System.Drawing.Color.YellowGreen;
-            this.labelUyduStatusuText.Location = new System.Drawing.Point(4, 25);
-            this.labelUyduStatusuText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelUyduStatusuText.Location = new System.Drawing.Point(0, 26);
+            this.labelUyduStatusuText.Margin = new System.Windows.Forms.Padding(0);
             this.labelUyduStatusuText.Name = "labelUyduStatusuText";
-            this.labelUyduStatusuText.Size = new System.Drawing.Size(307, 25);
+            this.labelUyduStatusuText.Size = new System.Drawing.Size(280, 26);
             this.labelUyduStatusuText.TabIndex = 2;
             this.labelUyduStatusuText.Text = "UYDU STATÜSÜ :";
-            this.labelUyduStatusuText.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelUyduStatusuText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelPaketNoVALUE
             // 
             this.labelPaketNoVALUE.AutoSize = true;
             this.labelPaketNoVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelPaketNoVALUE.ForeColor = System.Drawing.Color.YellowGreen;
-            this.labelPaketNoVALUE.Location = new System.Drawing.Point(319, 0);
-            this.labelPaketNoVALUE.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelPaketNoVALUE.Location = new System.Drawing.Point(280, 0);
+            this.labelPaketNoVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelPaketNoVALUE.Name = "labelPaketNoVALUE";
-            this.labelPaketNoVALUE.Size = new System.Drawing.Size(202, 25);
+            this.labelPaketNoVALUE.Size = new System.Drawing.Size(205, 26);
             this.labelPaketNoVALUE.TabIndex = 1;
             this.labelPaketNoVALUE.Text = "####";
             this.labelPaketNoVALUE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -859,13 +859,13 @@
             this.labelPaketNoText.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelPaketNoText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelPaketNoText.ForeColor = System.Drawing.Color.YellowGreen;
-            this.labelPaketNoText.Location = new System.Drawing.Point(4, 0);
-            this.labelPaketNoText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelPaketNoText.Location = new System.Drawing.Point(0, 0);
+            this.labelPaketNoText.Margin = new System.Windows.Forms.Padding(0);
             this.labelPaketNoText.Name = "labelPaketNoText";
-            this.labelPaketNoText.Size = new System.Drawing.Size(307, 25);
+            this.labelPaketNoText.Size = new System.Drawing.Size(280, 26);
             this.labelPaketNoText.TabIndex = 0;
             this.labelPaketNoText.Text = "PAKET NUMARASI :";
-            this.labelPaketNoText.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelPaketNoText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // tableLayoutPanelChart
             // 
@@ -890,7 +890,7 @@
             this.tableLayoutPanelChart.Controls.Add(this.chartBasinc1, 0, 1);
             this.tableLayoutPanelChart.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanelChart.Location = new System.Drawing.Point(4, 4);
-            this.tableLayoutPanelChart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanelChart.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanelChart.Name = "tableLayoutPanelChart";
             this.tableLayoutPanelChart.RowCount = 8;
             this.tableLayoutPanelChart.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
@@ -902,124 +902,126 @@
             this.tableLayoutPanelChart.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanelChart.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanelChart.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanelChart.Size = new System.Drawing.Size(919, 512);
+            this.tableLayoutPanelChart.Size = new System.Drawing.Size(967, 512);
             this.tableLayoutPanelChart.TabIndex = 1;
             // 
             // chartPilGerilimi
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chartPilGerilimi.ChartAreas.Add(chartArea1);
+            chartArea25.Name = "ChartArea1";
+            this.chartPilGerilimi.ChartAreas.Add(chartArea25);
             this.chartPilGerilimi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chartPilGerilimi.Location = new System.Drawing.Point(462, 408);
+            this.chartPilGerilimi.Location = new System.Drawing.Point(486, 408);
             this.chartPilGerilimi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartPilGerilimi.Name = "chartPilGerilimi";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series1.Name = "pilGerilimi";
-            this.chartPilGerilimi.Series.Add(series1);
-            this.chartPilGerilimi.Size = new System.Drawing.Size(454, 102);
+            series25.ChartArea = "ChartArea1";
+            series25.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series25.Name = "pilGerilimi";
+            this.chartPilGerilimi.Series.Add(series25);
+            this.chartPilGerilimi.Size = new System.Drawing.Size(478, 102);
             this.chartPilGerilimi.TabIndex = 33;
             this.chartPilGerilimi.Text = "chart8";
             // 
             // chartSicaklik
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chartSicaklik.ChartAreas.Add(chartArea2);
+            chartArea26.Name = "ChartArea1";
+            this.chartSicaklik.ChartAreas.Add(chartArea26);
             this.chartSicaklik.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartSicaklik.Location = new System.Drawing.Point(3, 408);
             this.chartSicaklik.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartSicaklik.Name = "chartSicaklik";
             this.chartSicaklik.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SemiTransparent;
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series2.Name = "sicaklik";
-            this.chartSicaklik.Series.Add(series2);
-            this.chartSicaklik.Size = new System.Drawing.Size(453, 102);
+            series26.ChartArea = "ChartArea1";
+            series26.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series26.Name = "sicaklik";
+            this.chartSicaklik.Series.Add(series26);
+            this.chartSicaklik.Size = new System.Drawing.Size(477, 102);
             this.chartSicaklik.TabIndex = 32;
             this.chartSicaklik.Text = "chart7";
             // 
             // chartInisGizi
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chartInisGizi.ChartAreas.Add(chartArea3);
+            chartArea27.Name = "ChartArea1";
+            this.chartInisGizi.ChartAreas.Add(chartArea27);
             this.chartInisGizi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chartInisGizi.Location = new System.Drawing.Point(462, 281);
+            this.chartInisGizi.Location = new System.Drawing.Point(486, 281);
             this.chartInisGizi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartInisGizi.Name = "chartInisGizi";
             this.chartInisGizi.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series3.Name = "inisHizi";
-            this.chartInisGizi.Series.Add(series3);
-            this.chartInisGizi.Size = new System.Drawing.Size(454, 98);
+            series27.ChartArea = "ChartArea1";
+            series27.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series27.Name = "inisHizi";
+            this.chartInisGizi.Series.Add(series27);
+            this.chartInisGizi.Size = new System.Drawing.Size(478, 98);
             this.chartInisGizi.TabIndex = 31;
             this.chartInisGizi.Text = "chart6";
             // 
             // chartIrtifaFarki
             // 
-            chartArea4.Name = "ChartArea1";
-            this.chartIrtifaFarki.ChartAreas.Add(chartArea4);
+            chartArea28.Name = "ChartArea1";
+            this.chartIrtifaFarki.ChartAreas.Add(chartArea28);
             this.chartIrtifaFarki.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartIrtifaFarki.Location = new System.Drawing.Point(3, 281);
             this.chartIrtifaFarki.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartIrtifaFarki.Name = "chartIrtifaFarki";
             this.chartIrtifaFarki.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series4.Name = "irtifaFarki";
-            this.chartIrtifaFarki.Series.Add(series4);
-            this.chartIrtifaFarki.Size = new System.Drawing.Size(453, 98);
+            series28.ChartArea = "ChartArea1";
+            series28.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series28.Name = "irtifaFarki";
+            this.chartIrtifaFarki.Series.Add(series28);
+            this.chartIrtifaFarki.Size = new System.Drawing.Size(477, 98);
             this.chartIrtifaFarki.TabIndex = 30;
             this.chartIrtifaFarki.Text = "chart5";
             // 
             // chartYukseklik2
             // 
-            chartArea5.Name = "ChartArea1";
-            this.chartYukseklik2.ChartAreas.Add(chartArea5);
+            this.chartYukseklik2.BackSecondaryColor = System.Drawing.Color.Transparent;
+            this.chartYukseklik2.BorderSkin.BackColor = System.Drawing.Color.DarkGreen;
+            chartArea29.Name = "ChartArea1";
+            this.chartYukseklik2.ChartAreas.Add(chartArea29);
             this.chartYukseklik2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chartYukseklik2.Location = new System.Drawing.Point(462, 154);
-            this.chartYukseklik2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.chartYukseklik2.Location = new System.Drawing.Point(487, 156);
+            this.chartYukseklik2.Margin = new System.Windows.Forms.Padding(4);
             this.chartYukseklik2.Name = "chartYukseklik2";
             this.chartYukseklik2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series5.ChartArea = "ChartArea1";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series5.Name = "yukseklik2";
-            this.chartYukseklik2.Series.Add(series5);
-            this.chartYukseklik2.Size = new System.Drawing.Size(454, 98);
+            series29.ChartArea = "ChartArea1";
+            series29.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series29.Name = "yukseklik2";
+            this.chartYukseklik2.Series.Add(series29);
+            this.chartYukseklik2.Size = new System.Drawing.Size(476, 94);
             this.chartYukseklik2.TabIndex = 29;
             this.chartYukseklik2.Text = "chart4";
             // 
             // chartYukseklik1
             // 
-            chartArea6.Name = "ChartArea1";
-            this.chartYukseklik1.ChartAreas.Add(chartArea6);
+            chartArea30.Name = "ChartArea1";
+            this.chartYukseklik1.ChartAreas.Add(chartArea30);
             this.chartYukseklik1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chartYukseklik1.Location = new System.Drawing.Point(3, 154);
-            this.chartYukseklik1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.chartYukseklik1.Location = new System.Drawing.Point(4, 156);
+            this.chartYukseklik1.Margin = new System.Windows.Forms.Padding(4);
             this.chartYukseklik1.Name = "chartYukseklik1";
             this.chartYukseklik1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series6.ChartArea = "ChartArea1";
-            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series6.Name = "yukseklik1";
-            this.chartYukseklik1.Series.Add(series6);
-            this.chartYukseklik1.Size = new System.Drawing.Size(453, 98);
+            series30.ChartArea = "ChartArea1";
+            series30.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series30.Name = "yukseklik1";
+            this.chartYukseklik1.Series.Add(series30);
+            this.chartYukseklik1.Size = new System.Drawing.Size(475, 94);
             this.chartYukseklik1.TabIndex = 28;
             this.chartYukseklik1.Text = "chart3";
             // 
             // chartBasinc2
             // 
-            chartArea7.Name = "ChartArea1";
-            this.chartBasinc2.ChartAreas.Add(chartArea7);
+            chartArea31.Name = "ChartArea1";
+            this.chartBasinc2.ChartAreas.Add(chartArea31);
             this.chartBasinc2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chartBasinc2.Location = new System.Drawing.Point(462, 27);
+            this.chartBasinc2.Location = new System.Drawing.Point(486, 27);
             this.chartBasinc2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartBasinc2.Name = "chartBasinc2";
             this.chartBasinc2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
-            series7.ChartArea = "ChartArea1";
-            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series7.Name = "basinc2";
-            this.chartBasinc2.Series.Add(series7);
-            this.chartBasinc2.Size = new System.Drawing.Size(454, 98);
+            series31.ChartArea = "ChartArea1";
+            series31.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series31.Name = "basinc2";
+            this.chartBasinc2.Series.Add(series31);
+            this.chartBasinc2.Size = new System.Drawing.Size(478, 98);
             this.chartBasinc2.TabIndex = 27;
             this.chartBasinc2.Text = "chart2";
             // 
@@ -1031,7 +1033,7 @@
             this.labelGraphBasinc1.Location = new System.Drawing.Point(4, 0);
             this.labelGraphBasinc1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelGraphBasinc1.Name = "labelGraphBasinc1";
-            this.labelGraphBasinc1.Size = new System.Drawing.Size(451, 25);
+            this.labelGraphBasinc1.Size = new System.Drawing.Size(475, 25);
             this.labelGraphBasinc1.TabIndex = 1;
             this.labelGraphBasinc1.Text = "BASINÇ-1 (GÖREV YÜKÜ) : 0.0 (Pa)";
             this.labelGraphBasinc1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1041,10 +1043,10 @@
             this.labelGraphBasinc2.AutoSize = true;
             this.labelGraphBasinc2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelGraphBasinc2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelGraphBasinc2.Location = new System.Drawing.Point(463, 0);
+            this.labelGraphBasinc2.Location = new System.Drawing.Point(487, 0);
             this.labelGraphBasinc2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelGraphBasinc2.Name = "labelGraphBasinc2";
-            this.labelGraphBasinc2.Size = new System.Drawing.Size(452, 25);
+            this.labelGraphBasinc2.Size = new System.Drawing.Size(476, 25);
             this.labelGraphBasinc2.TabIndex = 2;
             this.labelGraphBasinc2.Text = "BASINÇ-2 (TAŞIYICI) :  0.0 (Pa)";
             this.labelGraphBasinc2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1054,10 +1056,10 @@
             this.labelGraphYukseklik2.AutoSize = true;
             this.labelGraphYukseklik2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelGraphYukseklik2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelGraphYukseklik2.Location = new System.Drawing.Point(463, 127);
+            this.labelGraphYukseklik2.Location = new System.Drawing.Point(487, 127);
             this.labelGraphYukseklik2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelGraphYukseklik2.Name = "labelGraphYukseklik2";
-            this.labelGraphYukseklik2.Size = new System.Drawing.Size(452, 25);
+            this.labelGraphYukseklik2.Size = new System.Drawing.Size(476, 25);
             this.labelGraphYukseklik2.TabIndex = 5;
             this.labelGraphYukseklik2.Text = "YÜKSEKLİK-2 (TAŞIYICI) : 0.0 (m)";
             this.labelGraphYukseklik2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1070,7 +1072,7 @@
             this.labelGraphIrtifaFarki.Location = new System.Drawing.Point(4, 254);
             this.labelGraphIrtifaFarki.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelGraphIrtifaFarki.Name = "labelGraphIrtifaFarki";
-            this.labelGraphIrtifaFarki.Size = new System.Drawing.Size(451, 25);
+            this.labelGraphIrtifaFarki.Size = new System.Drawing.Size(475, 25);
             this.labelGraphIrtifaFarki.TabIndex = 8;
             this.labelGraphIrtifaFarki.Text = "İRTİFA FARKI : 0.0 (m)";
             this.labelGraphIrtifaFarki.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1080,10 +1082,10 @@
             this.labelGraphGYinisHizi.AutoSize = true;
             this.labelGraphGYinisHizi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelGraphGYinisHizi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelGraphGYinisHizi.Location = new System.Drawing.Point(463, 254);
+            this.labelGraphGYinisHizi.Location = new System.Drawing.Point(487, 254);
             this.labelGraphGYinisHizi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelGraphGYinisHizi.Name = "labelGraphGYinisHizi";
-            this.labelGraphGYinisHizi.Size = new System.Drawing.Size(452, 25);
+            this.labelGraphGYinisHizi.Size = new System.Drawing.Size(476, 25);
             this.labelGraphGYinisHizi.TabIndex = 9;
             this.labelGraphGYinisHizi.Text = "GÖREV YÜKÜ İNİŞ HIZI : 0.0 (m/s)";
             this.labelGraphGYinisHizi.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1096,7 +1098,7 @@
             this.labelGraphYukseklik1.Location = new System.Drawing.Point(4, 127);
             this.labelGraphYukseklik1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelGraphYukseklik1.Name = "labelGraphYukseklik1";
-            this.labelGraphYukseklik1.Size = new System.Drawing.Size(451, 25);
+            this.labelGraphYukseklik1.Size = new System.Drawing.Size(475, 25);
             this.labelGraphYukseklik1.TabIndex = 16;
             this.labelGraphYukseklik1.Text = "YÜKSEKLİK-1 (GÖREV YÜKÜ) : 0.0 (m)";
             this.labelGraphYukseklik1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1109,7 +1111,7 @@
             this.labelGraphSicaklik.Location = new System.Drawing.Point(4, 381);
             this.labelGraphSicaklik.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelGraphSicaklik.Name = "labelGraphSicaklik";
-            this.labelGraphSicaklik.Size = new System.Drawing.Size(451, 25);
+            this.labelGraphSicaklik.Size = new System.Drawing.Size(475, 25);
             this.labelGraphSicaklik.TabIndex = 17;
             this.labelGraphSicaklik.Text = "SICAKLIK 0.0 (C°)";
             this.labelGraphSicaklik.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1120,28 +1122,28 @@
             this.labelGraphPilGerilimi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelGraphPilGerilimi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelGraphPilGerilimi.ForeColor = System.Drawing.Color.YellowGreen;
-            this.labelGraphPilGerilimi.Location = new System.Drawing.Point(463, 381);
+            this.labelGraphPilGerilimi.Location = new System.Drawing.Point(487, 381);
             this.labelGraphPilGerilimi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelGraphPilGerilimi.Name = "labelGraphPilGerilimi";
-            this.labelGraphPilGerilimi.Size = new System.Drawing.Size(452, 25);
+            this.labelGraphPilGerilimi.Size = new System.Drawing.Size(476, 25);
             this.labelGraphPilGerilimi.TabIndex = 13;
             this.labelGraphPilGerilimi.Text = "PİL GERİLİMİ 0.0 (V)";
             this.labelGraphPilGerilimi.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // chartBasinc1
             // 
-            chartArea8.Name = "ChartArea1";
-            this.chartBasinc1.ChartAreas.Add(chartArea8);
+            chartArea32.Name = "ChartArea1";
+            this.chartBasinc1.ChartAreas.Add(chartArea32);
             this.chartBasinc1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartBasinc1.Location = new System.Drawing.Point(3, 27);
             this.chartBasinc1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartBasinc1.Name = "chartBasinc1";
             this.chartBasinc1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
-            series8.ChartArea = "ChartArea1";
-            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series8.Name = "basinc1";
-            this.chartBasinc1.Series.Add(series8);
-            this.chartBasinc1.Size = new System.Drawing.Size(453, 98);
+            series32.ChartArea = "ChartArea1";
+            series32.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series32.Name = "basinc1";
+            this.chartBasinc1.Series.Add(series32);
+            this.chartBasinc1.Size = new System.Drawing.Size(477, 98);
             this.chartBasinc1.TabIndex = 26;
             this.chartBasinc1.Text = "chart1";
             // 
@@ -1153,7 +1155,7 @@
             this.tableLayoutPanelDataAndARAS.Controls.Add(this.tableLayoutPanel7, 0, 0);
             this.tableLayoutPanelDataAndARAS.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanelDataAndARAS.Location = new System.Drawing.Point(246, 532);
-            this.tableLayoutPanelDataAndARAS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanelDataAndARAS.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanelDataAndARAS.Name = "tableLayoutPanelDataAndARAS";
             this.tableLayoutPanelDataAndARAS.RowCount = 2;
             this.tableLayoutPanelDataAndARAS.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 41.96429F));
@@ -1186,7 +1188,7 @@
             this.takimNo,
             this.tasiyiciInisHizi});
             this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
@@ -1305,8 +1307,8 @@
             // tableLayoutPanel7
             // 
             this.tableLayoutPanel7.ColumnCount = 2;
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.61434F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.38566F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.71252F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.28748F));
             this.tableLayoutPanel7.Controls.Add(this.tableLayoutPanel9, 1, 0);
             this.tableLayoutPanel7.Controls.Add(this.gmap, 0, 0);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1321,20 +1323,19 @@
             // tableLayoutPanel9
             // 
             this.tableLayoutPanel9.ColumnCount = 1;
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 900F));
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 18F));
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel11, 0, 2);
             this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel10, 0, 0);
             this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel8, 0, 1);
             this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel9.Location = new System.Drawing.Point(927, 2);
-            this.tableLayoutPanel9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(969, 0);
+            this.tableLayoutPanel9.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 3;
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 51.88679F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 48.11321F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 46F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(524, 121);
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 41.09589F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 58.90411F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(485, 125);
             this.tableLayoutPanel9.TabIndex = 69;
             // 
             // tableLayoutPanel11
@@ -1351,13 +1352,13 @@
             this.tableLayoutPanel11.Controls.Add(this.buttonHKA1, 0, 0);
             this.tableLayoutPanel11.Controls.Add(this.buttonHKA2, 0, 0);
             this.tableLayoutPanel11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel11.Location = new System.Drawing.Point(4, 78);
-            this.tableLayoutPanel11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel11.Location = new System.Drawing.Point(0, 75);
+            this.tableLayoutPanel11.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel11.Name = "tableLayoutPanel11";
             this.tableLayoutPanel11.RowCount = 1;
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
-            this.tableLayoutPanel11.Size = new System.Drawing.Size(892, 39);
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel11.Size = new System.Drawing.Size(485, 50);
             this.tableLayoutPanel11.TabIndex = 38;
             // 
             // buttonHKA4
@@ -1367,10 +1368,10 @@
             this.buttonHKA4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonHKA4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.buttonHKA4.ForeColor = System.Drawing.Color.YellowGreen;
-            this.buttonHKA4.Location = new System.Drawing.Point(538, 4);
-            this.buttonHKA4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonHKA4.Location = new System.Drawing.Point(295, 4);
+            this.buttonHKA4.Margin = new System.Windows.Forms.Padding(4);
             this.buttonHKA4.Name = "buttonHKA4";
-            this.buttonHKA4.Size = new System.Drawing.Size(170, 31);
+            this.buttonHKA4.Size = new System.Drawing.Size(89, 42);
             this.buttonHKA4.TabIndex = 74;
             this.buttonHKA4.Text = "Görev yükü konum verisi alınma durumu";
             this.buttonHKA4.UseVisualStyleBackColor = false;
@@ -1382,10 +1383,10 @@
             this.buttonHKA5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonHKA5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.buttonHKA5.ForeColor = System.Drawing.Color.YellowGreen;
-            this.buttonHKA5.Location = new System.Drawing.Point(716, 4);
-            this.buttonHKA5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonHKA5.Location = new System.Drawing.Point(392, 4);
+            this.buttonHKA5.Margin = new System.Windows.Forms.Padding(4);
             this.buttonHKA5.Name = "buttonHKA5";
-            this.buttonHKA5.Size = new System.Drawing.Size(172, 31);
+            this.buttonHKA5.Size = new System.Drawing.Size(89, 42);
             this.buttonHKA5.TabIndex = 73;
             this.buttonHKA5.Text = " Ayrılmanın gerçekleşme durumu";
             this.buttonHKA5.UseVisualStyleBackColor = false;
@@ -1397,10 +1398,10 @@
             this.buttonHKA3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonHKA3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.buttonHKA3.ForeColor = System.Drawing.Color.YellowGreen;
-            this.buttonHKA3.Location = new System.Drawing.Point(360, 4);
-            this.buttonHKA3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonHKA3.Location = new System.Drawing.Point(198, 4);
+            this.buttonHKA3.Margin = new System.Windows.Forms.Padding(4);
             this.buttonHKA3.Name = "buttonHKA3";
-            this.buttonHKA3.Size = new System.Drawing.Size(170, 31);
+            this.buttonHKA3.Size = new System.Drawing.Size(89, 42);
             this.buttonHKA3.TabIndex = 72;
             this.buttonHKA3.Text = "Taşıyıcı basınç verisi alınma durumu";
             this.buttonHKA3.UseVisualStyleBackColor = false;
@@ -1414,9 +1415,9 @@
             this.buttonHKA1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.buttonHKA1.ForeColor = System.Drawing.Color.YellowGreen;
             this.buttonHKA1.Location = new System.Drawing.Point(4, 4);
-            this.buttonHKA1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonHKA1.Margin = new System.Windows.Forms.Padding(4);
             this.buttonHKA1.Name = "buttonHKA1";
-            this.buttonHKA1.Size = new System.Drawing.Size(170, 31);
+            this.buttonHKA1.Size = new System.Drawing.Size(89, 42);
             this.buttonHKA1.TabIndex = 71;
             this.buttonHKA1.Text = " Taşıyıcı iniş hızı  12-14 m/s  durumu";
             this.buttonHKA1.UseVisualStyleBackColor = false;
@@ -1428,10 +1429,10 @@
             this.buttonHKA2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonHKA2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.buttonHKA2.ForeColor = System.Drawing.Color.YellowGreen;
-            this.buttonHKA2.Location = new System.Drawing.Point(182, 4);
-            this.buttonHKA2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonHKA2.Location = new System.Drawing.Point(101, 4);
+            this.buttonHKA2.Margin = new System.Windows.Forms.Padding(4);
             this.buttonHKA2.Name = "buttonHKA2";
-            this.buttonHKA2.Size = new System.Drawing.Size(170, 31);
+            this.buttonHKA2.Size = new System.Drawing.Size(89, 42);
             this.buttonHKA2.TabIndex = 70;
             this.buttonHKA2.Text = "Görev yükü iniş hızı 6-8 m/s durumu";
             this.buttonHKA2.UseVisualStyleBackColor = false;
@@ -1439,9 +1440,9 @@
             // tableLayoutPanel10
             // 
             this.tableLayoutPanel10.ColumnCount = 5;
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.21973F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.34978F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.29596F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel10.Controls.Add(this.button18, 0, 0);
@@ -1450,12 +1451,12 @@
             this.tableLayoutPanel10.Controls.Add(this.button21, 0, 0);
             this.tableLayoutPanel10.Controls.Add(this.button22, 0, 0);
             this.tableLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel10.Location = new System.Drawing.Point(4, 4);
-            this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel10.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
             this.tableLayoutPanel10.RowCount = 1;
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel10.Size = new System.Drawing.Size(892, 30);
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(485, 31);
             this.tableLayoutPanel10.TabIndex = 37;
             // 
             // button18
@@ -1465,10 +1466,10 @@
             this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button18.ForeColor = System.Drawing.Color.Black;
-            this.button18.Location = new System.Drawing.Point(538, 4);
-            this.button18.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button18.Location = new System.Drawing.Point(291, 0);
+            this.button18.Margin = new System.Windows.Forms.Padding(0);
             this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(170, 22);
+            this.button18.Size = new System.Drawing.Size(97, 31);
             this.button18.TabIndex = 69;
             this.button18.Text = "4";
             this.button18.UseVisualStyleBackColor = false;
@@ -1480,10 +1481,10 @@
             this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button19.ForeColor = System.Drawing.Color.Black;
-            this.button19.Location = new System.Drawing.Point(716, 4);
-            this.button19.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button19.Location = new System.Drawing.Point(388, 0);
+            this.button19.Margin = new System.Windows.Forms.Padding(0);
             this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(172, 22);
+            this.button19.Size = new System.Drawing.Size(97, 31);
             this.button19.TabIndex = 68;
             this.button19.Text = "5";
             this.button19.UseVisualStyleBackColor = false;
@@ -1495,10 +1496,10 @@
             this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button20.ForeColor = System.Drawing.Color.Black;
-            this.button20.Location = new System.Drawing.Point(241, 4);
-            this.button20.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button20.Location = new System.Drawing.Point(194, 0);
+            this.button20.Margin = new System.Windows.Forms.Padding(0);
             this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(289, 22);
+            this.button20.Size = new System.Drawing.Size(97, 31);
             this.button20.TabIndex = 67;
             this.button20.Text = "3";
             this.button20.UseVisualStyleBackColor = false;
@@ -1510,10 +1511,10 @@
             this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button21.ForeColor = System.Drawing.Color.Black;
-            this.button21.Location = new System.Drawing.Point(4, 4);
-            this.button21.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button21.Location = new System.Drawing.Point(0, 0);
+            this.button21.Margin = new System.Windows.Forms.Padding(0);
             this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(101, 22);
+            this.button21.Size = new System.Drawing.Size(97, 31);
             this.button21.TabIndex = 66;
             this.button21.Text = "1";
             this.button21.UseVisualStyleBackColor = false;
@@ -1525,10 +1526,10 @@
             this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button22.ForeColor = System.Drawing.Color.Black;
-            this.button22.Location = new System.Drawing.Point(113, 4);
-            this.button22.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button22.Location = new System.Drawing.Point(97, 0);
+            this.button22.Margin = new System.Windows.Forms.Padding(0);
             this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(120, 22);
+            this.button22.Size = new System.Drawing.Size(97, 31);
             this.button22.TabIndex = 65;
             this.button22.Text = "2";
             this.button22.UseVisualStyleBackColor = false;
@@ -1536,9 +1537,9 @@
             // tableLayoutPanel8
             // 
             this.tableLayoutPanel8.ColumnCount = 5;
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.55605F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.46188F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.84753F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel8.Controls.Add(this.buttonHKR4, 0, 0);
@@ -1547,12 +1548,12 @@
             this.tableLayoutPanel8.Controls.Add(this.buttonHKR1, 0, 0);
             this.tableLayoutPanel8.Controls.Add(this.buttonHKR2, 0, 0);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(4, 42);
-            this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(0, 31);
+            this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 1;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(892, 28);
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(485, 44);
             this.tableLayoutPanel8.TabIndex = 37;
             // 
             // buttonHKR4
@@ -1562,12 +1563,11 @@
             this.buttonHKR4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonHKR4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.buttonHKR4.ForeColor = System.Drawing.Color.Black;
-            this.buttonHKR4.Location = new System.Drawing.Point(538, 4);
-            this.buttonHKR4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonHKR4.Location = new System.Drawing.Point(291, 0);
+            this.buttonHKR4.Margin = new System.Windows.Forms.Padding(0);
             this.buttonHKR4.Name = "buttonHKR4";
-            this.buttonHKR4.Size = new System.Drawing.Size(170, 20);
+            this.buttonHKR4.Size = new System.Drawing.Size(97, 44);
             this.buttonHKR4.TabIndex = 64;
-            this.buttonHKR4.Text = "0";
             this.buttonHKR4.UseVisualStyleBackColor = false;
             // 
             // buttonHKR5
@@ -1577,12 +1577,11 @@
             this.buttonHKR5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonHKR5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.buttonHKR5.ForeColor = System.Drawing.Color.Black;
-            this.buttonHKR5.Location = new System.Drawing.Point(716, 4);
-            this.buttonHKR5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonHKR5.Location = new System.Drawing.Point(388, 0);
+            this.buttonHKR5.Margin = new System.Windows.Forms.Padding(0);
             this.buttonHKR5.Name = "buttonHKR5";
-            this.buttonHKR5.Size = new System.Drawing.Size(172, 20);
+            this.buttonHKR5.Size = new System.Drawing.Size(97, 44);
             this.buttonHKR5.TabIndex = 63;
-            this.buttonHKR5.Text = "0";
             this.buttonHKR5.UseVisualStyleBackColor = false;
             // 
             // buttonHKR3
@@ -1592,12 +1591,11 @@
             this.buttonHKR3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonHKR3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.buttonHKR3.ForeColor = System.Drawing.Color.Black;
-            this.buttonHKR3.Location = new System.Drawing.Point(245, 4);
-            this.buttonHKR3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonHKR3.Location = new System.Drawing.Point(194, 0);
+            this.buttonHKR3.Margin = new System.Windows.Forms.Padding(0);
             this.buttonHKR3.Name = "buttonHKR3";
-            this.buttonHKR3.Size = new System.Drawing.Size(285, 20);
+            this.buttonHKR3.Size = new System.Drawing.Size(97, 44);
             this.buttonHKR3.TabIndex = 62;
-            this.buttonHKR3.Text = "0";
             this.buttonHKR3.UseVisualStyleBackColor = false;
             // 
             // buttonHKR1
@@ -1607,12 +1605,11 @@
             this.buttonHKR1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonHKR1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.buttonHKR1.ForeColor = System.Drawing.Color.Black;
-            this.buttonHKR1.Location = new System.Drawing.Point(4, 4);
-            this.buttonHKR1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonHKR1.Location = new System.Drawing.Point(0, 0);
+            this.buttonHKR1.Margin = new System.Windows.Forms.Padding(0);
             this.buttonHKR1.Name = "buttonHKR1";
-            this.buttonHKR1.Size = new System.Drawing.Size(104, 20);
+            this.buttonHKR1.Size = new System.Drawing.Size(97, 44);
             this.buttonHKR1.TabIndex = 61;
-            this.buttonHKR1.Text = "0";
             this.buttonHKR1.UseVisualStyleBackColor = false;
             // 
             // buttonHKR2
@@ -1622,12 +1619,11 @@
             this.buttonHKR2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonHKR2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.buttonHKR2.ForeColor = System.Drawing.Color.Black;
-            this.buttonHKR2.Location = new System.Drawing.Point(116, 4);
-            this.buttonHKR2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonHKR2.Location = new System.Drawing.Point(97, 0);
+            this.buttonHKR2.Margin = new System.Windows.Forms.Padding(0);
             this.buttonHKR2.Name = "buttonHKR2";
-            this.buttonHKR2.Size = new System.Drawing.Size(121, 20);
+            this.buttonHKR2.Size = new System.Drawing.Size(97, 44);
             this.buttonHKR2.TabIndex = 60;
-            this.buttonHKR2.Text = "0";
             this.buttonHKR2.UseVisualStyleBackColor = false;
             // 
             // gmap
@@ -1654,7 +1650,7 @@
             this.gmap.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
             this.gmap.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
             this.gmap.ShowTileGridLines = false;
-            this.gmap.Size = new System.Drawing.Size(918, 121);
+            this.gmap.Size = new System.Drawing.Size(963, 121);
             this.gmap.TabIndex = 70;
             this.gmap.Zoom = 0D;
             // 
@@ -1668,7 +1664,7 @@
             this.tableLayoutPanelSolkisim.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanelSolkisim.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tableLayoutPanelSolkisim.Location = new System.Drawing.Point(4, 4);
-            this.tableLayoutPanelSolkisim.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanelSolkisim.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanelSolkisim.Name = "tableLayoutPanelSolkisim";
             this.tableLayoutPanelSolkisim.RowCount = 3;
             this.tableLayoutPanelSolkisim.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.97455F));
@@ -1690,7 +1686,7 @@
             this.tableLayoutPanelSerial.Controls.Add(this.comboBoxPortName, 1, 0);
             this.tableLayoutPanelSerial.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanelSerial.Location = new System.Drawing.Point(4, 4);
-            this.tableLayoutPanelSerial.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanelSerial.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanelSerial.Name = "tableLayoutPanelSerial";
             this.tableLayoutPanelSerial.RowCount = 3;
             this.tableLayoutPanelSerial.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 21.66667F));
@@ -1706,7 +1702,7 @@
             this.buttonBuzzer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonBuzzer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.buttonBuzzer.Location = new System.Drawing.Point(96, 59);
-            this.buttonBuzzer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonBuzzer.Margin = new System.Windows.Forms.Padding(4);
             this.buttonBuzzer.Name = "buttonBuzzer";
             this.buttonBuzzer.Size = new System.Drawing.Size(126, 32);
             this.buttonBuzzer.TabIndex = 61;
@@ -1720,11 +1716,11 @@
             this.buttonManuelAyril.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonManuelAyril.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.buttonManuelAyril.Location = new System.Drawing.Point(96, 24);
-            this.buttonManuelAyril.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonManuelAyril.Margin = new System.Windows.Forms.Padding(4);
             this.buttonManuelAyril.Name = "buttonManuelAyril";
             this.buttonManuelAyril.Size = new System.Drawing.Size(126, 27);
             this.buttonManuelAyril.TabIndex = 62;
-            this.buttonManuelAyril.Text = "Manuel Ayıl";
+            this.buttonManuelAyril.Text = "Manuel Ayrılma";
             this.buttonManuelAyril.UseVisualStyleBackColor = true;
             this.buttonManuelAyril.Click += new System.EventHandler(this.buttonManuelAyril_Click);
             // 
@@ -1734,7 +1730,7 @@
             this.buttonYer2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonYer2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.buttonYer2.Location = new System.Drawing.Point(4, 59);
-            this.buttonYer2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonYer2.Margin = new System.Windows.Forms.Padding(4);
             this.buttonYer2.Name = "buttonYer2";
             this.buttonYer2.Size = new System.Drawing.Size(84, 32);
             this.buttonYer2.TabIndex = 67;
@@ -1748,7 +1744,7 @@
             this.buttonSerialPortBaglanti.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSerialPortBaglanti.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.buttonSerialPortBaglanti.Location = new System.Drawing.Point(4, 24);
-            this.buttonSerialPortBaglanti.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonSerialPortBaglanti.Margin = new System.Windows.Forms.Padding(4);
             this.buttonSerialPortBaglanti.Name = "buttonSerialPortBaglanti";
             this.buttonSerialPortBaglanti.Size = new System.Drawing.Size(84, 27);
             this.buttonSerialPortBaglanti.TabIndex = 58;
@@ -1796,7 +1792,7 @@
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tableLayoutPanel2.Location = new System.Drawing.Point(4, 107);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 4;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.2F));
@@ -1814,7 +1810,7 @@
             this.buttonCsvTemizle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.buttonCsvTemizle.ForeColor = System.Drawing.Color.OliveDrab;
             this.buttonCsvTemizle.Location = new System.Drawing.Point(4, 4);
-            this.buttonCsvTemizle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonCsvTemizle.Margin = new System.Windows.Forms.Padding(4);
             this.buttonCsvTemizle.Name = "buttonCsvTemizle";
             this.buttonCsvTemizle.Size = new System.Drawing.Size(218, 30);
             this.buttonCsvTemizle.TabIndex = 68;
@@ -1827,7 +1823,7 @@
             this.progressBar1.BackColor = System.Drawing.Color.MediumPurple;
             this.progressBar1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.progressBar1.Location = new System.Drawing.Point(4, 86);
-            this.progressBar1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.progressBar1.Margin = new System.Windows.Forms.Padding(4);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(218, 18);
             this.progressBar1.TabIndex = 55;
@@ -1843,11 +1839,11 @@
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tableLayoutPanel3.Location = new System.Drawing.Point(4, 42);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 43F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(218, 36);
             this.tableLayoutPanel3.TabIndex = 57;
             // 
@@ -1858,7 +1854,7 @@
             this.buttonCsvKaydet.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.buttonCsvKaydet.ForeColor = System.Drawing.Color.OliveDrab;
             this.buttonCsvKaydet.Location = new System.Drawing.Point(4, 4);
-            this.buttonCsvKaydet.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonCsvKaydet.Margin = new System.Windows.Forms.Padding(4);
             this.buttonCsvKaydet.Name = "buttonCsvKaydet";
             this.buttonCsvKaydet.Size = new System.Drawing.Size(101, 28);
             this.buttonCsvKaydet.TabIndex = 59;
@@ -1873,7 +1869,7 @@
             this.buttonCsvDurdur.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.buttonCsvDurdur.ForeColor = System.Drawing.Color.OliveDrab;
             this.buttonCsvDurdur.Location = new System.Drawing.Point(113, 4);
-            this.buttonCsvDurdur.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonCsvDurdur.Margin = new System.Windows.Forms.Padding(4);
             this.buttonCsvDurdur.Name = "buttonCsvDurdur";
             this.buttonCsvDurdur.Size = new System.Drawing.Size(101, 28);
             this.buttonCsvDurdur.TabIndex = 60;
@@ -1890,7 +1886,7 @@
             this.tableLayoutPanel12.Controls.Add(this.btnDosyaSec, 0, 0);
             this.tableLayoutPanel12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel12.Location = new System.Drawing.Point(4, 112);
-            this.tableLayoutPanel12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel12.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel12.Name = "tableLayoutPanel12";
             this.tableLayoutPanel12.RowCount = 1;
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -1906,7 +1902,7 @@
             this.button28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.button28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.button28.Location = new System.Drawing.Point(113, 4);
-            this.button28.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button28.Margin = new System.Windows.Forms.Padding(4);
             this.button28.Name = "button28";
             this.button28.Size = new System.Drawing.Size(101, 40);
             this.button28.TabIndex = 73;
@@ -1920,7 +1916,7 @@
             this.btnDosyaSec.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDosyaSec.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnDosyaSec.Location = new System.Drawing.Point(4, 4);
-            this.btnDosyaSec.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDosyaSec.Margin = new System.Windows.Forms.Padding(4);
             this.btnDosyaSec.Name = "btnDosyaSec";
             this.btnDosyaSec.Size = new System.Drawing.Size(101, 40);
             this.btnDosyaSec.TabIndex = 57;
@@ -1935,7 +1931,7 @@
             this.tableLayoutPanel4.Controls.Add(this.glControl1, 0, 1);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(4, 279);
-            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.71758F));
@@ -1951,11 +1947,11 @@
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel5, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(4, 4);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42.55319F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 85F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 71F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(218, 71);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
@@ -1970,7 +1966,7 @@
             this.tableLayoutPanel5.Controls.Add(this.button29, 0, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(4, 4);
-            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -1984,7 +1980,7 @@
             this.button31.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button31.ForeColor = System.Drawing.Color.Chartreuse;
             this.button31.Location = new System.Drawing.Point(144, 4);
-            this.button31.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button31.Margin = new System.Windows.Forms.Padding(4);
             this.button31.Name = "button31";
             this.button31.Size = new System.Drawing.Size(62, 55);
             this.button31.TabIndex = 68;
@@ -1998,7 +1994,7 @@
             this.button30.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button30.ForeColor = System.Drawing.Color.LightGreen;
             this.button30.Location = new System.Drawing.Point(74, 4);
-            this.button30.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button30.Margin = new System.Windows.Forms.Padding(4);
             this.button30.Name = "button30";
             this.button30.Size = new System.Drawing.Size(62, 55);
             this.button30.TabIndex = 67;
@@ -2012,7 +2008,7 @@
             this.button29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button29.ForeColor = System.Drawing.Color.LimeGreen;
             this.button29.Location = new System.Drawing.Point(4, 4);
-            this.button29.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button29.Margin = new System.Windows.Forms.Padding(4);
             this.button29.Name = "button29";
             this.button29.Size = new System.Drawing.Size(62, 55);
             this.button29.TabIndex = 66;
@@ -2041,11 +2037,11 @@
             this.tableLayoutPanelSolAltKisim.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanelSolAltKisim.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tableLayoutPanelSolAltKisim.Location = new System.Drawing.Point(4, 532);
-            this.tableLayoutPanelSolAltKisim.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanelSolAltKisim.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanelSolAltKisim.Name = "tableLayoutPanelSolAltKisim";
             this.tableLayoutPanelSolAltKisim.RowCount = 2;
-            this.tableLayoutPanelSolAltKisim.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 62.94643F));
-            this.tableLayoutPanelSolAltKisim.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 37.05357F));
+            this.tableLayoutPanelSolAltKisim.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 72.4026F));
+            this.tableLayoutPanelSolAltKisim.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 27.5974F));
             this.tableLayoutPanelSolAltKisim.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
             this.tableLayoutPanelSolAltKisim.Size = new System.Drawing.Size(234, 308);
             this.tableLayoutPanelSolAltKisim.TabIndex = 3;
@@ -2056,12 +2052,13 @@
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 18F));
             this.tableLayoutPanel6.Controls.Add(this.tableLayoutPanel13, 0, 0);
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(4, 197);
-            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(4, 226);
+            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 1;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(226, 107);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(226, 78);
             this.tableLayoutPanel6.TabIndex = 1;
             // 
             // tableLayoutPanel13
@@ -2078,10 +2075,10 @@
             this.tableLayoutPanel13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel13.Name = "tableLayoutPanel13";
             this.tableLayoutPanel13.RowCount = 2;
-            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 51.35135F));
+            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 48.64865F));
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
-            this.tableLayoutPanel13.Size = new System.Drawing.Size(220, 103);
+            this.tableLayoutPanel13.Size = new System.Drawing.Size(220, 74);
             this.tableLayoutPanel13.TabIndex = 0;
             // 
             // buttonOpenFile
@@ -2089,12 +2086,12 @@
             this.buttonOpenFile.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonOpenFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonOpenFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.buttonOpenFile.Location = new System.Drawing.Point(114, 55);
-            this.buttonOpenFile.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonOpenFile.Location = new System.Drawing.Point(114, 42);
+            this.buttonOpenFile.Margin = new System.Windows.Forms.Padding(4);
             this.buttonOpenFile.Name = "buttonOpenFile";
-            this.buttonOpenFile.Size = new System.Drawing.Size(102, 44);
+            this.buttonOpenFile.Size = new System.Drawing.Size(102, 28);
             this.buttonOpenFile.TabIndex = 69;
-            this.buttonOpenFile.Text = "Dosyayı aç";
+            this.buttonOpenFile.Text = "DOSYAYI AÇ";
             this.buttonOpenFile.UseVisualStyleBackColor = true;
             this.buttonOpenFile.Click += new System.EventHandler(this.buttonOpenFile_Click);
             // 
@@ -2103,12 +2100,12 @@
             this.buttonRecStop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonRecStop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonRecStop.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.buttonRecStop.Location = new System.Drawing.Point(4, 55);
-            this.buttonRecStop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonRecStop.Location = new System.Drawing.Point(4, 42);
+            this.buttonRecStop.Margin = new System.Windows.Forms.Padding(4);
             this.buttonRecStop.Name = "buttonRecStop";
-            this.buttonRecStop.Size = new System.Drawing.Size(102, 44);
+            this.buttonRecStop.Size = new System.Drawing.Size(102, 28);
             this.buttonRecStop.TabIndex = 67;
-            this.buttonRecStop.Text = "Kamerayı durdur";
+            this.buttonRecStop.Text = "DURDUR";
             this.buttonRecStop.UseVisualStyleBackColor = true;
             this.buttonRecStop.Click += new System.EventHandler(this.buttonRecStop_Click);
             // 
@@ -2118,11 +2115,11 @@
             this.buttonRecSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonRecSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.buttonRecSave.Location = new System.Drawing.Point(114, 4);
-            this.buttonRecSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonRecSave.Margin = new System.Windows.Forms.Padding(4);
             this.buttonRecSave.Name = "buttonRecSave";
-            this.buttonRecSave.Size = new System.Drawing.Size(102, 43);
+            this.buttonRecSave.Size = new System.Drawing.Size(102, 30);
             this.buttonRecSave.TabIndex = 68;
-            this.buttonRecSave.Text = "Kayıt et";
+            this.buttonRecSave.Text = "KAYDET";
             this.buttonRecSave.UseVisualStyleBackColor = true;
             this.buttonRecSave.Click += new System.EventHandler(this.buttonRecSave_Click_1);
             // 
@@ -2132,11 +2129,11 @@
             this.buttonRecStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonRecStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.buttonRecStart.Location = new System.Drawing.Point(4, 4);
-            this.buttonRecStart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonRecStart.Margin = new System.Windows.Forms.Padding(4);
             this.buttonRecStart.Name = "buttonRecStart";
-            this.buttonRecStart.Size = new System.Drawing.Size(102, 43);
+            this.buttonRecStart.Size = new System.Drawing.Size(102, 30);
             this.buttonRecStart.TabIndex = 66;
-            this.buttonRecStart.Text = "Kameraya bağlan";
+            this.buttonRecStart.Text = "BAĞLAN";
             this.buttonRecStart.UseVisualStyleBackColor = true;
             this.buttonRecStart.Click += new System.EventHandler(this.buttonRecStart_Click_1);
             // 
@@ -2146,7 +2143,7 @@
             this.videoSourcePlayer1.Location = new System.Drawing.Point(3, 2);
             this.videoSourcePlayer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.videoSourcePlayer1.Name = "videoSourcePlayer1";
-            this.videoSourcePlayer1.Size = new System.Drawing.Size(228, 189);
+            this.videoSourcePlayer1.Size = new System.Drawing.Size(228, 218);
             this.videoSourcePlayer1.TabIndex = 2;
             this.videoSourcePlayer1.Text = "videoSourcePlayer1";
             this.videoSourcePlayer1.VideoSource = null;
