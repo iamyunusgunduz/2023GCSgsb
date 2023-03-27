@@ -21,6 +21,8 @@ using GMap.NET.MapProviders;
 using GMap.NET;
 using GMap.NET.WindowsForms;
 using GMap.NET.WindowsForms.Markers;
+using System.IO;
+using System.Net;
 
 namespace _2023MUYGCS
 {
@@ -35,7 +37,7 @@ namespace _2023MUYGCS
         public static string title;
         static SerialPort _serialPort;
         Thread readThread = new Thread(Read);
-
+        public string ftpStatus = "%0";
         int x = 0, y = 0, z = 0;
         bool cx = false, cy = false, cz = false;
         datas ds1 = new datas(); datas ds2 = new datas(); datas ds3 = new datas();
@@ -65,6 +67,8 @@ namespace _2023MUYGCS
             datalar.Add(ds1);
             datalar.Add(ds2);
             datalar.Add(ds3);
+
+            backgroundWorker1.WorkerSupportsCancellation = true;
         }
         void hesapla(float x, float y, float z, float radius, datas data)
         {
@@ -776,6 +780,131 @@ namespace _2023MUYGCS
                     FileWriter.WriteVideoFrame(video);
 
                     buttonRecStop.Text = "Kaydı durdur";
+                }
+            }
+        }
+        struct FtpSetting
+        {
+            public string Server { get; set; }
+            public string Username { get; set; }
+            public string Password { get; set; }
+            public string FileName { get; set; }
+            public string FullName { get; set; }
+        }
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        {
+            string fileName = ((FtpSetting)e.Argument).FileName;
+            string fullName = ((FtpSetting)e.Argument).FullName;
+            string userName = ((FtpSetting)e.Argument).Username;
+            string password = ((FtpSetting)e.Argument).Password;
+            string server = ((FtpSetting)e.Argument).Server;
+            FtpWebRequest request = (FtpWebRequest)WebRequest.Create(new Uri(string.Format("{0}/{1}", server, fileName)));
+            request.Method = WebRequestMethods.Ftp.UploadFile;
+            request.Credentials = new NetworkCredential(userName, password);
+            try
+            {
+                Stream ftpStream = request.GetRequestStream();
+                FileStream fs = File.OpenRead(fullName);
+                byte[] buffer = new byte[1024];
+                double total = (double)fs.Length;
+                int byteRead = 0;
+                double read = 0;
+                do
+                {
+                    if (!backgroundWorker1.CancellationPending)
+                    {
+                        //Upload file & update process bar
+
+                        byteRead = fs.Read(buffer, 0, 1024);
+                        ftpStream.Write(buffer, 0, byteRead);
+                        read += (double)byteRead;
+                        double percentage = read / total * 100;
+                        backgroundWorker1.ReportProgress((int)percentage);
+                    }
+
+
+                }
+                while (byteRead != 0);
+                fs.Close();
+                ftpStream.Close();
+            }
+            catch (Exception hata)
+            {
+
+
+
+                ftpStatus = "Bağlanamadı";
+                Console.WriteLine("Ftp Status" + ftpStatus);
+
+
+                if (backgroundWorker1.WorkerSupportsCancellation == true)
+                {
+                    /* Eğer backgroundWorker1 için durdurulabilme özelliği de aktifse ki başta aktif ettim, butona
+                     bastığımda backgroundWorker'in durdurulmasını istedim. Yanlış anlaşılmasın burada işlemi durdurmadım sadece
+                     durdurulmasını istedim */
+                    backgroundWorker1.CancelAsync();
+                }
+                BackgroundWorker worker = sender as BackgroundWorker;
+                if (worker.CancellationPending == true)
+                {
+                    // Eğer yapılan işlemi durdumak için istek gönderildiyse, DoWork olayını durdur ve döngüden çık.
+                    e.Cancel = true;
+
+                }
+
+                //if (backgroundWorker1.IsBusy != true)
+                //{
+
+                //}
+
+                //if (lblStatus.Text == "Bağlanamadı")
+                //{
+                //    if (progressBar1.Value > 0 || progressBar1.Value < 100)
+                //    {
+                //        MessageBox.Show("Test");
+                //    }
+                //}
+
+
+            }
+        }
+        FtpSetting _inputParameter;
+        private void backgroundWorker1_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        {
+
+            ftpStatus = $"Yüklenen {e.ProgressPercentage} %";
+            Console.WriteLine("Ftp Status"+ftpStatus);
+            progressBar1.Value = e.ProgressPercentage;
+            progressBar1.Update();
+        }
+
+        private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            if (ftpStatus != "Bağlanamadı")
+            {
+                ftpStatus = "yükleme tamamlandı";
+                if (ftpStatus == "yükleme tamamlandı")
+                {
+                    
+                }
+
+            }
+        }
+
+        private void btnDosyaSec_Click(object sender, EventArgs e)
+        {
+
+            using (OpenFileDialog ofd = new OpenFileDialog() { Multiselect = true, ValidateNames = true, Filter = "All files|*.*" })
+            {
+                if (ofd.ShowDialog() == DialogResult.OK)
+                {
+                    FileInfo fi = new FileInfo(ofd.FileName);
+                    _inputParameter.Username = "wildbite@yunusgunduz.site";
+                    _inputParameter.Password = "108484Yg.//";
+                    _inputParameter.Server = "ftp://mt-sauron-da.guzelhosting.com:21";
+                    _inputParameter.FileName = fi.Name;
+                    _inputParameter.FullName = fi.FullName;
+                    backgroundWorker1.RunWorkerAsync(_inputParameter);
                 }
             }
         }
