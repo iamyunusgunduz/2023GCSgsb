@@ -885,7 +885,8 @@ namespace _2023MUYGCS
                 ftpStatus = "yükleme tamamlandı";
                 if (ftpStatus == "yükleme tamamlandı")
                 {
-                    
+                   
+                    Console.WriteLine("Ftp Status" + ftpStatus);
                 }
 
             }
