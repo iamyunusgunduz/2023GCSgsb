@@ -179,13 +179,13 @@
             this.buttonRecStop = new System.Windows.Forms.Button();
             this.buttonRecSave = new System.Windows.Forms.Button();
             this.buttonRecStart = new System.Windows.Forms.Button();
+            this.videoSourcePlayer1 = new AForge.Controls.VideoSourcePlayer();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.timerKamera = new System.Windows.Forms.Timer(this.components);
             this.timerXYZ = new System.Windows.Forms.Timer(this.components);
             this.Zamanlayici = new System.Windows.Forms.Timer(this.components);
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.videoSourcePlayer1 = new AForge.Controls.VideoSourcePlayer();
             this.tableLayoutPanelMain.SuspendLayout();
             this.tableLayoutPanelChartTelemetri.SuspendLayout();
             this.tableLayoutPanelTelemetri.SuspendLayout();
@@ -2119,7 +2119,7 @@
             this.buttonRecStop.Name = "buttonRecStop";
             this.buttonRecStop.Size = new System.Drawing.Size(117, 35);
             this.buttonRecStop.TabIndex = 67;
-            this.buttonRecStop.Text = "DURDUR";
+            this.buttonRecStop.Text = "Kamerayı durdur";
             this.buttonRecStop.UseVisualStyleBackColor = true;
             this.buttonRecStop.Click += new System.EventHandler(this.buttonRecStop_Click);
             // 
@@ -2133,9 +2133,9 @@
             this.buttonRecSave.Name = "buttonRecSave";
             this.buttonRecSave.Size = new System.Drawing.Size(117, 37);
             this.buttonRecSave.TabIndex = 68;
-            this.buttonRecSave.Text = "KAYDET";
+            this.buttonRecSave.Text = "Kayıt et";
             this.buttonRecSave.UseVisualStyleBackColor = true;
-            this.buttonRecSave.Click += new System.EventHandler(this.buttonRecSave_Click_1);
+            this.buttonRecSave.Click += new System.EventHandler(this.buttonRecSave_Click);
             // 
             // buttonRecStart
             // 
@@ -2147,9 +2147,20 @@
             this.buttonRecStart.Name = "buttonRecStart";
             this.buttonRecStart.Size = new System.Drawing.Size(117, 37);
             this.buttonRecStart.TabIndex = 66;
-            this.buttonRecStart.Text = "BAĞLAN";
+            this.buttonRecStart.Text = "Kameraya bağlan";
             this.buttonRecStart.UseVisualStyleBackColor = true;
-            this.buttonRecStart.Click += new System.EventHandler(this.buttonRecStart_Click_1);
+            this.buttonRecStart.Click += new System.EventHandler(this.buttonRecStart_Click);
+            // 
+            // videoSourcePlayer1
+            // 
+            this.videoSourcePlayer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.videoSourcePlayer1.Location = new System.Drawing.Point(3, 2);
+            this.videoSourcePlayer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.videoSourcePlayer1.Name = "videoSourcePlayer1";
+            this.videoSourcePlayer1.Size = new System.Drawing.Size(258, 274);
+            this.videoSourcePlayer1.TabIndex = 2;
+            this.videoSourcePlayer1.Text = "videoSourcePlayer1";
+            this.videoSourcePlayer1.VideoSource = null;
             // 
             // timer1
             // 
@@ -2181,17 +2192,6 @@
             this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
             this.backgroundWorker1.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker1_ProgressChanged);
             this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker1_RunWorkerCompleted);
-            // 
-            // videoSourcePlayer1
-            // 
-            this.videoSourcePlayer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.videoSourcePlayer1.Location = new System.Drawing.Point(3, 2);
-            this.videoSourcePlayer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.videoSourcePlayer1.Name = "videoSourcePlayer1";
-            this.videoSourcePlayer1.Size = new System.Drawing.Size(258, 274);
-            this.videoSourcePlayer1.TabIndex = 2;
-            this.videoSourcePlayer1.Text = "videoSourcePlayer1";
-            this.videoSourcePlayer1.VideoSource = null;
             // 
             // Form1
             // 

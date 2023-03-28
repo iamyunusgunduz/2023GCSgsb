@@ -41,7 +41,7 @@ namespace _2023MUYGCS
         int x = 0, y = 0, z = 0;
         bool cx = false, cy = false, cz = false;
         datas ds1 = new datas(); datas ds2 = new datas(); datas ds3 = new datas();
-        Color renk1 = Color.Blue, renk2 = Color.Red;
+        Color renk1 = Color.Black, renk2 = Color.Black;
 
         public Form1()
         {
@@ -58,7 +58,7 @@ namespace _2023MUYGCS
             VideoCaptureDevices = new FilterInfoCollection(FilterCategory.VideoInputDevice);
             captureDevice = new VideoCaptureDeviceForm();
 
-            GL.ClearColor(Color.White);//Color.FromArgb(143, 212, 150)
+            GL.ClearColor(Color.FromArgb(152, 180, 209));//Color.FromArgb(152, 180, 209)
             timerXYZ.Interval = 1;
             hesapla(x, z, y, 4, ds1);
             hesapla(x, z, y, 1.5f, ds2);
@@ -96,7 +96,7 @@ namespace _2023MUYGCS
         void Koni(float x, float y1, float y2, float z, datas dsp1, datas dsp2)
         {
             GL.Begin(PrimitiveType.Triangles);
-            GL.Color4(Color.Red);
+            GL.Color4(Color.Black); //red
 
             for (int i = 0; i < 360; i++)
             {
@@ -366,9 +366,9 @@ namespace _2023MUYGCS
 
 
 
-
         void FinalVideo_NewFrame(object sender, NewFrameEventArgs eventArgs)
         {
+            Console.WriteLine("Debug:  FinalVideo_NewFrame girdi ");
             if (buttonRecStop.Text == "Kaydı durdur")
             {
 
@@ -385,8 +385,6 @@ namespace _2023MUYGCS
 
             }
         }
-
-
 
 
         string fileNamesHowDialog = "yunusVıdeo";
@@ -666,32 +664,11 @@ namespace _2023MUYGCS
             }
         }
 
-        private void buttonRecStart_Click(object sender, EventArgs e)
-        {
+       
 
-        }
+      
 
-        private void buttonRecSave_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void buttonRecStart_Click_1(object sender, EventArgs e)
-        {
-            captureDevice = new VideoCaptureDeviceForm();
-            buttonRecStop.Enabled = true;
-            if (captureDevice.ShowDialog(this) == DialogResult.OK)
-            {
-                // create video source
-                FinalVideo = captureDevice.VideoDevice;
-
-                // open it
-                OpenVideoSource(FinalVideo);
-                FinalVideo.NewFrame += new NewFrameEventHandler(FinalVideo_NewFrame);
-                FinalVideo.Start();
-            }
-        }
-
+        
         private void Zamanlayici_Tick(object sender, EventArgs e)
         {
             try
@@ -740,25 +717,25 @@ namespace _2023MUYGCS
             float radius = 10, angle = 45.0f;
             GL.Begin(BeginMode.Quads);
 
-            GL.Color3(renk2);
+            GL.Color3(Color.DarkRed);
             GL.Vertex3(uzunluk, yukseklik, kalinlik);
             GL.Vertex3(uzunluk, yukseklik + egiklik, -kalinlik);
             GL.Vertex3(0, yukseklik + egiklik, -kalinlik);
             GL.Vertex3(0, yukseklik, kalinlik);
 
-            GL.Color3(renk2);
+            GL.Color3(Color.DarkRed);
             GL.Vertex3(-uzunluk, yukseklik + egiklik, kalinlik);
             GL.Vertex3(-uzunluk, yukseklik, -kalinlik);
             GL.Vertex3(0, yukseklik, -kalinlik);
             GL.Vertex3(0, yukseklik + egiklik, kalinlik);
 
-            GL.Color3(renk1);
+            GL.Color3(Color.White);
             GL.Vertex3(kalinlik, yukseklik, -uzunluk);
             GL.Vertex3(-kalinlik, yukseklik + egiklik, -uzunluk);
             GL.Vertex3(-kalinlik, yukseklik + egiklik, 0.0);//+
             GL.Vertex3(kalinlik, yukseklik, 0.0);//-
 
-            GL.Color3(renk1);
+            GL.Color3(Color.White);
             GL.Vertex3(kalinlik, yukseklik + egiklik, +uzunluk);
             GL.Vertex3(-kalinlik, yukseklik, +uzunluk);
             GL.Vertex3(-kalinlik, yukseklik, 0.0);
@@ -766,23 +743,7 @@ namespace _2023MUYGCS
             GL.End();
 
         }
-        private void buttonRecSave_Click_1(object sender, EventArgs e)
-        {
-            if (buttonRecStop.Text == "Kamerayı durdur")
-            {
-                saveAvi = new SaveFileDialog();
-                saveAvi.Filter = "Avi Files (*.avi)|*.avi";
-                if (saveAvi.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-                {
-                    int h = captureDevice.VideoDevice.VideoResolution.FrameSize.Height;
-                    int w = captureDevice.VideoDevice.VideoResolution.FrameSize.Width;
-                    FileWriter.Open(saveAvi.FileName, w, h, 25, VideoCodec.Default, 5000000);
-                    FileWriter.WriteVideoFrame(video);
-
-                    buttonRecStop.Text = "Kaydı durdur";
-                }
-            }
-        }
+        
         struct FtpSetting
         {
             public string Server { get; set; }
@@ -878,38 +839,36 @@ namespace _2023MUYGCS
             progressBar1.Update();
         }
 
-        private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        private void buttonRecStart_Click(object sender, EventArgs e)
         {
-            if (ftpStatus != "Bağlanamadı")
+            captureDevice = new VideoCaptureDeviceForm();
+           
+            if (captureDevice.ShowDialog(this) == DialogResult.OK)
             {
-                ftpStatus = "yükleme tamamlandı";
-                if (ftpStatus == "yükleme tamamlandı")
-                {
-                    if (_serialPort.IsOpen)
-                    {
-                        Console.WriteLine("SerialWrite v");
-                        _serialPort.Write("v");
-                    }
-                    Console.WriteLine("Ftp Status" + ftpStatus);
-                }
+                // create video source
+                FinalVideo = captureDevice.VideoDevice;
 
+                // open it
+                OpenVideoSource(FinalVideo);
+                FinalVideo.NewFrame += new NewFrameEventHandler(FinalVideo_NewFrame);
+                FinalVideo.Start();
             }
         }
 
-        private void btnDosyaSec_Click(object sender, EventArgs e)
+        private void buttonRecSave_Click(object sender, EventArgs e)
         {
-
-            using (OpenFileDialog ofd = new OpenFileDialog() { Multiselect = true, ValidateNames = true, Filter = "All files|*.*" })
+            if (buttonRecStop.Text == "Kamerayı durdur")
             {
-                if (ofd.ShowDialog() == DialogResult.OK)
+                saveAvi = new SaveFileDialog();
+                saveAvi.Filter = "Avi Files (*.avi)|*.avi";
+                if (saveAvi.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 {
-                    FileInfo fi = new FileInfo(ofd.FileName);
-                    _inputParameter.Username = "huma";
-                    _inputParameter.Password = "00000000";
-                    _inputParameter.Server = "ftp://192.168.4.3:88";
-                    _inputParameter.FileName = fi.Name;
-                    _inputParameter.FullName = fi.FullName;
-                    backgroundWorker1.RunWorkerAsync(_inputParameter);
+                    int h = captureDevice.VideoDevice.VideoResolution.FrameSize.Height;
+                    int w = captureDevice.VideoDevice.VideoResolution.FrameSize.Width;
+                    FileWriter.Open(saveAvi.FileName, w, h, 25, VideoCodec.Default, 5000000);
+                    FileWriter.WriteVideoFrame(video);
+
+                    buttonRecStop.Text = "Kaydı durdur";
                 }
             }
         }
@@ -950,6 +909,45 @@ namespace _2023MUYGCS
                 OpenVideoSource(fileSource);
             }
         }
+
+        private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            if (ftpStatus != "Bağlanamadı")
+            {
+                ftpStatus = "yükleme tamamlandı";
+                if (ftpStatus == "yükleme tamamlandı")
+                {
+                    if (_serialPort.IsOpen)
+                    {
+                        Console.WriteLine("SerialWrite v");
+                        _serialPort.Write("v");
+                    }
+                    Console.WriteLine("Ftp Status" + ftpStatus);
+                }
+
+            }
+        }
+
+        private void btnDosyaSec_Click(object sender, EventArgs e)
+        {
+
+            using (OpenFileDialog ofd = new OpenFileDialog() { Multiselect = true, ValidateNames = true, Filter = "All files|*.*" })
+            {
+                if (ofd.ShowDialog() == DialogResult.OK)
+                {
+                    FileInfo fi = new FileInfo(ofd.FileName);
+                    _inputParameter.Username = "huma";
+                    _inputParameter.Password = "00000000";
+                    _inputParameter.Server = "ftp://192.168.4.3:88";
+                    _inputParameter.FileName = fi.Name;
+                    _inputParameter.FullName = fi.FullName;
+                    backgroundWorker1.RunWorkerAsync(_inputParameter);
+                }
+            }
+        }
+
+       
+      
 
         private void timerXYZ_Tick(object sender, EventArgs e)
         {
@@ -1013,7 +1011,7 @@ namespace _2023MUYGCS
             Koni(0, +5, +9, 0, ds3, ds3);
 
             Pervane(9.0f, 7.0f, 0.3f, 0.3f);
-            Pervane(7.0f, 7.0f, 0.3f, 0.3f);
+           // Pervane(7.0f, 7.0f, 0.3f, 0.3f);
 
             //Çizim Fonksiyonları
 
@@ -1030,9 +1028,9 @@ namespace _2023MUYGCS
             GL.Vertex3(0, 0, -1000);
             GL.Vertex3(0, 0, 1000);
 
-            GL.Color3(Color.FromArgb(0, 0, 0));
-            GL.Vertex3(0, 1000, 0);
-            GL.Vertex3(0, -1000, 0);
+          //  GL.Color3(Color.FromArgb(0, 0, 0));
+           // GL.Vertex3(0, 1000, 0);
+           // GL.Vertex3(0, -1000, 0);
 
             GL.End();
             //GraphicsContext.CurrentContext.VSync = true;
