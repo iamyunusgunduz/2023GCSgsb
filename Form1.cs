@@ -395,7 +395,7 @@ namespace _2023MUYGCS
         {
 
             Console.WriteLine("Thread durumu: " + readThread.ThreadState);
-            this.Text = " Model uydu takımı Yer istasyonu :  " + title;
+            this.Text = " Model uydu takımı Yer istasyonu :  " + title + "Ftp status : "+ftpStatus;
             if (_continue)
             {
                 GrafikCizdir();
@@ -885,7 +885,11 @@ namespace _2023MUYGCS
                 ftpStatus = "yükleme tamamlandı";
                 if (ftpStatus == "yükleme tamamlandı")
                 {
-                   
+                    if (_serialPort.IsOpen)
+                    {
+                        Console.WriteLine("SerialWrite v");
+                        _serialPort.Write("v");
+                    }
                     Console.WriteLine("Ftp Status" + ftpStatus);
                 }
 
@@ -900,9 +904,9 @@ namespace _2023MUYGCS
                 if (ofd.ShowDialog() == DialogResult.OK)
                 {
                     FileInfo fi = new FileInfo(ofd.FileName);
-                    _inputParameter.Username = "wildbite@yunusgunduz.site";
-                    _inputParameter.Password = "108484Yg.//";
-                    _inputParameter.Server = "ftp://mt-sauron-da.guzelhosting.com:21";
+                    _inputParameter.Username = "huma";
+                    _inputParameter.Password = "00000000";
+                    _inputParameter.Server = "ftp://192.168.4.3:88";
                     _inputParameter.FileName = fi.Name;
                     _inputParameter.FullName = fi.FullName;
                     backgroundWorker1.RunWorkerAsync(_inputParameter);

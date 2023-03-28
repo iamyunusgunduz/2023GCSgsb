@@ -179,13 +179,13 @@
             this.buttonRecStop = new System.Windows.Forms.Button();
             this.buttonRecSave = new System.Windows.Forms.Button();
             this.buttonRecStart = new System.Windows.Forms.Button();
-            this.videoSourcePlayer1 = new AForge.Controls.VideoSourcePlayer();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.timerKamera = new System.Windows.Forms.Timer(this.components);
             this.timerXYZ = new System.Windows.Forms.Timer(this.components);
             this.Zamanlayici = new System.Windows.Forms.Timer(this.components);
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.videoSourcePlayer1 = new AForge.Controls.VideoSourcePlayer();
             this.tableLayoutPanelMain.SuspendLayout();
             this.tableLayoutPanelChartTelemetri.SuspendLayout();
             this.tableLayoutPanelTelemetri.SuspendLayout();
@@ -227,7 +227,7 @@
             this.tableLayoutPanelMain.Controls.Add(this.tableLayoutPanelSolkisim, 0, 0);
             this.tableLayoutPanelMain.Controls.Add(this.tableLayoutPanelSolAltKisim, 0, 1);
             this.tableLayoutPanelMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanelMain.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.tableLayoutPanelMain.ForeColor = System.Drawing.Color.Black;
             this.tableLayoutPanelMain.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanelMain.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tableLayoutPanelMain.Name = "tableLayoutPanelMain";
@@ -333,7 +333,7 @@
             this.labelTinisHiziText.AutoSize = true;
             this.labelTinisHiziText.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelTinisHiziText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelTinisHiziText.ForeColor = System.Drawing.Color.YellowGreen;
+            this.labelTinisHiziText.ForeColor = System.Drawing.Color.Black;
             this.labelTinisHiziText.Location = new System.Drawing.Point(0, 608);
             this.labelTinisHiziText.Margin = new System.Windows.Forms.Padding(0);
             this.labelTinisHiziText.Name = "labelTinisHiziText";
@@ -346,7 +346,7 @@
             // 
             this.labelTinisHiziVALUE.AutoSize = true;
             this.labelTinisHiziVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelTinisHiziVALUE.ForeColor = System.Drawing.Color.YellowGreen;
+            this.labelTinisHiziVALUE.ForeColor = System.Drawing.Color.Black;
             this.labelTinisHiziVALUE.Location = new System.Drawing.Point(314, 608);
             this.labelTinisHiziVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelTinisHiziVALUE.Name = "labelTinisHiziVALUE";
@@ -359,7 +359,7 @@
             // 
             this.labelTakimNoVALUE.AutoSize = true;
             this.labelTakimNoVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelTakimNoVALUE.ForeColor = System.Drawing.Color.YellowGreen;
+            this.labelTakimNoVALUE.ForeColor = System.Drawing.Color.Black;
             this.labelTakimNoVALUE.Location = new System.Drawing.Point(314, 576);
             this.labelTakimNoVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelTakimNoVALUE.Name = "labelTakimNoVALUE";
@@ -373,7 +373,7 @@
             this.labelTakimNoText.AutoSize = true;
             this.labelTakimNoText.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelTakimNoText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelTakimNoText.ForeColor = System.Drawing.Color.YellowGreen;
+            this.labelTakimNoText.ForeColor = System.Drawing.Color.Black;
             this.labelTakimNoText.Location = new System.Drawing.Point(0, 576);
             this.labelTakimNoText.Margin = new System.Windows.Forms.Padding(0);
             this.labelTakimNoText.Name = "labelTakimNoText";
@@ -386,7 +386,7 @@
             // 
             this.labelYawVALUE.AutoSize = true;
             this.labelYawVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelYawVALUE.ForeColor = System.Drawing.Color.YellowGreen;
+            this.labelYawVALUE.ForeColor = System.Drawing.Color.Black;
             this.labelYawVALUE.Location = new System.Drawing.Point(314, 544);
             this.labelYawVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelYawVALUE.Name = "labelYawVALUE";
@@ -400,7 +400,7 @@
             this.labelYawText.AutoSize = true;
             this.labelYawText.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelYawText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelYawText.ForeColor = System.Drawing.Color.YellowGreen;
+            this.labelYawText.ForeColor = System.Drawing.Color.Black;
             this.labelYawText.Location = new System.Drawing.Point(0, 544);
             this.labelYawText.Margin = new System.Windows.Forms.Padding(0);
             this.labelYawText.Name = "labelYawText";
@@ -413,7 +413,7 @@
             // 
             this.labelRollVALUE.AutoSize = true;
             this.labelRollVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelRollVALUE.ForeColor = System.Drawing.Color.YellowGreen;
+            this.labelRollVALUE.ForeColor = System.Drawing.Color.Black;
             this.labelRollVALUE.Location = new System.Drawing.Point(314, 512);
             this.labelRollVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelRollVALUE.Name = "labelRollVALUE";
@@ -427,7 +427,7 @@
             this.labelRollText.AutoSize = true;
             this.labelRollText.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelRollText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelRollText.ForeColor = System.Drawing.Color.YellowGreen;
+            this.labelRollText.ForeColor = System.Drawing.Color.Black;
             this.labelRollText.Location = new System.Drawing.Point(0, 512);
             this.labelRollText.Margin = new System.Windows.Forms.Padding(0);
             this.labelRollText.Name = "labelRollText";
@@ -440,7 +440,7 @@
             // 
             this.labelPitchVALUE.AutoSize = true;
             this.labelPitchVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelPitchVALUE.ForeColor = System.Drawing.Color.YellowGreen;
+            this.labelPitchVALUE.ForeColor = System.Drawing.Color.Black;
             this.labelPitchVALUE.Location = new System.Drawing.Point(314, 480);
             this.labelPitchVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelPitchVALUE.Name = "labelPitchVALUE";
@@ -454,7 +454,7 @@
             this.labelPitchText.AutoSize = true;
             this.labelPitchText.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelPitchText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelPitchText.ForeColor = System.Drawing.Color.YellowGreen;
+            this.labelPitchText.ForeColor = System.Drawing.Color.Black;
             this.labelPitchText.Location = new System.Drawing.Point(0, 480);
             this.labelPitchText.Margin = new System.Windows.Forms.Padding(0);
             this.labelPitchText.Name = "labelPitchText";
@@ -467,7 +467,7 @@
             // 
             this.labelGps1AltGYVALUE.AutoSize = true;
             this.labelGps1AltGYVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelGps1AltGYVALUE.ForeColor = System.Drawing.Color.YellowGreen;
+            this.labelGps1AltGYVALUE.ForeColor = System.Drawing.Color.Black;
             this.labelGps1AltGYVALUE.Location = new System.Drawing.Point(314, 448);
             this.labelGps1AltGYVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelGps1AltGYVALUE.Name = "labelGps1AltGYVALUE";
@@ -481,7 +481,7 @@
             this.labelGps1AltGYText.AutoSize = true;
             this.labelGps1AltGYText.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelGps1AltGYText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelGps1AltGYText.ForeColor = System.Drawing.Color.YellowGreen;
+            this.labelGps1AltGYText.ForeColor = System.Drawing.Color.Black;
             this.labelGps1AltGYText.Location = new System.Drawing.Point(0, 448);
             this.labelGps1AltGYText.Margin = new System.Windows.Forms.Padding(0);
             this.labelGps1AltGYText.Name = "labelGps1AltGYText";
@@ -494,7 +494,7 @@
             // 
             this.labelGps1LongGYVALUE.AutoSize = true;
             this.labelGps1LongGYVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelGps1LongGYVALUE.ForeColor = System.Drawing.Color.YellowGreen;
+            this.labelGps1LongGYVALUE.ForeColor = System.Drawing.Color.Black;
             this.labelGps1LongGYVALUE.Location = new System.Drawing.Point(314, 416);
             this.labelGps1LongGYVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelGps1LongGYVALUE.Name = "labelGps1LongGYVALUE";
@@ -508,7 +508,7 @@
             this.labelGps1LongGYText.AutoSize = true;
             this.labelGps1LongGYText.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelGps1LongGYText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelGps1LongGYText.ForeColor = System.Drawing.Color.YellowGreen;
+            this.labelGps1LongGYText.ForeColor = System.Drawing.Color.Black;
             this.labelGps1LongGYText.Location = new System.Drawing.Point(0, 416);
             this.labelGps1LongGYText.Margin = new System.Windows.Forms.Padding(0);
             this.labelGps1LongGYText.Name = "labelGps1LongGYText";
@@ -521,7 +521,7 @@
             // 
             this.labelGps1LatGYVALUE.AutoSize = true;
             this.labelGps1LatGYVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelGps1LatGYVALUE.ForeColor = System.Drawing.Color.YellowGreen;
+            this.labelGps1LatGYVALUE.ForeColor = System.Drawing.Color.Black;
             this.labelGps1LatGYVALUE.Location = new System.Drawing.Point(314, 384);
             this.labelGps1LatGYVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelGps1LatGYVALUE.Name = "labelGps1LatGYVALUE";
@@ -535,7 +535,7 @@
             this.labelGps1LatGYText.AutoSize = true;
             this.labelGps1LatGYText.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelGps1LatGYText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelGps1LatGYText.ForeColor = System.Drawing.Color.YellowGreen;
+            this.labelGps1LatGYText.ForeColor = System.Drawing.Color.Black;
             this.labelGps1LatGYText.Location = new System.Drawing.Point(0, 384);
             this.labelGps1LatGYText.Margin = new System.Windows.Forms.Padding(0);
             this.labelGps1LatGYText.Name = "labelGps1LatGYText";
@@ -548,7 +548,7 @@
             // 
             this.labelPilGerilimiVALUE.AutoSize = true;
             this.labelPilGerilimiVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelPilGerilimiVALUE.ForeColor = System.Drawing.Color.YellowGreen;
+            this.labelPilGerilimiVALUE.ForeColor = System.Drawing.Color.Black;
             this.labelPilGerilimiVALUE.Location = new System.Drawing.Point(314, 352);
             this.labelPilGerilimiVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelPilGerilimiVALUE.Name = "labelPilGerilimiVALUE";
@@ -562,7 +562,7 @@
             this.labelPilGerilimiText.AutoSize = true;
             this.labelPilGerilimiText.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelPilGerilimiText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelPilGerilimiText.ForeColor = System.Drawing.Color.YellowGreen;
+            this.labelPilGerilimiText.ForeColor = System.Drawing.Color.Black;
             this.labelPilGerilimiText.Location = new System.Drawing.Point(0, 352);
             this.labelPilGerilimiText.Margin = new System.Windows.Forms.Padding(0);
             this.labelPilGerilimiText.Name = "labelPilGerilimiText";
@@ -575,7 +575,7 @@
             // 
             this.labelSicaklikVALUE.AutoSize = true;
             this.labelSicaklikVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelSicaklikVALUE.ForeColor = System.Drawing.Color.YellowGreen;
+            this.labelSicaklikVALUE.ForeColor = System.Drawing.Color.Black;
             this.labelSicaklikVALUE.Location = new System.Drawing.Point(314, 320);
             this.labelSicaklikVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelSicaklikVALUE.Name = "labelSicaklikVALUE";
@@ -589,7 +589,7 @@
             this.labelSicaklikText.AutoSize = true;
             this.labelSicaklikText.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelSicaklikText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelSicaklikText.ForeColor = System.Drawing.Color.YellowGreen;
+            this.labelSicaklikText.ForeColor = System.Drawing.Color.Black;
             this.labelSicaklikText.Location = new System.Drawing.Point(0, 320);
             this.labelSicaklikText.Margin = new System.Windows.Forms.Padding(0);
             this.labelSicaklikText.Name = "labelSicaklikText";
@@ -602,7 +602,7 @@
             // 
             this.labelGYinisHiziVALUE.AutoSize = true;
             this.labelGYinisHiziVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelGYinisHiziVALUE.ForeColor = System.Drawing.Color.YellowGreen;
+            this.labelGYinisHiziVALUE.ForeColor = System.Drawing.Color.Black;
             this.labelGYinisHiziVALUE.Location = new System.Drawing.Point(314, 288);
             this.labelGYinisHiziVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelGYinisHiziVALUE.Name = "labelGYinisHiziVALUE";
@@ -616,7 +616,7 @@
             this.labelGYinisHiziText.AutoSize = true;
             this.labelGYinisHiziText.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelGYinisHiziText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelGYinisHiziText.ForeColor = System.Drawing.Color.YellowGreen;
+            this.labelGYinisHiziText.ForeColor = System.Drawing.Color.Black;
             this.labelGYinisHiziText.Location = new System.Drawing.Point(0, 288);
             this.labelGYinisHiziText.Margin = new System.Windows.Forms.Padding(0);
             this.labelGYinisHiziText.Name = "labelGYinisHiziText";
@@ -629,7 +629,7 @@
             // 
             this.labelIrtifaFarkiVALUE.AutoSize = true;
             this.labelIrtifaFarkiVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelIrtifaFarkiVALUE.ForeColor = System.Drawing.Color.YellowGreen;
+            this.labelIrtifaFarkiVALUE.ForeColor = System.Drawing.Color.Black;
             this.labelIrtifaFarkiVALUE.Location = new System.Drawing.Point(314, 256);
             this.labelIrtifaFarkiVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelIrtifaFarkiVALUE.Name = "labelIrtifaFarkiVALUE";
@@ -643,7 +643,7 @@
             this.labelIrtifaFarkiText.AutoSize = true;
             this.labelIrtifaFarkiText.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelIrtifaFarkiText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelIrtifaFarkiText.ForeColor = System.Drawing.Color.YellowGreen;
+            this.labelIrtifaFarkiText.ForeColor = System.Drawing.Color.Black;
             this.labelIrtifaFarkiText.Location = new System.Drawing.Point(0, 256);
             this.labelIrtifaFarkiText.Margin = new System.Windows.Forms.Padding(0);
             this.labelIrtifaFarkiText.Name = "labelIrtifaFarkiText";
@@ -656,7 +656,7 @@
             // 
             this.labelYukseklik2TVALUE.AutoSize = true;
             this.labelYukseklik2TVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelYukseklik2TVALUE.ForeColor = System.Drawing.Color.YellowGreen;
+            this.labelYukseklik2TVALUE.ForeColor = System.Drawing.Color.Black;
             this.labelYukseklik2TVALUE.Location = new System.Drawing.Point(314, 224);
             this.labelYukseklik2TVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelYukseklik2TVALUE.Name = "labelYukseklik2TVALUE";
@@ -670,7 +670,7 @@
             this.labelYukseklik2TText.AutoSize = true;
             this.labelYukseklik2TText.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelYukseklik2TText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelYukseklik2TText.ForeColor = System.Drawing.Color.YellowGreen;
+            this.labelYukseklik2TText.ForeColor = System.Drawing.Color.Black;
             this.labelYukseklik2TText.Location = new System.Drawing.Point(0, 224);
             this.labelYukseklik2TText.Margin = new System.Windows.Forms.Padding(0);
             this.labelYukseklik2TText.Name = "labelYukseklik2TText";
@@ -683,7 +683,7 @@
             // 
             this.labelYukseklik1GYVALUE.AutoSize = true;
             this.labelYukseklik1GYVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelYukseklik1GYVALUE.ForeColor = System.Drawing.Color.YellowGreen;
+            this.labelYukseklik1GYVALUE.ForeColor = System.Drawing.Color.Black;
             this.labelYukseklik1GYVALUE.Location = new System.Drawing.Point(314, 192);
             this.labelYukseklik1GYVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelYukseklik1GYVALUE.Name = "labelYukseklik1GYVALUE";
@@ -697,7 +697,7 @@
             this.labelYukseklik1GYText.AutoSize = true;
             this.labelYukseklik1GYText.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelYukseklik1GYText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelYukseklik1GYText.ForeColor = System.Drawing.Color.YellowGreen;
+            this.labelYukseklik1GYText.ForeColor = System.Drawing.Color.Black;
             this.labelYukseklik1GYText.Location = new System.Drawing.Point(0, 192);
             this.labelYukseklik1GYText.Margin = new System.Windows.Forms.Padding(0);
             this.labelYukseklik1GYText.Name = "labelYukseklik1GYText";
@@ -710,7 +710,7 @@
             // 
             this.labelBasinc2TVALUE.AutoSize = true;
             this.labelBasinc2TVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelBasinc2TVALUE.ForeColor = System.Drawing.Color.YellowGreen;
+            this.labelBasinc2TVALUE.ForeColor = System.Drawing.Color.Black;
             this.labelBasinc2TVALUE.Location = new System.Drawing.Point(314, 160);
             this.labelBasinc2TVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelBasinc2TVALUE.Name = "labelBasinc2TVALUE";
@@ -724,7 +724,7 @@
             this.labelBasinc2TText.AutoSize = true;
             this.labelBasinc2TText.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelBasinc2TText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelBasinc2TText.ForeColor = System.Drawing.Color.YellowGreen;
+            this.labelBasinc2TText.ForeColor = System.Drawing.Color.Black;
             this.labelBasinc2TText.Location = new System.Drawing.Point(0, 160);
             this.labelBasinc2TText.Margin = new System.Windows.Forms.Padding(0);
             this.labelBasinc2TText.Name = "labelBasinc2TText";
@@ -737,7 +737,7 @@
             // 
             this.labelBasinc1GYVALUE.AutoSize = true;
             this.labelBasinc1GYVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelBasinc1GYVALUE.ForeColor = System.Drawing.Color.YellowGreen;
+            this.labelBasinc1GYVALUE.ForeColor = System.Drawing.Color.Black;
             this.labelBasinc1GYVALUE.Location = new System.Drawing.Point(314, 128);
             this.labelBasinc1GYVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelBasinc1GYVALUE.Name = "labelBasinc1GYVALUE";
@@ -751,7 +751,7 @@
             this.labelBasinc1GYText.AutoSize = true;
             this.labelBasinc1GYText.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelBasinc1GYText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelBasinc1GYText.ForeColor = System.Drawing.Color.YellowGreen;
+            this.labelBasinc1GYText.ForeColor = System.Drawing.Color.Black;
             this.labelBasinc1GYText.Location = new System.Drawing.Point(0, 128);
             this.labelBasinc1GYText.Margin = new System.Windows.Forms.Padding(0);
             this.labelBasinc1GYText.Name = "labelBasinc1GYText";
@@ -764,7 +764,7 @@
             // 
             this.labelGondermeSaatiVALUE.AutoSize = true;
             this.labelGondermeSaatiVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelGondermeSaatiVALUE.ForeColor = System.Drawing.Color.YellowGreen;
+            this.labelGondermeSaatiVALUE.ForeColor = System.Drawing.Color.Black;
             this.labelGondermeSaatiVALUE.Location = new System.Drawing.Point(314, 96);
             this.labelGondermeSaatiVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelGondermeSaatiVALUE.Name = "labelGondermeSaatiVALUE";
@@ -778,7 +778,7 @@
             this.labelGondermeSaatiText.AutoSize = true;
             this.labelGondermeSaatiText.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelGondermeSaatiText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelGondermeSaatiText.ForeColor = System.Drawing.Color.YellowGreen;
+            this.labelGondermeSaatiText.ForeColor = System.Drawing.Color.Black;
             this.labelGondermeSaatiText.Location = new System.Drawing.Point(0, 96);
             this.labelGondermeSaatiText.Margin = new System.Windows.Forms.Padding(0);
             this.labelGondermeSaatiText.Name = "labelGondermeSaatiText";
@@ -791,7 +791,7 @@
             // 
             this.labelHataKoduVALUE.AutoSize = true;
             this.labelHataKoduVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelHataKoduVALUE.ForeColor = System.Drawing.Color.YellowGreen;
+            this.labelHataKoduVALUE.ForeColor = System.Drawing.Color.Black;
             this.labelHataKoduVALUE.Location = new System.Drawing.Point(314, 64);
             this.labelHataKoduVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelHataKoduVALUE.Name = "labelHataKoduVALUE";
@@ -805,7 +805,7 @@
             this.labelHataKoduText.AutoSize = true;
             this.labelHataKoduText.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelHataKoduText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelHataKoduText.ForeColor = System.Drawing.Color.YellowGreen;
+            this.labelHataKoduText.ForeColor = System.Drawing.Color.Black;
             this.labelHataKoduText.Location = new System.Drawing.Point(0, 64);
             this.labelHataKoduText.Margin = new System.Windows.Forms.Padding(0);
             this.labelHataKoduText.Name = "labelHataKoduText";
@@ -818,7 +818,7 @@
             // 
             this.labelUyduStatusuVALUE.AutoSize = true;
             this.labelUyduStatusuVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelUyduStatusuVALUE.ForeColor = System.Drawing.Color.YellowGreen;
+            this.labelUyduStatusuVALUE.ForeColor = System.Drawing.Color.Black;
             this.labelUyduStatusuVALUE.Location = new System.Drawing.Point(314, 32);
             this.labelUyduStatusuVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelUyduStatusuVALUE.Name = "labelUyduStatusuVALUE";
@@ -832,7 +832,7 @@
             this.labelUyduStatusuText.AutoSize = true;
             this.labelUyduStatusuText.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelUyduStatusuText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelUyduStatusuText.ForeColor = System.Drawing.Color.YellowGreen;
+            this.labelUyduStatusuText.ForeColor = System.Drawing.Color.Black;
             this.labelUyduStatusuText.Location = new System.Drawing.Point(0, 32);
             this.labelUyduStatusuText.Margin = new System.Windows.Forms.Padding(0);
             this.labelUyduStatusuText.Name = "labelUyduStatusuText";
@@ -845,7 +845,7 @@
             // 
             this.labelPaketNoVALUE.AutoSize = true;
             this.labelPaketNoVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelPaketNoVALUE.ForeColor = System.Drawing.Color.YellowGreen;
+            this.labelPaketNoVALUE.ForeColor = System.Drawing.Color.Black;
             this.labelPaketNoVALUE.Location = new System.Drawing.Point(314, 0);
             this.labelPaketNoVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelPaketNoVALUE.Name = "labelPaketNoVALUE";
@@ -859,7 +859,7 @@
             this.labelPaketNoText.AutoSize = true;
             this.labelPaketNoText.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelPaketNoText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelPaketNoText.ForeColor = System.Drawing.Color.YellowGreen;
+            this.labelPaketNoText.ForeColor = System.Drawing.Color.Black;
             this.labelPaketNoText.Location = new System.Drawing.Point(0, 0);
             this.labelPaketNoText.Margin = new System.Windows.Forms.Padding(0);
             this.labelPaketNoText.Name = "labelPaketNoText";
@@ -1031,6 +1031,7 @@
             this.labelGraphBasinc1.AutoSize = true;
             this.labelGraphBasinc1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelGraphBasinc1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelGraphBasinc1.ForeColor = System.Drawing.Color.Black;
             this.labelGraphBasinc1.Location = new System.Drawing.Point(4, 0);
             this.labelGraphBasinc1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelGraphBasinc1.Name = "labelGraphBasinc1";
@@ -1044,6 +1045,7 @@
             this.labelGraphBasinc2.AutoSize = true;
             this.labelGraphBasinc2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelGraphBasinc2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelGraphBasinc2.ForeColor = System.Drawing.Color.Black;
             this.labelGraphBasinc2.Location = new System.Drawing.Point(549, 0);
             this.labelGraphBasinc2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelGraphBasinc2.Name = "labelGraphBasinc2";
@@ -1057,6 +1059,7 @@
             this.labelGraphYukseklik2.AutoSize = true;
             this.labelGraphYukseklik2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelGraphYukseklik2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelGraphYukseklik2.ForeColor = System.Drawing.Color.Black;
             this.labelGraphYukseklik2.Location = new System.Drawing.Point(549, 160);
             this.labelGraphYukseklik2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelGraphYukseklik2.Name = "labelGraphYukseklik2";
@@ -1070,6 +1073,7 @@
             this.labelGraphIrtifaFarki.AutoSize = true;
             this.labelGraphIrtifaFarki.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelGraphIrtifaFarki.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelGraphIrtifaFarki.ForeColor = System.Drawing.Color.Black;
             this.labelGraphIrtifaFarki.Location = new System.Drawing.Point(4, 320);
             this.labelGraphIrtifaFarki.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelGraphIrtifaFarki.Name = "labelGraphIrtifaFarki";
@@ -1083,6 +1087,7 @@
             this.labelGraphGYinisHizi.AutoSize = true;
             this.labelGraphGYinisHizi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelGraphGYinisHizi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelGraphGYinisHizi.ForeColor = System.Drawing.Color.Black;
             this.labelGraphGYinisHizi.Location = new System.Drawing.Point(549, 320);
             this.labelGraphGYinisHizi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelGraphGYinisHizi.Name = "labelGraphGYinisHizi";
@@ -1096,6 +1101,7 @@
             this.labelGraphYukseklik1.AutoSize = true;
             this.labelGraphYukseklik1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelGraphYukseklik1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelGraphYukseklik1.ForeColor = System.Drawing.Color.Black;
             this.labelGraphYukseklik1.Location = new System.Drawing.Point(4, 160);
             this.labelGraphYukseklik1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelGraphYukseklik1.Name = "labelGraphYukseklik1";
@@ -1109,6 +1115,7 @@
             this.labelGraphSicaklik.AutoSize = true;
             this.labelGraphSicaklik.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelGraphSicaklik.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelGraphSicaklik.ForeColor = System.Drawing.Color.Black;
             this.labelGraphSicaklik.Location = new System.Drawing.Point(4, 480);
             this.labelGraphSicaklik.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelGraphSicaklik.Name = "labelGraphSicaklik";
@@ -1122,7 +1129,7 @@
             this.labelGraphPilGerilimi.AutoSize = true;
             this.labelGraphPilGerilimi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelGraphPilGerilimi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelGraphPilGerilimi.ForeColor = System.Drawing.Color.YellowGreen;
+            this.labelGraphPilGerilimi.ForeColor = System.Drawing.Color.Black;
             this.labelGraphPilGerilimi.Location = new System.Drawing.Point(549, 480);
             this.labelGraphPilGerilimi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelGraphPilGerilimi.Name = "labelGraphPilGerilimi";
@@ -1364,11 +1371,11 @@
             // 
             // buttonHKA4
             // 
-            this.buttonHKA4.BackColor = System.Drawing.Color.Black;
+            this.buttonHKA4.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonHKA4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonHKA4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonHKA4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.buttonHKA4.ForeColor = System.Drawing.Color.YellowGreen;
+            this.buttonHKA4.ForeColor = System.Drawing.Color.Black;
             this.buttonHKA4.Location = new System.Drawing.Point(331, 5);
             this.buttonHKA4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonHKA4.Name = "buttonHKA4";
@@ -1379,11 +1386,11 @@
             // 
             // buttonHKA5
             // 
-            this.buttonHKA5.BackColor = System.Drawing.Color.Black;
+            this.buttonHKA5.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonHKA5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonHKA5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonHKA5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.buttonHKA5.ForeColor = System.Drawing.Color.YellowGreen;
+            this.buttonHKA5.ForeColor = System.Drawing.Color.Black;
             this.buttonHKA5.Location = new System.Drawing.Point(440, 5);
             this.buttonHKA5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonHKA5.Name = "buttonHKA5";
@@ -1394,11 +1401,11 @@
             // 
             // buttonHKA3
             // 
-            this.buttonHKA3.BackColor = System.Drawing.Color.Black;
+            this.buttonHKA3.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonHKA3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonHKA3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonHKA3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.buttonHKA3.ForeColor = System.Drawing.Color.YellowGreen;
+            this.buttonHKA3.ForeColor = System.Drawing.Color.Black;
             this.buttonHKA3.Location = new System.Drawing.Point(222, 5);
             this.buttonHKA3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonHKA3.Name = "buttonHKA3";
@@ -1410,11 +1417,11 @@
             // buttonHKA1
             // 
             this.buttonHKA1.AutoSize = true;
-            this.buttonHKA1.BackColor = System.Drawing.Color.Black;
+            this.buttonHKA1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonHKA1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonHKA1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonHKA1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.buttonHKA1.ForeColor = System.Drawing.Color.YellowGreen;
+            this.buttonHKA1.ForeColor = System.Drawing.Color.Black;
             this.buttonHKA1.Location = new System.Drawing.Point(4, 5);
             this.buttonHKA1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonHKA1.Name = "buttonHKA1";
@@ -1425,11 +1432,11 @@
             // 
             // buttonHKA2
             // 
-            this.buttonHKA2.BackColor = System.Drawing.Color.Black;
+            this.buttonHKA2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonHKA2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonHKA2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonHKA2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.buttonHKA2.ForeColor = System.Drawing.Color.YellowGreen;
+            this.buttonHKA2.ForeColor = System.Drawing.Color.Black;
             this.buttonHKA2.Location = new System.Drawing.Point(113, 5);
             this.buttonHKA2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonHKA2.Name = "buttonHKA2";
@@ -1702,6 +1709,7 @@
             this.buttonBuzzer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonBuzzer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonBuzzer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.buttonBuzzer.ForeColor = System.Drawing.Color.Black;
             this.buttonBuzzer.Location = new System.Drawing.Point(109, 75);
             this.buttonBuzzer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonBuzzer.Name = "buttonBuzzer";
@@ -1716,6 +1724,7 @@
             this.buttonManuelAyril.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonManuelAyril.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonManuelAyril.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.buttonManuelAyril.ForeColor = System.Drawing.Color.Black;
             this.buttonManuelAyril.Location = new System.Drawing.Point(109, 30);
             this.buttonManuelAyril.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonManuelAyril.Name = "buttonManuelAyril";
@@ -1730,6 +1739,7 @@
             this.buttonYer2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonYer2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonYer2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.buttonYer2.ForeColor = System.Drawing.Color.Black;
             this.buttonYer2.Location = new System.Drawing.Point(4, 75);
             this.buttonYer2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonYer2.Name = "buttonYer2";
@@ -1744,6 +1754,7 @@
             this.buttonSerialPortBaglanti.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonSerialPortBaglanti.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSerialPortBaglanti.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.buttonSerialPortBaglanti.ForeColor = System.Drawing.Color.Black;
             this.buttonSerialPortBaglanti.Location = new System.Drawing.Point(4, 30);
             this.buttonSerialPortBaglanti.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonSerialPortBaglanti.Name = "buttonSerialPortBaglanti";
@@ -1758,6 +1769,7 @@
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(4, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
@@ -1768,7 +1780,7 @@
             // 
             // comboBoxPortName
             // 
-            this.comboBoxPortName.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.comboBoxPortName.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.comboBoxPortName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboBoxPortName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBoxPortName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(162)));
@@ -1897,11 +1909,11 @@
             // button28
             // 
             this.button28.AutoSize = true;
-            this.button28.BackColor = System.Drawing.Color.Black;
+            this.button28.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button28.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button28.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.button28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.button28.ForeColor = System.Drawing.Color.Black;
             this.button28.Location = new System.Drawing.Point(128, 5);
             this.button28.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button28.Name = "button28";
@@ -1980,7 +1992,7 @@
             this.button31.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button31.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button31.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button31.ForeColor = System.Drawing.Color.Chartreuse;
+            this.button31.ForeColor = System.Drawing.Color.Black;
             this.button31.Location = new System.Drawing.Point(164, 5);
             this.button31.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button31.Name = "button31";
@@ -1994,7 +2006,7 @@
             this.button30.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button30.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button30.ForeColor = System.Drawing.Color.LightGreen;
+            this.button30.ForeColor = System.Drawing.Color.Black;
             this.button30.Location = new System.Drawing.Point(84, 5);
             this.button30.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button30.Name = "button30";
@@ -2008,7 +2020,7 @@
             this.button29.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button29.ForeColor = System.Drawing.Color.LimeGreen;
+            this.button29.ForeColor = System.Drawing.Color.Black;
             this.button29.Location = new System.Drawing.Point(4, 5);
             this.button29.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button29.Name = "button29";
@@ -2139,17 +2151,6 @@
             this.buttonRecStart.UseVisualStyleBackColor = true;
             this.buttonRecStart.Click += new System.EventHandler(this.buttonRecStart_Click_1);
             // 
-            // videoSourcePlayer1
-            // 
-            this.videoSourcePlayer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.videoSourcePlayer1.Location = new System.Drawing.Point(3, 2);
-            this.videoSourcePlayer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.videoSourcePlayer1.Name = "videoSourcePlayer1";
-            this.videoSourcePlayer1.Size = new System.Drawing.Size(258, 274);
-            this.videoSourcePlayer1.TabIndex = 2;
-            this.videoSourcePlayer1.Text = "videoSourcePlayer1";
-            this.videoSourcePlayer1.VideoSource = null;
-            // 
             // timer1
             // 
             this.timer1.Enabled = true;
@@ -2181,11 +2182,22 @@
             this.backgroundWorker1.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker1_ProgressChanged);
             this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker1_RunWorkerCompleted);
             // 
+            // videoSourcePlayer1
+            // 
+            this.videoSourcePlayer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.videoSourcePlayer1.Location = new System.Drawing.Point(3, 2);
+            this.videoSourcePlayer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.videoSourcePlayer1.Name = "videoSourcePlayer1";
+            this.videoSourcePlayer1.Size = new System.Drawing.Size(258, 274);
+            this.videoSourcePlayer1.TabIndex = 2;
+            this.videoSourcePlayer1.Text = "videoSourcePlayer1";
+            this.videoSourcePlayer1.VideoSource = null;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
             this.Controls.Add(this.tableLayoutPanelMain);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -2323,7 +2335,6 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart chartBasinc1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel13;
-        private AForge.Controls.VideoSourcePlayer videoSourcePlayer1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Timer timerKamera;
         private System.Windows.Forms.Button buttonOpenFile;
@@ -2376,6 +2387,7 @@
         private System.Windows.Forms.Button buttonHKR2;
         private GMap.NET.WindowsForms.GMapControl gmap;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private AForge.Controls.VideoSourcePlayer videoSourcePlayer1;
     }
 }
 
