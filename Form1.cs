@@ -33,15 +33,17 @@ namespace _2023MUYGCS
         private System.Diagnostics.Stopwatch stopWatch = null;
         static TelemetriVerileriModel telemetri = new TelemetriVerileriModel();
         static bool _continue;
+       public static bool ftpDurumu = false;
         static bool csvVeriKaydedilsinmi = false;
         public static string title;
         static SerialPort _serialPort;
         Thread readThread = new Thread(Read);
         public string ftpStatus = "%0";
+        public string gonderilenKomut = "";
         int x = 0, y = 0, z = 0;
         bool cx = false, cy = false, cz = false;
         datas ds1 = new datas(); datas ds2 = new datas(); datas ds3 = new datas();
-        Color renk1 = Color.Black, renk2 = Color.Black;
+        Color renk1 = Color.Black, renk2 = Color.DarkGray;
 
         public Form1()
         {
@@ -232,6 +234,7 @@ namespace _2023MUYGCS
                             telemetri.yaw = gelenTelemetriVeriDizisi[18];
                             telemetri.takimNo = gelenTelemetriVeriDizisi[19];
                             telemetri.tasiyiciInisHizi = gelenTelemetriVeriDizisi[20];
+                            telemetri.ftpGeldimi = gelenTelemetriVeriDizisi[21];
 
                             if (csvVeriKaydedilsinmi)
                             {
@@ -393,7 +396,25 @@ namespace _2023MUYGCS
         {
 
             Console.WriteLine("Thread durumu: " + readThread.ThreadState);
-            this.Text = " Model uydu takımı Yer istasyonu :  " + title + "Ftp status : "+ftpStatus;
+            this.Text = " Model uydu takımı Yer istasyonu :  " + title + "\t \t { "+gonderilenKomut+" }";
+            gonderilenKomut = "";
+            Console.WriteLine(telemetri.ftpGeldimi);
+            if (ftpStatus == "OK")
+            {
+                if (telemetri.ftpGeldimi.Trim() == "0")
+                {
+                  
+                    button30.ForeColor = Color.Red;
+
+                }
+                else
+                {
+                    button30.ForeColor = Color.Green;
+                }
+
+            }
+           
+            labelFtpStatus.Text = ftpStatus;
             if (_continue)
             {
                 GrafikCizdir();
@@ -593,19 +614,23 @@ namespace _2023MUYGCS
 
         private void buttonManuelAyril_Click(object sender, EventArgs e)
         {
-            _serialPort.Write("A");
-            Console.WriteLine("A");
+            if (_serialPort.IsOpen)
+            {
+                _serialPort.Write("k");
+                Console.WriteLine("Debug: k");
+                gonderilenKomut = "k";
+            }
+          
         }
-
-        private void buttonYer2_Click(object sender, EventArgs e)
-        {
-            Console.WriteLine("Yer2");
-        }
-
+ 
         private void buttonBuzzer_Click(object sender, EventArgs e)
         {
-            _serialPort.Write("B");
-            Console.WriteLine("B");
+            if (_serialPort.IsOpen)
+            {
+                _serialPort.Write("B");
+                Console.WriteLine("Debug: B");
+                gonderilenKomut = "B";
+            }
         }
 
         private void buttonCsvTemizle_Click(object sender, EventArgs e)
@@ -695,21 +720,21 @@ namespace _2023MUYGCS
         private void renk_ataması(int step)
         {
             if (step < 45)
-                GL.Color3(renk2);
+                GL.Color3(Color.White);
             else if (step < 90)
-                GL.Color3(renk1);
+                GL.Color3(Color.Black);
             else if (step < 135)
-                GL.Color3(renk2);
+                GL.Color3(Color.Red);
             else if (step < 180)
-                GL.Color3(renk1);
+                GL.Color3(Color.Yellow);
             else if (step < 225)
-                GL.Color3(renk2);
+                GL.Color3(Color.Orange);
             else if (step < 270)
-                GL.Color3(renk1);
+                GL.Color3(Color.Blue);
             else if (step < 315)
-                GL.Color3(renk2);
+                GL.Color3(Color.Cyan);
             else if (step < 360)
-                GL.Color3(renk1);
+                GL.Color3(Color.Purple);
         }
 
         private void Pervane(float yukseklik, float uzunluk, float kalinlik, float egiklik)
@@ -717,13 +742,16 @@ namespace _2023MUYGCS
             float radius = 10, angle = 45.0f;
             GL.Begin(BeginMode.Quads);
 
-            GL.Color3(Color.DarkRed);
+        
+
+
+            GL.Color3(Color.FromArgb(152, 180, 209));
             GL.Vertex3(uzunluk, yukseklik, kalinlik);
             GL.Vertex3(uzunluk, yukseklik + egiklik, -kalinlik);
             GL.Vertex3(0, yukseklik + egiklik, -kalinlik);
             GL.Vertex3(0, yukseklik, kalinlik);
 
-            GL.Color3(Color.DarkRed);
+            GL.Color3(Color.FromArgb(152, 180, 209));
             GL.Vertex3(-uzunluk, yukseklik + egiklik, kalinlik);
             GL.Vertex3(-uzunluk, yukseklik, -kalinlik);
             GL.Vertex3(0, yukseklik, -kalinlik);
@@ -910,19 +938,39 @@ namespace _2023MUYGCS
             }
         }
 
+        private void buttonKilitle_Click(object sender, EventArgs e)
+        {
+            if (_serialPort.IsOpen)
+            {
+                _serialPort.Write("s");
+                Console.WriteLine("Debug: s");
+                gonderilenKomut = "s";
+            }
+        }
+
+        private void button30_Click(object sender, EventArgs e)
+        {
+            if (_serialPort.IsOpen)
+            {
+                _serialPort.Write("v");
+                Console.WriteLine("Debug: v");
+                gonderilenKomut = "v";
+            }
+        }
+
         private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
             if (ftpStatus != "Bağlanamadı")
             {
-                ftpStatus = "yükleme tamamlandı";
-                if (ftpStatus == "yükleme tamamlandı")
+                ftpStatus = "OK";
+                if (ftpStatus == "OK")
                 {
-                    if (_serialPort.IsOpen)
-                    {
-                        Console.WriteLine("SerialWrite v");
-                        _serialPort.Write("v");
-                    }
+
+                    _serialPort.Write("v");
+                    gonderilenKomut = "v";
+                    Console.WriteLine("Debug: SerialWrite v");
                     Console.WriteLine("Ftp Status" + ftpStatus);
+
                 }
 
             }
@@ -930,15 +978,23 @@ namespace _2023MUYGCS
 
         private void btnDosyaSec_Click(object sender, EventArgs e)
         {
-
-            using (OpenFileDialog ofd = new OpenFileDialog() { Multiselect = true, ValidateNames = true, Filter = "All files|*.*" })
+ 
+           
+            using (OpenFileDialog ofd = new OpenFileDialog() { Multiselect = true, ValidateNames = true, Filter = "All files|*.*"})
             {
+                 
+      
                 if (ofd.ShowDialog() == DialogResult.OK)
                 {
                     FileInfo fi = new FileInfo(ofd.FileName);
-                    _inputParameter.Username = "huma";
-                    _inputParameter.Password = "00000000";
-                    _inputParameter.Server = "ftp://192.168.4.3:88";
+                    /*
+                      _inputParameter.Username = "huma";
+                      _inputParameter.Password = "00000000";
+                      _inputParameter.Server = "ftp://192.168.4.3:88";
+                    */
+                    _inputParameter.Username = "yunusgu2";
+                    _inputParameter.Password = "108484Yg.//";
+                    _inputParameter.Server = "ftp://mt-sauron-da.guzelhosting.com:21";
                     _inputParameter.FileName = fi.Name;
                     _inputParameter.FullName = fi.FullName;
                     backgroundWorker1.RunWorkerAsync(_inputParameter);
@@ -1003,19 +1059,21 @@ namespace _2023MUYGCS
             GL.Rotate(z, 0.0, 1.0, 0.0);
             GL.Rotate(y, 0.0, 0.0, 1.0);
 
-            Koni(0, -5, +3, 0, ds1, ds1);
-            Koni(0, -5, -10, 0, ds1, ds2);
-            kapak(0, -10, 0, Color.Green, ds2);
-            Koni(0, +3, +5, 0, ds1, ds2);
-            kapak(0, +5, 0, Color.Green, ds2);
-            Koni(0, +5, +9, 0, ds3, ds3);
+            Koni(0, -5, +3, 0, ds1, ds1); //  en orta koni
+           // Koni(0, -5, -10, 0, ds1, ds2); // az alt
+           //kapak(0, -10, 0, Color.Green, ds2);
+          //  Koni(0, +3, +5, 0, ds1, ds2);
+          //  kapak(0, +5, 0, Color.Green, ds2);
+           // Koni(0, +5, +9, 0, ds3, ds3);
 
-            Pervane(9.0f, 7.0f, 0.3f, 0.3f);
+
+            //Pervane(Yükseklik,Pervane Uzunluğu,Pervane Genişliği,Pervane açısı)
+              Pervane(-6.0f, 7.0f, 0.3f, 0.3f);
            // Pervane(7.0f, 7.0f, 0.3f, 0.3f);
 
             //Çizim Fonksiyonları
 
-            //Pervane(Yükseklik,Pervane Uzunluğu,Pervane Genişliği,Pervane açısı)
+           
 
             //// AŞAĞIDA X, Y, Z EKSEN CİZGELERİ ÇİZDİRİLİYOR
             GL.Begin(PrimitiveType.Lines);

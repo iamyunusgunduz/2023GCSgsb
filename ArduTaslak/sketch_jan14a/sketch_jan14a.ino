@@ -1,15 +1,21 @@
-void setup() {
-  // put your setup code here, to run once:
-
-Serial.begin(115200);
-}
 int paketNo = 0 ;
 int basinc1 = 100;
 int basinc2 = 50 ;
 String uyduStatu = "1";
-int pitch = 15;
-int roll = 74;
-int yaw = 94 ;
+int pitch = 0;
+int roll = 0;
+int yaw = 0 ;
+int ftpDurum=0;
+long ftpDurumTimer;
+void setup() {
+ 
+
+Serial.begin(115200);
+
+ftpDurumTimer = millis();
+}
+
+
 
 
 void loop() {
@@ -34,12 +40,16 @@ Serial.print("<");Serial.print(pitch);Serial.print(">,");//pitch
 Serial.print("<");Serial.print(roll);Serial.print(">,");//roll
 Serial.print("<");Serial.print(yaw);Serial.print(">,");//yaw
 Serial.print("<1412>,");//takım no
-Serial.println("<3>");//tasiyici inis hizi
+Serial.print("<3>,");//tasiyici inis hizi
+Serial.print("<");Serial.print(ftpDurum);Serial.println(">");//ftpDurum
+if(millis()-ftpDurumTimer>=10000){
+  ftpDurum = 1;
+}
 delay(1000);
-basinc1++;
-pitch++;
-roll++;
-yaw++;
+basinc1 += 5;
+pitch += 5;
+roll += 5;
+yaw += 5;
 if(basinc1%10 == 0){
   uyduStatu = "1?";
 }else{

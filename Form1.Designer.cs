@@ -150,21 +150,22 @@
             this.gmap = new GMap.NET.WindowsForms.GMapControl();
             this.tableLayoutPanelSolkisim = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanelSerial = new System.Windows.Forms.TableLayoutPanel();
-            this.buttonBuzzer = new System.Windows.Forms.Button();
-            this.buttonManuelAyril = new System.Windows.Forms.Button();
-            this.buttonYer2 = new System.Windows.Forms.Button();
+            this.buttonKilitle = new System.Windows.Forms.Button();
             this.buttonSerialPortBaglanti = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBoxPortName = new System.Windows.Forms.ComboBox();
+            this.buttonManuelAyril = new System.Windows.Forms.Button();
+            this.buttonBuzzer = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.buttonCsvTemizle = new System.Windows.Forms.Button();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.buttonCsvKaydet = new System.Windows.Forms.Button();
             this.buttonCsvDurdur = new System.Windows.Forms.Button();
             this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
-            this.button28 = new System.Windows.Forms.Button();
             this.btnDosyaSec = new System.Windows.Forms.Button();
+            this.tableLayoutPanel14 = new System.Windows.Forms.TableLayoutPanel();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.labelFtpStatus = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
@@ -209,6 +210,7 @@
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel12.SuspendLayout();
+            this.tableLayoutPanel14.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
@@ -893,7 +895,7 @@
             this.tableLayoutPanelChart.Location = new System.Drawing.Point(4, 5);
             this.tableLayoutPanelChart.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tableLayoutPanelChart.Name = "tableLayoutPanelChart";
-            this.tableLayoutPanelChart.RowCount = 8;
+            this.tableLayoutPanelChart.RowCount = 9;
             this.tableLayoutPanelChart.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanelChart.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanelChart.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
@@ -911,14 +913,14 @@
             chartArea1.Name = "ChartArea1";
             this.chartPilGerilimi.ChartAreas.Add(chartArea1);
             this.chartPilGerilimi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chartPilGerilimi.Location = new System.Drawing.Point(548, 514);
+            this.chartPilGerilimi.Location = new System.Drawing.Point(548, 488);
             this.chartPilGerilimi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartPilGerilimi.Name = "chartPilGerilimi";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
             series1.Name = "pilGerilimi";
             this.chartPilGerilimi.Series.Add(series1);
-            this.chartPilGerilimi.Size = new System.Drawing.Size(540, 125);
+            this.chartPilGerilimi.Size = new System.Drawing.Size(540, 118);
             this.chartPilGerilimi.TabIndex = 33;
             this.chartPilGerilimi.Text = "chart8";
             // 
@@ -927,7 +929,7 @@
             chartArea2.Name = "ChartArea1";
             this.chartSicaklik.ChartAreas.Add(chartArea2);
             this.chartSicaklik.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chartSicaklik.Location = new System.Drawing.Point(3, 514);
+            this.chartSicaklik.Location = new System.Drawing.Point(3, 488);
             this.chartSicaklik.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartSicaklik.Name = "chartSicaklik";
             this.chartSicaklik.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SemiTransparent;
@@ -935,7 +937,7 @@
             series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
             series2.Name = "sicaklik";
             this.chartSicaklik.Series.Add(series2);
-            this.chartSicaklik.Size = new System.Drawing.Size(539, 125);
+            this.chartSicaklik.Size = new System.Drawing.Size(539, 118);
             this.chartSicaklik.TabIndex = 32;
             this.chartSicaklik.Text = "chart7";
             // 
@@ -944,7 +946,7 @@
             chartArea3.Name = "ChartArea1";
             this.chartInisGizi.ChartAreas.Add(chartArea3);
             this.chartInisGizi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chartInisGizi.Location = new System.Drawing.Point(548, 354);
+            this.chartInisGizi.Location = new System.Drawing.Point(548, 336);
             this.chartInisGizi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartInisGizi.Name = "chartInisGizi";
             this.chartInisGizi.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
@@ -952,7 +954,7 @@
             series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
             series3.Name = "inisHizi";
             this.chartInisGizi.Series.Add(series3);
-            this.chartInisGizi.Size = new System.Drawing.Size(540, 124);
+            this.chartInisGizi.Size = new System.Drawing.Size(540, 118);
             this.chartInisGizi.TabIndex = 31;
             this.chartInisGizi.Text = "chart6";
             // 
@@ -961,7 +963,7 @@
             chartArea4.Name = "ChartArea1";
             this.chartIrtifaFarki.ChartAreas.Add(chartArea4);
             this.chartIrtifaFarki.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chartIrtifaFarki.Location = new System.Drawing.Point(3, 354);
+            this.chartIrtifaFarki.Location = new System.Drawing.Point(3, 336);
             this.chartIrtifaFarki.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartIrtifaFarki.Name = "chartIrtifaFarki";
             this.chartIrtifaFarki.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
@@ -969,7 +971,7 @@
             series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
             series4.Name = "irtifaFarki";
             this.chartIrtifaFarki.Series.Add(series4);
-            this.chartIrtifaFarki.Size = new System.Drawing.Size(539, 124);
+            this.chartIrtifaFarki.Size = new System.Drawing.Size(539, 118);
             this.chartIrtifaFarki.TabIndex = 30;
             this.chartIrtifaFarki.Text = "chart5";
             // 
@@ -980,7 +982,7 @@
             chartArea5.Name = "ChartArea1";
             this.chartYukseklik2.ChartAreas.Add(chartArea5);
             this.chartYukseklik2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chartYukseklik2.Location = new System.Drawing.Point(549, 197);
+            this.chartYukseklik2.Location = new System.Drawing.Point(549, 187);
             this.chartYukseklik2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.chartYukseklik2.Name = "chartYukseklik2";
             this.chartYukseklik2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
@@ -988,7 +990,7 @@
             series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
             series5.Name = "yukseklik2";
             this.chartYukseklik2.Series.Add(series5);
-            this.chartYukseklik2.Size = new System.Drawing.Size(538, 118);
+            this.chartYukseklik2.Size = new System.Drawing.Size(538, 112);
             this.chartYukseklik2.TabIndex = 29;
             this.chartYukseklik2.Text = "chart4";
             // 
@@ -997,7 +999,7 @@
             chartArea6.Name = "ChartArea1";
             this.chartYukseklik1.ChartAreas.Add(chartArea6);
             this.chartYukseklik1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chartYukseklik1.Location = new System.Drawing.Point(4, 197);
+            this.chartYukseklik1.Location = new System.Drawing.Point(4, 187);
             this.chartYukseklik1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.chartYukseklik1.Name = "chartYukseklik1";
             this.chartYukseklik1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
@@ -1005,7 +1007,7 @@
             series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
             series6.Name = "yukseklik1";
             this.chartYukseklik1.Series.Add(series6);
-            this.chartYukseklik1.Size = new System.Drawing.Size(537, 118);
+            this.chartYukseklik1.Size = new System.Drawing.Size(537, 112);
             this.chartYukseklik1.TabIndex = 28;
             this.chartYukseklik1.Text = "chart3";
             // 
@@ -1014,7 +1016,7 @@
             chartArea7.Name = "ChartArea1";
             this.chartBasinc2.ChartAreas.Add(chartArea7);
             this.chartBasinc2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chartBasinc2.Location = new System.Drawing.Point(548, 34);
+            this.chartBasinc2.Location = new System.Drawing.Point(548, 32);
             this.chartBasinc2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartBasinc2.Name = "chartBasinc2";
             this.chartBasinc2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
@@ -1022,7 +1024,7 @@
             series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
             series7.Name = "basinc2";
             this.chartBasinc2.Series.Add(series7);
-            this.chartBasinc2.Size = new System.Drawing.Size(540, 124);
+            this.chartBasinc2.Size = new System.Drawing.Size(540, 118);
             this.chartBasinc2.TabIndex = 27;
             this.chartBasinc2.Text = "chart2";
             // 
@@ -1035,7 +1037,7 @@
             this.labelGraphBasinc1.Location = new System.Drawing.Point(4, 0);
             this.labelGraphBasinc1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelGraphBasinc1.Name = "labelGraphBasinc1";
-            this.labelGraphBasinc1.Size = new System.Drawing.Size(537, 32);
+            this.labelGraphBasinc1.Size = new System.Drawing.Size(537, 30);
             this.labelGraphBasinc1.TabIndex = 1;
             this.labelGraphBasinc1.Text = "BASINÇ-1 (GÖREV YÜKÜ) : 0.0 (Pa)";
             this.labelGraphBasinc1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1049,7 +1051,7 @@
             this.labelGraphBasinc2.Location = new System.Drawing.Point(549, 0);
             this.labelGraphBasinc2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelGraphBasinc2.Name = "labelGraphBasinc2";
-            this.labelGraphBasinc2.Size = new System.Drawing.Size(538, 32);
+            this.labelGraphBasinc2.Size = new System.Drawing.Size(538, 30);
             this.labelGraphBasinc2.TabIndex = 2;
             this.labelGraphBasinc2.Text = "BASINÇ-2 (TAŞIYICI) :  0.0 (Pa)";
             this.labelGraphBasinc2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1060,10 +1062,10 @@
             this.labelGraphYukseklik2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelGraphYukseklik2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelGraphYukseklik2.ForeColor = System.Drawing.Color.Black;
-            this.labelGraphYukseklik2.Location = new System.Drawing.Point(549, 160);
+            this.labelGraphYukseklik2.Location = new System.Drawing.Point(549, 152);
             this.labelGraphYukseklik2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelGraphYukseklik2.Name = "labelGraphYukseklik2";
-            this.labelGraphYukseklik2.Size = new System.Drawing.Size(538, 32);
+            this.labelGraphYukseklik2.Size = new System.Drawing.Size(538, 30);
             this.labelGraphYukseklik2.TabIndex = 5;
             this.labelGraphYukseklik2.Text = "YÜKSEKLİK-2 (TAŞIYICI) : 0.0 (m)";
             this.labelGraphYukseklik2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1074,10 +1076,10 @@
             this.labelGraphIrtifaFarki.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelGraphIrtifaFarki.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelGraphIrtifaFarki.ForeColor = System.Drawing.Color.Black;
-            this.labelGraphIrtifaFarki.Location = new System.Drawing.Point(4, 320);
+            this.labelGraphIrtifaFarki.Location = new System.Drawing.Point(4, 304);
             this.labelGraphIrtifaFarki.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelGraphIrtifaFarki.Name = "labelGraphIrtifaFarki";
-            this.labelGraphIrtifaFarki.Size = new System.Drawing.Size(537, 32);
+            this.labelGraphIrtifaFarki.Size = new System.Drawing.Size(537, 30);
             this.labelGraphIrtifaFarki.TabIndex = 8;
             this.labelGraphIrtifaFarki.Text = "İRTİFA FARKI : 0.0 (m)";
             this.labelGraphIrtifaFarki.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1088,10 +1090,10 @@
             this.labelGraphGYinisHizi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelGraphGYinisHizi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelGraphGYinisHizi.ForeColor = System.Drawing.Color.Black;
-            this.labelGraphGYinisHizi.Location = new System.Drawing.Point(549, 320);
+            this.labelGraphGYinisHizi.Location = new System.Drawing.Point(549, 304);
             this.labelGraphGYinisHizi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelGraphGYinisHizi.Name = "labelGraphGYinisHizi";
-            this.labelGraphGYinisHizi.Size = new System.Drawing.Size(538, 32);
+            this.labelGraphGYinisHizi.Size = new System.Drawing.Size(538, 30);
             this.labelGraphGYinisHizi.TabIndex = 9;
             this.labelGraphGYinisHizi.Text = "GÖREV YÜKÜ İNİŞ HIZI : 0.0 (m/s)";
             this.labelGraphGYinisHizi.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1102,10 +1104,10 @@
             this.labelGraphYukseklik1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelGraphYukseklik1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelGraphYukseklik1.ForeColor = System.Drawing.Color.Black;
-            this.labelGraphYukseklik1.Location = new System.Drawing.Point(4, 160);
+            this.labelGraphYukseklik1.Location = new System.Drawing.Point(4, 152);
             this.labelGraphYukseklik1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelGraphYukseklik1.Name = "labelGraphYukseklik1";
-            this.labelGraphYukseklik1.Size = new System.Drawing.Size(537, 32);
+            this.labelGraphYukseklik1.Size = new System.Drawing.Size(537, 30);
             this.labelGraphYukseklik1.TabIndex = 16;
             this.labelGraphYukseklik1.Text = "YÜKSEKLİK-1 (GÖREV YÜKÜ) : 0.0 (m)";
             this.labelGraphYukseklik1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1116,10 +1118,10 @@
             this.labelGraphSicaklik.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelGraphSicaklik.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelGraphSicaklik.ForeColor = System.Drawing.Color.Black;
-            this.labelGraphSicaklik.Location = new System.Drawing.Point(4, 480);
+            this.labelGraphSicaklik.Location = new System.Drawing.Point(4, 456);
             this.labelGraphSicaklik.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelGraphSicaklik.Name = "labelGraphSicaklik";
-            this.labelGraphSicaklik.Size = new System.Drawing.Size(537, 32);
+            this.labelGraphSicaklik.Size = new System.Drawing.Size(537, 30);
             this.labelGraphSicaklik.TabIndex = 17;
             this.labelGraphSicaklik.Text = "SICAKLIK 0.0 (C°)";
             this.labelGraphSicaklik.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1130,10 +1132,10 @@
             this.labelGraphPilGerilimi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelGraphPilGerilimi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelGraphPilGerilimi.ForeColor = System.Drawing.Color.Black;
-            this.labelGraphPilGerilimi.Location = new System.Drawing.Point(549, 480);
+            this.labelGraphPilGerilimi.Location = new System.Drawing.Point(549, 456);
             this.labelGraphPilGerilimi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelGraphPilGerilimi.Name = "labelGraphPilGerilimi";
-            this.labelGraphPilGerilimi.Size = new System.Drawing.Size(538, 32);
+            this.labelGraphPilGerilimi.Size = new System.Drawing.Size(538, 30);
             this.labelGraphPilGerilimi.TabIndex = 13;
             this.labelGraphPilGerilimi.Text = "PİL GERİLİMİ 0.0 (V)";
             this.labelGraphPilGerilimi.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -1143,7 +1145,7 @@
             chartArea8.Name = "ChartArea1";
             this.chartBasinc1.ChartAreas.Add(chartArea8);
             this.chartBasinc1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chartBasinc1.Location = new System.Drawing.Point(3, 34);
+            this.chartBasinc1.Location = new System.Drawing.Point(3, 32);
             this.chartBasinc1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartBasinc1.Name = "chartBasinc1";
             this.chartBasinc1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
@@ -1151,7 +1153,7 @@
             series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
             series8.Name = "basinc1";
             this.chartBasinc1.Series.Add(series8);
-            this.chartBasinc1.Size = new System.Drawing.Size(539, 124);
+            this.chartBasinc1.Size = new System.Drawing.Size(539, 118);
             this.chartBasinc1.TabIndex = 26;
             this.chartBasinc1.Text = "chart1";
             // 
@@ -1686,12 +1688,12 @@
             this.tableLayoutPanelSerial.ColumnCount = 2;
             this.tableLayoutPanelSerial.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41.12149F));
             this.tableLayoutPanelSerial.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58.87851F));
-            this.tableLayoutPanelSerial.Controls.Add(this.buttonBuzzer, 1, 2);
-            this.tableLayoutPanelSerial.Controls.Add(this.buttonManuelAyril, 1, 1);
-            this.tableLayoutPanelSerial.Controls.Add(this.buttonYer2, 0, 2);
+            this.tableLayoutPanelSerial.Controls.Add(this.buttonKilitle, 0, 2);
             this.tableLayoutPanelSerial.Controls.Add(this.buttonSerialPortBaglanti, 0, 1);
             this.tableLayoutPanelSerial.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanelSerial.Controls.Add(this.comboBoxPortName, 1, 0);
+            this.tableLayoutPanelSerial.Controls.Add(this.buttonManuelAyril, 1, 2);
+            this.tableLayoutPanelSerial.Controls.Add(this.buttonBuzzer, 1, 1);
             this.tableLayoutPanelSerial.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanelSerial.Location = new System.Drawing.Point(4, 5);
             this.tableLayoutPanelSerial.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -1704,50 +1706,20 @@
             this.tableLayoutPanelSerial.Size = new System.Drawing.Size(256, 119);
             this.tableLayoutPanelSerial.TabIndex = 0;
             // 
-            // buttonBuzzer
+            // buttonKilitle
             // 
-            this.buttonBuzzer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonBuzzer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonBuzzer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.buttonBuzzer.ForeColor = System.Drawing.Color.Black;
-            this.buttonBuzzer.Location = new System.Drawing.Point(109, 75);
-            this.buttonBuzzer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.buttonBuzzer.Name = "buttonBuzzer";
-            this.buttonBuzzer.Size = new System.Drawing.Size(143, 39);
-            this.buttonBuzzer.TabIndex = 61;
-            this.buttonBuzzer.Text = "Buzzer";
-            this.buttonBuzzer.UseVisualStyleBackColor = true;
-            this.buttonBuzzer.Click += new System.EventHandler(this.buttonBuzzer_Click);
-            // 
-            // buttonManuelAyril
-            // 
-            this.buttonManuelAyril.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonManuelAyril.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonManuelAyril.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.buttonManuelAyril.ForeColor = System.Drawing.Color.Black;
-            this.buttonManuelAyril.Location = new System.Drawing.Point(109, 30);
-            this.buttonManuelAyril.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.buttonManuelAyril.Name = "buttonManuelAyril";
-            this.buttonManuelAyril.Size = new System.Drawing.Size(143, 35);
-            this.buttonManuelAyril.TabIndex = 62;
-            this.buttonManuelAyril.Text = "Manuel Ayrılma";
-            this.buttonManuelAyril.UseVisualStyleBackColor = true;
-            this.buttonManuelAyril.Click += new System.EventHandler(this.buttonManuelAyril_Click);
-            // 
-            // buttonYer2
-            // 
-            this.buttonYer2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonYer2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonYer2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.buttonYer2.ForeColor = System.Drawing.Color.Black;
-            this.buttonYer2.Location = new System.Drawing.Point(4, 75);
-            this.buttonYer2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.buttonYer2.Name = "buttonYer2";
-            this.buttonYer2.Size = new System.Drawing.Size(97, 39);
-            this.buttonYer2.TabIndex = 67;
-            this.buttonYer2.Text = "Yer2";
-            this.buttonYer2.UseVisualStyleBackColor = true;
-            this.buttonYer2.Click += new System.EventHandler(this.buttonYer2_Click);
+            this.buttonKilitle.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonKilitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonKilitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.buttonKilitle.ForeColor = System.Drawing.Color.Black;
+            this.buttonKilitle.Location = new System.Drawing.Point(4, 75);
+            this.buttonKilitle.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonKilitle.Name = "buttonKilitle";
+            this.buttonKilitle.Size = new System.Drawing.Size(97, 39);
+            this.buttonKilitle.TabIndex = 67;
+            this.buttonKilitle.Text = "Kilitle";
+            this.buttonKilitle.UseVisualStyleBackColor = true;
+            this.buttonKilitle.Click += new System.EventHandler(this.buttonKilitle_Click);
             // 
             // buttonSerialPortBaglanti
             // 
@@ -1784,7 +1756,7 @@
             this.comboBoxPortName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboBoxPortName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBoxPortName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(162)));
-            this.comboBoxPortName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.comboBoxPortName.ForeColor = System.Drawing.Color.Black;
             this.comboBoxPortName.FormattingEnabled = true;
             this.comboBoxPortName.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.comboBoxPortName.Location = new System.Drawing.Point(108, 2);
@@ -1794,14 +1766,44 @@
             this.comboBoxPortName.Size = new System.Drawing.Size(145, 21);
             this.comboBoxPortName.TabIndex = 68;
             // 
+            // buttonManuelAyril
+            // 
+            this.buttonManuelAyril.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonManuelAyril.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonManuelAyril.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.buttonManuelAyril.ForeColor = System.Drawing.Color.Black;
+            this.buttonManuelAyril.Location = new System.Drawing.Point(109, 75);
+            this.buttonManuelAyril.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonManuelAyril.Name = "buttonManuelAyril";
+            this.buttonManuelAyril.Size = new System.Drawing.Size(143, 39);
+            this.buttonManuelAyril.TabIndex = 62;
+            this.buttonManuelAyril.Text = "Ayrılma";
+            this.buttonManuelAyril.UseVisualStyleBackColor = true;
+            this.buttonManuelAyril.Click += new System.EventHandler(this.buttonManuelAyril_Click);
+            // 
+            // buttonBuzzer
+            // 
+            this.buttonBuzzer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonBuzzer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonBuzzer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.buttonBuzzer.ForeColor = System.Drawing.Color.Black;
+            this.buttonBuzzer.Location = new System.Drawing.Point(109, 30);
+            this.buttonBuzzer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonBuzzer.Name = "buttonBuzzer";
+            this.buttonBuzzer.Size = new System.Drawing.Size(143, 35);
+            this.buttonBuzzer.TabIndex = 61;
+            this.buttonBuzzer.Text = "Buzzer";
+            this.buttonBuzzer.UseVisualStyleBackColor = true;
+            this.buttonBuzzer.Click += new System.EventHandler(this.buttonBuzzer_Click);
+            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Controls.Add(this.buttonCsvTemizle, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.progressBar1, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel12, 0, 3);
+            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel14, 0, 2);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tableLayoutPanel2.Location = new System.Drawing.Point(4, 134);
@@ -1831,17 +1833,6 @@
             this.buttonCsvTemizle.UseVisualStyleBackColor = true;
             this.buttonCsvTemizle.Click += new System.EventHandler(this.buttonCsvTemizle_Click);
             // 
-            // progressBar1
-            // 
-            this.progressBar1.BackColor = System.Drawing.Color.MediumPurple;
-            this.progressBar1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.progressBar1.Location = new System.Drawing.Point(4, 107);
-            this.progressBar1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(248, 22);
-            this.progressBar1.TabIndex = 55;
-            this.progressBar1.Value = 20;
-            // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 2;
@@ -1864,7 +1855,7 @@
             // 
             this.buttonCsvKaydet.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonCsvKaydet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCsvKaydet.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.buttonCsvKaydet.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.buttonCsvKaydet.ForeColor = System.Drawing.Color.OliveDrab;
             this.buttonCsvKaydet.Location = new System.Drawing.Point(4, 5);
             this.buttonCsvKaydet.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -1879,7 +1870,7 @@
             // 
             this.buttonCsvDurdur.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonCsvDurdur.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCsvDurdur.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.buttonCsvDurdur.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.buttonCsvDurdur.ForeColor = System.Drawing.Color.OliveDrab;
             this.buttonCsvDurdur.Location = new System.Drawing.Point(128, 5);
             this.buttonCsvDurdur.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -1893,9 +1884,8 @@
             // tableLayoutPanel12
             // 
             this.tableLayoutPanel12.ColumnCount = 2;
-            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel12.Controls.Add(this.button28, 0, 0);
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 84.67742F));
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.32258F));
             this.tableLayoutPanel12.Controls.Add(this.btnDosyaSec, 0, 0);
             this.tableLayoutPanel12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel12.Location = new System.Drawing.Point(4, 139);
@@ -1906,22 +1896,6 @@
             this.tableLayoutPanel12.Size = new System.Drawing.Size(248, 61);
             this.tableLayoutPanel12.TabIndex = 69;
             // 
-            // button28
-            // 
-            this.button28.AutoSize = true;
-            this.button28.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button28.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button28.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.button28.ForeColor = System.Drawing.Color.Black;
-            this.button28.Location = new System.Drawing.Point(128, 5);
-            this.button28.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(116, 51);
-            this.button28.TabIndex = 73;
-            this.button28.Text = "COM4";
-            this.button28.UseVisualStyleBackColor = false;
-            // 
             // btnDosyaSec
             // 
             this.btnDosyaSec.AutoSize = true;
@@ -1931,11 +1905,48 @@
             this.btnDosyaSec.Location = new System.Drawing.Point(4, 5);
             this.btnDosyaSec.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnDosyaSec.Name = "btnDosyaSec";
-            this.btnDosyaSec.Size = new System.Drawing.Size(116, 51);
+            this.btnDosyaSec.Size = new System.Drawing.Size(202, 51);
             this.btnDosyaSec.TabIndex = 57;
             this.btnDosyaSec.Text = "DOSYA SEÇ";
             this.btnDosyaSec.UseVisualStyleBackColor = true;
             this.btnDosyaSec.Click += new System.EventHandler(this.btnDosyaSec_Click);
+            // 
+            // tableLayoutPanel14
+            // 
+            this.tableLayoutPanel14.ColumnCount = 2;
+            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70.8F));
+            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.2F));
+            this.tableLayoutPanel14.Controls.Add(this.progressBar1, 0, 0);
+            this.tableLayoutPanel14.Controls.Add(this.labelFtpStatus, 1, 0);
+            this.tableLayoutPanel14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel14.Location = new System.Drawing.Point(3, 105);
+            this.tableLayoutPanel14.Name = "tableLayoutPanel14";
+            this.tableLayoutPanel14.RowCount = 1;
+            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel14.Size = new System.Drawing.Size(250, 26);
+            this.tableLayoutPanel14.TabIndex = 70;
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.BackColor = System.Drawing.Color.MediumPurple;
+            this.progressBar1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.progressBar1.Location = new System.Drawing.Point(4, 5);
+            this.progressBar1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(169, 16);
+            this.progressBar1.TabIndex = 56;
+            // 
+            // labelFtpStatus
+            // 
+            this.labelFtpStatus.AutoSize = true;
+            this.labelFtpStatus.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelFtpStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelFtpStatus.Location = new System.Drawing.Point(180, 0);
+            this.labelFtpStatus.Name = "labelFtpStatus";
+            this.labelFtpStatus.Size = new System.Drawing.Size(67, 26);
+            this.labelFtpStatus.TabIndex = 57;
+            this.labelFtpStatus.Text = "%0";
+            this.labelFtpStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel4
             // 
@@ -2006,14 +2017,15 @@
             this.button30.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button30.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button30.ForeColor = System.Drawing.Color.Black;
+            this.button30.ForeColor = System.Drawing.Color.DarkRed;
             this.button30.Location = new System.Drawing.Point(84, 5);
             this.button30.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button30.Name = "button30";
             this.button30.Size = new System.Drawing.Size(72, 70);
             this.button30.TabIndex = 67;
-            this.button30.Text = "HARİTA TEMİZLE";
+            this.button30.Text = "ftpTest";
             this.button30.UseVisualStyleBackColor = true;
+            this.button30.Click += new System.EventHandler(this.button30_Click);
             // 
             // button29
             // 
@@ -2235,6 +2247,8 @@
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel12.ResumeLayout(false);
             this.tableLayoutPanel12.PerformLayout();
+            this.tableLayoutPanel14.ResumeLayout(false);
+            this.tableLayoutPanel14.PerformLayout();
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
@@ -2300,7 +2314,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelSolAltKisim;
         private System.Windows.Forms.Button buttonSerialPortBaglanti;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.Button buttonManuelAyril;
@@ -2315,10 +2328,9 @@
         private System.Windows.Forms.Label labelGYinisHiziVALUE;
         private System.Windows.Forms.Label labelGYinisHiziText;
         private System.Windows.Forms.Button buttonCsvTemizle;
-        private System.Windows.Forms.Button buttonYer2;
+        private System.Windows.Forms.Button buttonKilitle;
         private System.Windows.Forms.Label labelGraphPilGerilimi;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel12;
-        private System.Windows.Forms.Button button28;
         private System.Windows.Forms.Button btnDosyaSec;
         private System.Windows.Forms.Button button31;
         private System.Windows.Forms.Button button30;
@@ -2388,6 +2400,9 @@
         private GMap.NET.WindowsForms.GMapControl gmap;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private AForge.Controls.VideoSourcePlayer videoSourcePlayer1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel14;
+        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Label labelFtpStatus;
     }
 }
 

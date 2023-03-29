@@ -39,7 +39,7 @@ namespace _2023MUYGCS.model
         public string yaw = "";
         public string takimNo = "";
         public string tasiyiciInisHizi = "";
-
+        public string ftpGeldimi = "";
 
 
 
