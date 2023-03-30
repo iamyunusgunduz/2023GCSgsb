@@ -627,9 +627,9 @@ namespace _2023MUYGCS
         {
             if (_serialPort.IsOpen)
             {
-                _serialPort.Write("B");
-                Console.WriteLine("Debug: B");
-                gonderilenKomut = "B";
+                _serialPort.Write("b");
+                Console.WriteLine("Debug: b");
+                gonderilenKomut = "b";
             }
         }
 
@@ -987,14 +987,15 @@ namespace _2023MUYGCS
                 if (ofd.ShowDialog() == DialogResult.OK)
                 {
                     FileInfo fi = new FileInfo(ofd.FileName);
-                    /*
+                  
                       _inputParameter.Username = "huma";
                       _inputParameter.Password = "00000000";
                       _inputParameter.Server = "ftp://192.168.4.3:88";
-                    */
-                    _inputParameter.Username = "yunusgu2";
-                    _inputParameter.Password = "108484Yg.//";
-                    _inputParameter.Server = "ftp://mt-sauron-da.guzelhosting.com:21";
+                    /*
+                  _inputParameter.Username = "yunusgu2";
+                  _inputParameter.Password = "108484Yg.//";
+                  _inputParameter.Server = "ftp://mt-sauron-da.guzelhosting.com:21";
+                  */
                     _inputParameter.FileName = fi.Name;
                     _inputParameter.FullName = fi.FullName;
                     backgroundWorker1.RunWorkerAsync(_inputParameter);
