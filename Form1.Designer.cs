@@ -2132,7 +2132,7 @@
             this.buttonRecStop.Name = "buttonRecStop";
             this.buttonRecStop.Size = new System.Drawing.Size(106, 32);
             this.buttonRecStop.TabIndex = 67;
-            this.buttonRecStop.Text = "Kamera durdur";
+            this.buttonRecStop.Text = "Kamerayı durdur";
             this.buttonRecStop.UseVisualStyleBackColor = true;
             this.buttonRecStop.Click += new System.EventHandler(this.buttonRecStop_Click);
             // 
@@ -2146,7 +2146,7 @@
             this.buttonRecSave.Name = "buttonRecSave";
             this.buttonRecSave.Size = new System.Drawing.Size(106, 33);
             this.buttonRecSave.TabIndex = 68;
-            this.buttonRecSave.Text = "Kamera Kaydet";
+            this.buttonRecSave.Text = "Kamerayı Kaydet";
             this.buttonRecSave.UseVisualStyleBackColor = true;
             this.buttonRecSave.Click += new System.EventHandler(this.buttonRecSave_Click);
             // 
