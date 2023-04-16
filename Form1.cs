@@ -29,11 +29,11 @@ namespace _2023MUYGCS
 
     public partial class Form1 : Form
     {
-
+        String tryCatchDurumu = "";
         private System.Diagnostics.Stopwatch stopWatch = null;
         static TelemetriVerileriModel telemetri = new TelemetriVerileriModel();
         static bool _continue;
-       public static bool ftpDurumu = false;
+        public static bool ftpDurumu = false;
         static bool csvVeriKaydedilsinmi = false;
         public static string title;
         static SerialPort _serialPort;
@@ -151,7 +151,7 @@ namespace _2023MUYGCS
                     _serialPort.Open();
                     _continue = true;
                     timer1.Start();
-                    buttonSerialPortBaglanti.ForeColor = Color.Red;
+                    buttonSerialPortBaglanti.ForeColor = Color.DarkRed;
                     buttonSerialPortBaglanti.Text = "Durdur";
                     if (readThread.ThreadState == ThreadState.Stopped)
                     {
@@ -240,6 +240,8 @@ namespace _2023MUYGCS
                             {
                                 try
                                 {
+
+
                                     StringBuilder csvContent = new StringBuilder();
 
                                     csvContent.AppendLine(gelenTelemetriVerisiRemoveKucuktur);
@@ -394,16 +396,24 @@ namespace _2023MUYGCS
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            if (csvVeriKaydedilsinmi)
+            {
+                buttonCsvKaydet.ForeColor = Color.DarkGreen;
 
+            }
+            else
+            {
+                buttonCsvKaydet.ForeColor = Color.DarkRed;
+            }
             Console.WriteLine("Thread durumu: " + readThread.ThreadState);
-            this.Text = " Model uydu takımı Yer istasyonu :  " + title + "\t \t { "+gonderilenKomut+" }";
+            this.Text = " Model uydu takımı Yer istasyonu :  " + title + "\t \t { " + gonderilenKomut + " } \t Debug:" + tryCatchDurumu;
             gonderilenKomut = "";
             Console.WriteLine(telemetri.ftpGeldimi);
             if (ftpStatus == "OK")
             {
                 if (telemetri.ftpGeldimi.Trim() == "0")
                 {
-                  
+
                     button30.ForeColor = Color.Red;
 
                 }
@@ -413,7 +423,7 @@ namespace _2023MUYGCS
                 }
 
             }
-           
+
             labelFtpStatus.Text = ftpStatus;
             if (_continue)
             {
@@ -557,7 +567,7 @@ namespace _2023MUYGCS
 
                     Console.WriteLine("Hata Harita " + err);
                 }
-               
+
                 /*
                 //  GorevYukuMarker
                 GMapMarker GorevYukuMarker = new GMarkerGoogle(
@@ -576,9 +586,9 @@ namespace _2023MUYGCS
                 {
                     try
                     {
-                        
+
                         gmap.Overlays.Remove(markersGorevYuku);
-                      
+
                         gmap.Refresh();
 
                     }
@@ -586,7 +596,7 @@ namespace _2023MUYGCS
                     catch (Exception err)
                     {
 
-                        Console.WriteLine("hATA"+ err);
+                        Console.WriteLine("hATA" + err);
                     }
 
                 }
@@ -620,9 +630,9 @@ namespace _2023MUYGCS
                 Console.WriteLine("Debug: k");
                 gonderilenKomut = "k";
             }
-          
+
         }
- 
+
         private void buttonBuzzer_Click(object sender, EventArgs e)
         {
             if (_serialPort.IsOpen)
@@ -689,21 +699,21 @@ namespace _2023MUYGCS
             }
         }
 
-       
 
-      
 
-        
+
+
+
         private void Zamanlayici_Tick(object sender, EventArgs e)
         {
             try
             {
-          
+
                 x = Convert.ToInt32(telemetri.roll);
                 y = Convert.ToInt32(telemetri.pitch);
                 z = Convert.ToInt32(telemetri.yaw);
                 glControl1.Invalidate();
-               
+
 
             }
             catch
@@ -742,7 +752,7 @@ namespace _2023MUYGCS
             float radius = 10, angle = 45.0f;
             GL.Begin(BeginMode.Quads);
 
-        
+
 
 
             GL.Color3(Color.FromArgb(152, 180, 209));
@@ -771,7 +781,7 @@ namespace _2023MUYGCS
             GL.End();
 
         }
-        
+
         struct FtpSetting
         {
             public string Server { get; set; }
@@ -862,7 +872,7 @@ namespace _2023MUYGCS
         {
 
             ftpStatus = $"Yüklenen {e.ProgressPercentage} %";
-            Console.WriteLine("Ftp Status"+ftpStatus);
+            Console.WriteLine("Ftp Status" + ftpStatus);
             progressBar1.Value = e.ProgressPercentage;
             progressBar1.Update();
         }
@@ -870,7 +880,7 @@ namespace _2023MUYGCS
         private void buttonRecStart_Click(object sender, EventArgs e)
         {
             captureDevice = new VideoCaptureDeviceForm();
-           
+
             if (captureDevice.ShowDialog(this) == DialogResult.OK)
             {
                 // create video source
@@ -888,7 +898,9 @@ namespace _2023MUYGCS
             if (buttonRecStop.Text == "Kamerayı durdur")
             {
                 saveAvi = new SaveFileDialog();
-                saveAvi.Filter = "Avi Files (*.avi)|*.avi";
+                saveAvi.FileName = "MUY2023_243868_VIDEO.mp4";
+                saveAvi.Filter = "MP4 Dosyaları (*.mp4)|*.mp4|Tüm Dosyalar (*.*)|*.*";
+
                 if (saveAvi.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 {
                     int h = captureDevice.VideoDevice.VideoResolution.FrameSize.Height;
@@ -897,6 +909,7 @@ namespace _2023MUYGCS
                     FileWriter.WriteVideoFrame(video);
 
                     buttonRecStop.Text = "Kaydı durdur";
+                    buttonRecSave.ForeColor = Color.DarkGreen;
                 }
             }
         }
@@ -915,6 +928,7 @@ namespace _2023MUYGCS
                     //this.AVIwriter.Close();
 
                 }
+                buttonRecSave.ForeColor = Color.DarkRed;
                 MessageBox.Show("video kaydedildi");
             }
             else
@@ -958,6 +972,20 @@ namespace _2023MUYGCS
             }
         }
 
+        private void buttonGrafikTemizle_Click(object sender, EventArgs e)
+        {
+            foreach (var series in chartBasinc1.Series) series.Points.Clear();
+            foreach (var series in chartBasinc2.Series) series.Points.Clear();
+            foreach (var series in chartInisGizi.Series) series.Points.Clear();
+            foreach (var series in chartIrtifaFarki.Series) series.Points.Clear();
+            foreach (var series in chartPilGerilimi.Series) series.Points.Clear();
+            foreach (var series in chartSicaklik.Series) series.Points.Clear();
+            foreach (var series in chartYukseklik1.Series) series.Points.Clear();
+            foreach (var series in chartYukseklik2.Series) series.Points.Clear();
+
+
+        }
+
         private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
             if (ftpStatus != "Bağlanamadı")
@@ -978,19 +1006,19 @@ namespace _2023MUYGCS
 
         private void btnDosyaSec_Click(object sender, EventArgs e)
         {
- 
-           
-            using (OpenFileDialog ofd = new OpenFileDialog() { Multiselect = true, ValidateNames = true, Filter = "All files|*.*"})
+
+
+            using (OpenFileDialog ofd = new OpenFileDialog() { Multiselect = true, ValidateNames = true, Filter = "All files|*.*" })
             {
-                 
-      
+
+
                 if (ofd.ShowDialog() == DialogResult.OK)
                 {
                     FileInfo fi = new FileInfo(ofd.FileName);
-                  
-                      _inputParameter.Username = "huma";
-                      _inputParameter.Password = "00000000";
-                      _inputParameter.Server = "ftp://192.168.4.3:88";
+
+                    _inputParameter.Username = "huma";
+                    _inputParameter.Password = "00000000";
+                    _inputParameter.Server = "ftp://192.168.4.3:88";
                     /*
                   _inputParameter.Username = "yunusgu2";
                   _inputParameter.Password = "108484Yg.//";
@@ -1003,8 +1031,8 @@ namespace _2023MUYGCS
             }
         }
 
-       
-      
+
+
 
         private void timerXYZ_Tick(object sender, EventArgs e)
         {
@@ -1014,7 +1042,7 @@ namespace _2023MUYGCS
                     x += 5;
                 else
                     x = 0;
-               // lblX.Text = x.ToString();
+                // lblX.Text = x.ToString();
             }
             if (cy == true)
             {
@@ -1022,7 +1050,7 @@ namespace _2023MUYGCS
                     y += 5;
                 else
                     y = 0;
-               // lblY.Text = y.ToString();
+                // lblY.Text = y.ToString();
             }
             if (cz == true)
             {
@@ -1030,7 +1058,7 @@ namespace _2023MUYGCS
                     z += 5;
                 else
                     z = 0;
-              //  lblZ.Text = z.ToString();
+                //  lblZ.Text = z.ToString();
             }
             glControl1.Invalidate();
         }
@@ -1061,20 +1089,20 @@ namespace _2023MUYGCS
             GL.Rotate(y, 0.0, 0.0, 1.0);
 
             Koni(0, -5, +3, 0, ds1, ds1); //  en orta koni
-           // Koni(0, -5, -10, 0, ds1, ds2); // az alt
-           //kapak(0, -10, 0, Color.Green, ds2);
-          //  Koni(0, +3, +5, 0, ds1, ds2);
-          //  kapak(0, +5, 0, Color.Green, ds2);
-           // Koni(0, +5, +9, 0, ds3, ds3);
+                                          // Koni(0, -5, -10, 0, ds1, ds2); // az alt
+                                          //kapak(0, -10, 0, Color.Green, ds2);
+                                          //  Koni(0, +3, +5, 0, ds1, ds2);
+                                          //  kapak(0, +5, 0, Color.Green, ds2);
+                                          // Koni(0, +5, +9, 0, ds3, ds3);
 
 
             //Pervane(Yükseklik,Pervane Uzunluğu,Pervane Genişliği,Pervane açısı)
-              Pervane(-6.0f, 7.0f, 0.3f, 0.3f);
-           // Pervane(7.0f, 7.0f, 0.3f, 0.3f);
+            Pervane(-6.0f, 7.0f, 0.3f, 0.3f);
+            // Pervane(7.0f, 7.0f, 0.3f, 0.3f);
 
             //Çizim Fonksiyonları
 
-           
+
 
             //// AŞAĞIDA X, Y, Z EKSEN CİZGELERİ ÇİZDİRİLİYOR
             GL.Begin(PrimitiveType.Lines);
@@ -1087,9 +1115,9 @@ namespace _2023MUYGCS
             GL.Vertex3(0, 0, -1000);
             GL.Vertex3(0, 0, 1000);
 
-          //  GL.Color3(Color.FromArgb(0, 0, 0));
-           // GL.Vertex3(0, 1000, 0);
-           // GL.Vertex3(0, -1000, 0);
+            //  GL.Color3(Color.FromArgb(0, 0, 0));
+            // GL.Vertex3(0, 1000, 0);
+            // GL.Vertex3(0, -1000, 0);
 
             GL.End();
             //GraphicsContext.CurrentContext.VSync = true;
