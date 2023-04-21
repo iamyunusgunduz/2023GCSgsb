@@ -812,7 +812,7 @@ namespace _2023MUYGCS
                 {
                     if (!backgroundWorker1.CancellationPending)
                     {
-                        //Upload file & update process bar
+                        //Upload file & update  bar
 
                         byteRead = fs.Read(buffer, 0, 1024);
                         ftpStream.Write(buffer, 0, byteRead);
@@ -983,6 +983,19 @@ namespace _2023MUYGCS
             foreach (var series in chartYukseklik1.Series) series.Points.Clear();
             foreach (var series in chartYukseklik2.Series) series.Points.Clear();
 
+
+        }
+
+        private void button31_Click(object sender, EventArgs e)
+        { 
+            
+            Form4 f4 = new Form4(); //this is the change, code for redirect  
+            timer1.Stop();
+           
+            this.Hide();
+            f4.Show();
+           
+          
 
         }
 
