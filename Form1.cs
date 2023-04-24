@@ -22,6 +22,7 @@ using GMap.NET;
 using GMap.NET.WindowsForms;
 using GMap.NET.WindowsForms.Markers;
 using System.IO;
+using System.Net.NetworkInformation;
 using System.Net;
 
 namespace _2023MUYGCS
@@ -71,6 +72,8 @@ namespace _2023MUYGCS
             datalar.Add(ds3);
 
             backgroundWorker1.WorkerSupportsCancellation = true;
+
+            
         }
         void hesapla(float x, float y, float z, float radius, datas data)
         {
@@ -80,6 +83,48 @@ namespace _2023MUYGCS
                 data.array[i, 1] = (float)(y + Math.Sin(i) * radius);
             }
 
+        }
+        static void MyThreadFunction(CancellationToken token)
+        {
+ 
+            while (true)
+            {
+                // token'in Cancel çağrısı yapılırsa thread çalışmasını sonlandır
+                if (token.IsCancellationRequested)
+                {
+                    Console.WriteLine("Thread canceled");
+                    return;
+                }
+
+                Console.WriteLine("Thread is running");
+                string ipAddress = "192.168.1.1"; // ping atılacak IP adresi
+
+                Ping pingSender = new Ping();
+
+                try
+                {
+                    PingReply reply = pingSender.Send(ipAddress, 5000); // Timeout 5000 ms olarak ayarlandı
+
+                    if (reply.Status == IPStatus.Success)
+                    {
+                        Console.WriteLine("--------------------------------Ping başarılı: " + reply.RoundtripTime + " ms");
+                        //buttonFtpBaglantiTest.BackColor = Color.DarkGreen;
+                       // buttonFtpBaglantiTest.Text = "Baglanti var";
+                    }
+                    else
+                    {
+                        Console.WriteLine("--------------------------------------Ping başarısız: " + reply.Status);
+                       // buttonFtpBaglantiTest.BackColor = Color.DarkRed;
+                      //  buttonFtpBaglantiTest.Text = "Baglanti yok";
+                    }
+                }
+                catch (Exception)
+                {
+
+                    throw;
+                }
+                Thread.Sleep(1000);
+            }
         }
         void kapak(float x, float y, float z, Color renk, datas ds)
         {
@@ -498,8 +543,8 @@ namespace _2023MUYGCS
                 if (telemetri.hataKodu.Length == 7)
                 {
                     string boslukSil = telemetri.hataKodu.Trim();
-                    Console.WriteLine("Hata kodu bosluksuz adet(" + boslukSil.Length + ")");
-                    Console.WriteLine("Hata kodu bosluksuz (" + boslukSil + ")");
+                //    Console.WriteLine("Hata kodu bosluksuz adet(" + boslukSil.Length + ")");
+                 //   Console.WriteLine("Hata kodu bosluksuz (" + boslukSil + ")");
                     char[] _GelenHataKodunuDiziyeAyirma = boslukSil.ToCharArray();
                     telemetri.hataKodu1 = _GelenHataKodunuDiziyeAyirma[0];
                     telemetri.hataKodu2 = _GelenHataKodunuDiziyeAyirma[1];
@@ -507,11 +552,11 @@ namespace _2023MUYGCS
                     telemetri.hataKodu4 = _GelenHataKodunuDiziyeAyirma[3];
                     telemetri.hataKodu5 = _GelenHataKodunuDiziyeAyirma[4];
 
-                    Console.WriteLine("telemetri hatakodu1: " + telemetri.hataKodu1);
-                    Console.WriteLine("telemetri hatakodu2: " + telemetri.hataKodu2);
-                    Console.WriteLine("telemetri hatakodu3: " + telemetri.hataKodu3);
-                    Console.WriteLine("telemetri hatakodu4: " + telemetri.hataKodu4);
-                    Console.WriteLine("telemetri hatakodu5: " + telemetri.hataKodu5);
+           //         Console.WriteLine("telemetri hatakodu1: " + telemetri.hataKodu1);
+                //    Console.WriteLine("telemetri hatakodu2: " + telemetri.hataKodu2);
+               //     Console.WriteLine("telemetri hatakodu3: " + telemetri.hataKodu3);
+             //       Console.WriteLine("telemetri hatakodu4: " + telemetri.hataKodu4);
+             //       Console.WriteLine("telemetri hatakodu5: " + telemetri.hataKodu5);
 
                     if (telemetri.hataKodu1 == '1') { buttonHKA1.ForeColor = Color.Red; buttonHKR1.BackColor = Color.Red; buttonHKR1.Text = "1"; }
                     if (telemetri.hataKodu1 == '0') { buttonHKA1.ForeColor = Color.Black; buttonHKR1.BackColor = Color.Green; buttonHKR1.Text = "0"; }
@@ -624,7 +669,7 @@ namespace _2023MUYGCS
 
         private void buttonManuelAyril_Click(object sender, EventArgs e)
         {
-            if (_serialPort.IsOpen)
+            if (_continue)
             {
                 _serialPort.Write("k");
                 Console.WriteLine("Debug: k");
@@ -635,7 +680,7 @@ namespace _2023MUYGCS
 
         private void buttonBuzzer_Click(object sender, EventArgs e)
         {
-            if (_serialPort.IsOpen)
+            if (_continue)
             {
                 _serialPort.Write("b");
                 Console.WriteLine("Debug: b");
@@ -954,7 +999,7 @@ namespace _2023MUYGCS
 
         private void buttonKilitle_Click(object sender, EventArgs e)
         {
-            if (_serialPort.IsOpen)
+            if (_continue)
             {
                 _serialPort.Write("s");
                 Console.WriteLine("Debug: s");
@@ -964,12 +1009,17 @@ namespace _2023MUYGCS
 
         private void button30_Click(object sender, EventArgs e)
         {
-            if (_serialPort.IsOpen)
-            {
-                _serialPort.Write("v");
-                Console.WriteLine("Debug: v");
-                gonderilenKomut = "v";
-            }
+            // video atildiginda
+            
+                if (_continue)
+                {
+                    _serialPort.Write("v");
+                    Console.WriteLine("Debug: v");
+                    gonderilenKomut = "v";
+                }
+            
+         
+          
         }
 
         private void buttonGrafikTemizle_Click(object sender, EventArgs e)
@@ -996,6 +1046,21 @@ namespace _2023MUYGCS
             f4.Show();
            
           
+
+        }
+
+        private void buttonFtpBaglantiTest_Click(object sender, EventArgs e)
+        {
+            CancellationTokenSource cts = new CancellationTokenSource();
+            CancellationToken token = cts.Token;
+            Thread thread = new Thread(() => MyThreadFunction(token));
+            thread.Start();
+
+            // 5 saniye sonra thread'i iptal et
+            Thread.Sleep(100);
+            cts.Cancel();
+
+
 
         }
 

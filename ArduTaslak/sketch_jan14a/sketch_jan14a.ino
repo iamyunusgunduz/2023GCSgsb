@@ -51,7 +51,7 @@ pitch += 5;
 roll += 5;
 yaw += 5;
 if(basinc1%10 == 0){
-  uyduStatu = "1?";
+ // uyduStatu = "1";
 }else{
    uyduStatu = "2";
 }

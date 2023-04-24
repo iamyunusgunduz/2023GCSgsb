@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea17 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series17 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea18 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series18 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea19 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series19 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea20 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series20 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea21 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series21 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea22 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series22 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea23 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series23 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea24 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series24 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tableLayoutPanelMain = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanelChartTelemetri = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanelTelemetri = new System.Windows.Forms.TableLayoutPanel();
@@ -162,6 +162,7 @@
             this.buttonCsvKaydet = new System.Windows.Forms.Button();
             this.buttonCsvDurdur = new System.Windows.Forms.Button();
             this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
+            this.buttonFtpBaglantiTest = new System.Windows.Forms.Button();
             this.btnDosyaSec = new System.Windows.Forms.Button();
             this.tableLayoutPanel14 = new System.Windows.Forms.TableLayoutPanel();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
@@ -259,8 +260,8 @@
             // tableLayoutPanelTelemetri
             // 
             this.tableLayoutPanelTelemetri.ColumnCount = 2;
-            this.tableLayoutPanelTelemetri.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.73196F));
-            this.tableLayoutPanelTelemetri.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.26804F));
+            this.tableLayoutPanelTelemetri.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.44444F));
+            this.tableLayoutPanelTelemetri.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.55556F));
             this.tableLayoutPanelTelemetri.Controls.Add(this.labelTinisHiziText, 0, 19);
             this.tableLayoutPanelTelemetri.Controls.Add(this.labelTinisHiziVALUE, 0, 19);
             this.tableLayoutPanelTelemetri.Controls.Add(this.labelTakimNoVALUE, 1, 18);
@@ -307,26 +308,26 @@
             this.tableLayoutPanelTelemetri.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanelTelemetri.Name = "tableLayoutPanelTelemetri";
             this.tableLayoutPanelTelemetri.RowCount = 20;
-            this.tableLayoutPanelTelemetri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanelTelemetri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanelTelemetri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanelTelemetri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanelTelemetri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanelTelemetri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanelTelemetri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanelTelemetri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanelTelemetri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanelTelemetri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanelTelemetri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanelTelemetri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanelTelemetri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanelTelemetri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanelTelemetri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanelTelemetri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanelTelemetri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanelTelemetri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanelTelemetri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanelTelemetri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanelTelemetri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.008463F));
+            this.tableLayoutPanelTelemetri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.008463F));
+            this.tableLayoutPanelTelemetri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.231574F));
+            this.tableLayoutPanelTelemetri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.616095F));
+            this.tableLayoutPanelTelemetri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.008463F));
+            this.tableLayoutPanelTelemetri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.008463F));
+            this.tableLayoutPanelTelemetri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.008463F));
+            this.tableLayoutPanelTelemetri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.008463F));
+            this.tableLayoutPanelTelemetri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.008463F));
+            this.tableLayoutPanelTelemetri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.008463F));
+            this.tableLayoutPanelTelemetri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.008463F));
+            this.tableLayoutPanelTelemetri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.008463F));
+            this.tableLayoutPanelTelemetri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.008463F));
+            this.tableLayoutPanelTelemetri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.008463F));
+            this.tableLayoutPanelTelemetri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.008463F));
+            this.tableLayoutPanelTelemetri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.008463F));
+            this.tableLayoutPanelTelemetri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.008463F));
+            this.tableLayoutPanelTelemetri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.008463F));
+            this.tableLayoutPanelTelemetri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.008463F));
+            this.tableLayoutPanelTelemetri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.008463F));
             this.tableLayoutPanelTelemetri.Size = new System.Drawing.Size(545, 651);
             this.tableLayoutPanelTelemetri.TabIndex = 0;
             // 
@@ -339,7 +340,7 @@
             this.labelTinisHiziText.Location = new System.Drawing.Point(0, 608);
             this.labelTinisHiziText.Margin = new System.Windows.Forms.Padding(0);
             this.labelTinisHiziText.Name = "labelTinisHiziText";
-            this.labelTinisHiziText.Size = new System.Drawing.Size(314, 43);
+            this.labelTinisHiziText.Size = new System.Drawing.Size(242, 43);
             this.labelTinisHiziText.TabIndex = 59;
             this.labelTinisHiziText.Text = "İNİŞ HIZI (TAŞIYICI)";
             this.labelTinisHiziText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -349,10 +350,10 @@
             this.labelTinisHiziVALUE.AutoSize = true;
             this.labelTinisHiziVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelTinisHiziVALUE.ForeColor = System.Drawing.Color.Black;
-            this.labelTinisHiziVALUE.Location = new System.Drawing.Point(314, 608);
+            this.labelTinisHiziVALUE.Location = new System.Drawing.Point(242, 608);
             this.labelTinisHiziVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelTinisHiziVALUE.Name = "labelTinisHiziVALUE";
-            this.labelTinisHiziVALUE.Size = new System.Drawing.Size(231, 43);
+            this.labelTinisHiziVALUE.Size = new System.Drawing.Size(303, 43);
             this.labelTinisHiziVALUE.TabIndex = 58;
             this.labelTinisHiziVALUE.Text = "####";
             this.labelTinisHiziVALUE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -362,10 +363,10 @@
             this.labelTakimNoVALUE.AutoSize = true;
             this.labelTakimNoVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelTakimNoVALUE.ForeColor = System.Drawing.Color.Black;
-            this.labelTakimNoVALUE.Location = new System.Drawing.Point(314, 576);
+            this.labelTakimNoVALUE.Location = new System.Drawing.Point(242, 576);
             this.labelTakimNoVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelTakimNoVALUE.Name = "labelTakimNoVALUE";
-            this.labelTakimNoVALUE.Size = new System.Drawing.Size(231, 32);
+            this.labelTakimNoVALUE.Size = new System.Drawing.Size(303, 32);
             this.labelTakimNoVALUE.TabIndex = 37;
             this.labelTakimNoVALUE.Text = "####";
             this.labelTakimNoVALUE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -379,7 +380,7 @@
             this.labelTakimNoText.Location = new System.Drawing.Point(0, 576);
             this.labelTakimNoText.Margin = new System.Windows.Forms.Padding(0);
             this.labelTakimNoText.Name = "labelTakimNoText";
-            this.labelTakimNoText.Size = new System.Drawing.Size(314, 32);
+            this.labelTakimNoText.Size = new System.Drawing.Size(242, 32);
             this.labelTakimNoText.TabIndex = 36;
             this.labelTakimNoText.Text = "TAKIM NO :";
             this.labelTakimNoText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -389,10 +390,10 @@
             this.labelYawVALUE.AutoSize = true;
             this.labelYawVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelYawVALUE.ForeColor = System.Drawing.Color.Black;
-            this.labelYawVALUE.Location = new System.Drawing.Point(314, 544);
+            this.labelYawVALUE.Location = new System.Drawing.Point(242, 544);
             this.labelYawVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelYawVALUE.Name = "labelYawVALUE";
-            this.labelYawVALUE.Size = new System.Drawing.Size(231, 32);
+            this.labelYawVALUE.Size = new System.Drawing.Size(303, 32);
             this.labelYawVALUE.TabIndex = 35;
             this.labelYawVALUE.Text = "####";
             this.labelYawVALUE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -406,7 +407,7 @@
             this.labelYawText.Location = new System.Drawing.Point(0, 544);
             this.labelYawText.Margin = new System.Windows.Forms.Padding(0);
             this.labelYawText.Name = "labelYawText";
-            this.labelYawText.Size = new System.Drawing.Size(314, 32);
+            this.labelYawText.Size = new System.Drawing.Size(242, 32);
             this.labelYawText.TabIndex = 34;
             this.labelYawText.Text = "YAW :";
             this.labelYawText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -416,10 +417,10 @@
             this.labelRollVALUE.AutoSize = true;
             this.labelRollVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelRollVALUE.ForeColor = System.Drawing.Color.Black;
-            this.labelRollVALUE.Location = new System.Drawing.Point(314, 512);
+            this.labelRollVALUE.Location = new System.Drawing.Point(242, 512);
             this.labelRollVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelRollVALUE.Name = "labelRollVALUE";
-            this.labelRollVALUE.Size = new System.Drawing.Size(231, 32);
+            this.labelRollVALUE.Size = new System.Drawing.Size(303, 32);
             this.labelRollVALUE.TabIndex = 33;
             this.labelRollVALUE.Text = "####";
             this.labelRollVALUE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -433,7 +434,7 @@
             this.labelRollText.Location = new System.Drawing.Point(0, 512);
             this.labelRollText.Margin = new System.Windows.Forms.Padding(0);
             this.labelRollText.Name = "labelRollText";
-            this.labelRollText.Size = new System.Drawing.Size(314, 32);
+            this.labelRollText.Size = new System.Drawing.Size(242, 32);
             this.labelRollText.TabIndex = 32;
             this.labelRollText.Text = "ROLL :";
             this.labelRollText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -443,10 +444,10 @@
             this.labelPitchVALUE.AutoSize = true;
             this.labelPitchVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelPitchVALUE.ForeColor = System.Drawing.Color.Black;
-            this.labelPitchVALUE.Location = new System.Drawing.Point(314, 480);
+            this.labelPitchVALUE.Location = new System.Drawing.Point(242, 480);
             this.labelPitchVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelPitchVALUE.Name = "labelPitchVALUE";
-            this.labelPitchVALUE.Size = new System.Drawing.Size(231, 32);
+            this.labelPitchVALUE.Size = new System.Drawing.Size(303, 32);
             this.labelPitchVALUE.TabIndex = 31;
             this.labelPitchVALUE.Text = "####";
             this.labelPitchVALUE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -460,7 +461,7 @@
             this.labelPitchText.Location = new System.Drawing.Point(0, 480);
             this.labelPitchText.Margin = new System.Windows.Forms.Padding(0);
             this.labelPitchText.Name = "labelPitchText";
-            this.labelPitchText.Size = new System.Drawing.Size(314, 32);
+            this.labelPitchText.Size = new System.Drawing.Size(242, 32);
             this.labelPitchText.TabIndex = 30;
             this.labelPitchText.Text = "PITCH :";
             this.labelPitchText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -470,10 +471,10 @@
             this.labelGps1AltGYVALUE.AutoSize = true;
             this.labelGps1AltGYVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelGps1AltGYVALUE.ForeColor = System.Drawing.Color.Black;
-            this.labelGps1AltGYVALUE.Location = new System.Drawing.Point(314, 448);
+            this.labelGps1AltGYVALUE.Location = new System.Drawing.Point(242, 448);
             this.labelGps1AltGYVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelGps1AltGYVALUE.Name = "labelGps1AltGYVALUE";
-            this.labelGps1AltGYVALUE.Size = new System.Drawing.Size(231, 32);
+            this.labelGps1AltGYVALUE.Size = new System.Drawing.Size(303, 32);
             this.labelGps1AltGYVALUE.TabIndex = 29;
             this.labelGps1AltGYVALUE.Text = "####";
             this.labelGps1AltGYVALUE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -487,7 +488,7 @@
             this.labelGps1AltGYText.Location = new System.Drawing.Point(0, 448);
             this.labelGps1AltGYText.Margin = new System.Windows.Forms.Padding(0);
             this.labelGps1AltGYText.Name = "labelGps1AltGYText";
-            this.labelGps1AltGYText.Size = new System.Drawing.Size(314, 32);
+            this.labelGps1AltGYText.Size = new System.Drawing.Size(242, 32);
             this.labelGps1AltGYText.TabIndex = 28;
             this.labelGps1AltGYText.Text = "GPS1 ALTITUDE :";
             this.labelGps1AltGYText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -497,10 +498,10 @@
             this.labelGps1LongGYVALUE.AutoSize = true;
             this.labelGps1LongGYVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelGps1LongGYVALUE.ForeColor = System.Drawing.Color.Black;
-            this.labelGps1LongGYVALUE.Location = new System.Drawing.Point(314, 416);
+            this.labelGps1LongGYVALUE.Location = new System.Drawing.Point(242, 416);
             this.labelGps1LongGYVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelGps1LongGYVALUE.Name = "labelGps1LongGYVALUE";
-            this.labelGps1LongGYVALUE.Size = new System.Drawing.Size(231, 32);
+            this.labelGps1LongGYVALUE.Size = new System.Drawing.Size(303, 32);
             this.labelGps1LongGYVALUE.TabIndex = 27;
             this.labelGps1LongGYVALUE.Text = "####";
             this.labelGps1LongGYVALUE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -514,7 +515,7 @@
             this.labelGps1LongGYText.Location = new System.Drawing.Point(0, 416);
             this.labelGps1LongGYText.Margin = new System.Windows.Forms.Padding(0);
             this.labelGps1LongGYText.Name = "labelGps1LongGYText";
-            this.labelGps1LongGYText.Size = new System.Drawing.Size(314, 32);
+            this.labelGps1LongGYText.Size = new System.Drawing.Size(242, 32);
             this.labelGps1LongGYText.TabIndex = 26;
             this.labelGps1LongGYText.Text = "GPS1 LONGITUDE :";
             this.labelGps1LongGYText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -524,10 +525,10 @@
             this.labelGps1LatGYVALUE.AutoSize = true;
             this.labelGps1LatGYVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelGps1LatGYVALUE.ForeColor = System.Drawing.Color.Black;
-            this.labelGps1LatGYVALUE.Location = new System.Drawing.Point(314, 384);
+            this.labelGps1LatGYVALUE.Location = new System.Drawing.Point(242, 384);
             this.labelGps1LatGYVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelGps1LatGYVALUE.Name = "labelGps1LatGYVALUE";
-            this.labelGps1LatGYVALUE.Size = new System.Drawing.Size(231, 32);
+            this.labelGps1LatGYVALUE.Size = new System.Drawing.Size(303, 32);
             this.labelGps1LatGYVALUE.TabIndex = 25;
             this.labelGps1LatGYVALUE.Text = "####";
             this.labelGps1LatGYVALUE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -541,7 +542,7 @@
             this.labelGps1LatGYText.Location = new System.Drawing.Point(0, 384);
             this.labelGps1LatGYText.Margin = new System.Windows.Forms.Padding(0);
             this.labelGps1LatGYText.Name = "labelGps1LatGYText";
-            this.labelGps1LatGYText.Size = new System.Drawing.Size(314, 32);
+            this.labelGps1LatGYText.Size = new System.Drawing.Size(242, 32);
             this.labelGps1LatGYText.TabIndex = 24;
             this.labelGps1LatGYText.Text = "GPS1 LATITUDE :";
             this.labelGps1LatGYText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -551,10 +552,10 @@
             this.labelPilGerilimiVALUE.AutoSize = true;
             this.labelPilGerilimiVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelPilGerilimiVALUE.ForeColor = System.Drawing.Color.Black;
-            this.labelPilGerilimiVALUE.Location = new System.Drawing.Point(314, 352);
+            this.labelPilGerilimiVALUE.Location = new System.Drawing.Point(242, 352);
             this.labelPilGerilimiVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelPilGerilimiVALUE.Name = "labelPilGerilimiVALUE";
-            this.labelPilGerilimiVALUE.Size = new System.Drawing.Size(231, 32);
+            this.labelPilGerilimiVALUE.Size = new System.Drawing.Size(303, 32);
             this.labelPilGerilimiVALUE.TabIndex = 23;
             this.labelPilGerilimiVALUE.Text = "####";
             this.labelPilGerilimiVALUE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -568,7 +569,7 @@
             this.labelPilGerilimiText.Location = new System.Drawing.Point(0, 352);
             this.labelPilGerilimiText.Margin = new System.Windows.Forms.Padding(0);
             this.labelPilGerilimiText.Name = "labelPilGerilimiText";
-            this.labelPilGerilimiText.Size = new System.Drawing.Size(314, 32);
+            this.labelPilGerilimiText.Size = new System.Drawing.Size(242, 32);
             this.labelPilGerilimiText.TabIndex = 22;
             this.labelPilGerilimiText.Text = "PİL GERİLİMİ :";
             this.labelPilGerilimiText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -578,10 +579,10 @@
             this.labelSicaklikVALUE.AutoSize = true;
             this.labelSicaklikVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelSicaklikVALUE.ForeColor = System.Drawing.Color.Black;
-            this.labelSicaklikVALUE.Location = new System.Drawing.Point(314, 320);
+            this.labelSicaklikVALUE.Location = new System.Drawing.Point(242, 320);
             this.labelSicaklikVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelSicaklikVALUE.Name = "labelSicaklikVALUE";
-            this.labelSicaklikVALUE.Size = new System.Drawing.Size(231, 32);
+            this.labelSicaklikVALUE.Size = new System.Drawing.Size(303, 32);
             this.labelSicaklikVALUE.TabIndex = 21;
             this.labelSicaklikVALUE.Text = "####";
             this.labelSicaklikVALUE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -595,7 +596,7 @@
             this.labelSicaklikText.Location = new System.Drawing.Point(0, 320);
             this.labelSicaklikText.Margin = new System.Windows.Forms.Padding(0);
             this.labelSicaklikText.Name = "labelSicaklikText";
-            this.labelSicaklikText.Size = new System.Drawing.Size(314, 32);
+            this.labelSicaklikText.Size = new System.Drawing.Size(242, 32);
             this.labelSicaklikText.TabIndex = 20;
             this.labelSicaklikText.Text = "SICAKLIK :";
             this.labelSicaklikText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -605,10 +606,10 @@
             this.labelGYinisHiziVALUE.AutoSize = true;
             this.labelGYinisHiziVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelGYinisHiziVALUE.ForeColor = System.Drawing.Color.Black;
-            this.labelGYinisHiziVALUE.Location = new System.Drawing.Point(314, 288);
+            this.labelGYinisHiziVALUE.Location = new System.Drawing.Point(242, 288);
             this.labelGYinisHiziVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelGYinisHiziVALUE.Name = "labelGYinisHiziVALUE";
-            this.labelGYinisHiziVALUE.Size = new System.Drawing.Size(231, 32);
+            this.labelGYinisHiziVALUE.Size = new System.Drawing.Size(303, 32);
             this.labelGYinisHiziVALUE.TabIndex = 19;
             this.labelGYinisHiziVALUE.Text = "####";
             this.labelGYinisHiziVALUE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -622,7 +623,7 @@
             this.labelGYinisHiziText.Location = new System.Drawing.Point(0, 288);
             this.labelGYinisHiziText.Margin = new System.Windows.Forms.Padding(0);
             this.labelGYinisHiziText.Name = "labelGYinisHiziText";
-            this.labelGYinisHiziText.Size = new System.Drawing.Size(314, 32);
+            this.labelGYinisHiziText.Size = new System.Drawing.Size(242, 32);
             this.labelGYinisHiziText.TabIndex = 18;
             this.labelGYinisHiziText.Text = "İNİŞ HIZI (GÖREV YÜKÜ) :";
             this.labelGYinisHiziText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -632,10 +633,10 @@
             this.labelIrtifaFarkiVALUE.AutoSize = true;
             this.labelIrtifaFarkiVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelIrtifaFarkiVALUE.ForeColor = System.Drawing.Color.Black;
-            this.labelIrtifaFarkiVALUE.Location = new System.Drawing.Point(314, 256);
+            this.labelIrtifaFarkiVALUE.Location = new System.Drawing.Point(242, 256);
             this.labelIrtifaFarkiVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelIrtifaFarkiVALUE.Name = "labelIrtifaFarkiVALUE";
-            this.labelIrtifaFarkiVALUE.Size = new System.Drawing.Size(231, 32);
+            this.labelIrtifaFarkiVALUE.Size = new System.Drawing.Size(303, 32);
             this.labelIrtifaFarkiVALUE.TabIndex = 17;
             this.labelIrtifaFarkiVALUE.Text = "####";
             this.labelIrtifaFarkiVALUE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -649,7 +650,7 @@
             this.labelIrtifaFarkiText.Location = new System.Drawing.Point(0, 256);
             this.labelIrtifaFarkiText.Margin = new System.Windows.Forms.Padding(0);
             this.labelIrtifaFarkiText.Name = "labelIrtifaFarkiText";
-            this.labelIrtifaFarkiText.Size = new System.Drawing.Size(314, 32);
+            this.labelIrtifaFarkiText.Size = new System.Drawing.Size(242, 32);
             this.labelIrtifaFarkiText.TabIndex = 16;
             this.labelIrtifaFarkiText.Text = "İRTİFA FARKI :";
             this.labelIrtifaFarkiText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -659,10 +660,10 @@
             this.labelYukseklik2TVALUE.AutoSize = true;
             this.labelYukseklik2TVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelYukseklik2TVALUE.ForeColor = System.Drawing.Color.Black;
-            this.labelYukseklik2TVALUE.Location = new System.Drawing.Point(314, 224);
+            this.labelYukseklik2TVALUE.Location = new System.Drawing.Point(242, 224);
             this.labelYukseklik2TVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelYukseklik2TVALUE.Name = "labelYukseklik2TVALUE";
-            this.labelYukseklik2TVALUE.Size = new System.Drawing.Size(231, 32);
+            this.labelYukseklik2TVALUE.Size = new System.Drawing.Size(303, 32);
             this.labelYukseklik2TVALUE.TabIndex = 15;
             this.labelYukseklik2TVALUE.Text = "####";
             this.labelYukseklik2TVALUE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -676,7 +677,7 @@
             this.labelYukseklik2TText.Location = new System.Drawing.Point(0, 224);
             this.labelYukseklik2TText.Margin = new System.Windows.Forms.Padding(0);
             this.labelYukseklik2TText.Name = "labelYukseklik2TText";
-            this.labelYukseklik2TText.Size = new System.Drawing.Size(314, 32);
+            this.labelYukseklik2TText.Size = new System.Drawing.Size(242, 32);
             this.labelYukseklik2TText.TabIndex = 14;
             this.labelYukseklik2TText.Text = "YÜKSEKLİK-2 (TAŞIYICI) :";
             this.labelYukseklik2TText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -686,10 +687,10 @@
             this.labelYukseklik1GYVALUE.AutoSize = true;
             this.labelYukseklik1GYVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelYukseklik1GYVALUE.ForeColor = System.Drawing.Color.Black;
-            this.labelYukseklik1GYVALUE.Location = new System.Drawing.Point(314, 192);
+            this.labelYukseklik1GYVALUE.Location = new System.Drawing.Point(242, 192);
             this.labelYukseklik1GYVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelYukseklik1GYVALUE.Name = "labelYukseklik1GYVALUE";
-            this.labelYukseklik1GYVALUE.Size = new System.Drawing.Size(231, 32);
+            this.labelYukseklik1GYVALUE.Size = new System.Drawing.Size(303, 32);
             this.labelYukseklik1GYVALUE.TabIndex = 13;
             this.labelYukseklik1GYVALUE.Text = "####";
             this.labelYukseklik1GYVALUE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -703,7 +704,7 @@
             this.labelYukseklik1GYText.Location = new System.Drawing.Point(0, 192);
             this.labelYukseklik1GYText.Margin = new System.Windows.Forms.Padding(0);
             this.labelYukseklik1GYText.Name = "labelYukseklik1GYText";
-            this.labelYukseklik1GYText.Size = new System.Drawing.Size(314, 32);
+            this.labelYukseklik1GYText.Size = new System.Drawing.Size(242, 32);
             this.labelYukseklik1GYText.TabIndex = 12;
             this.labelYukseklik1GYText.Text = "YÜKSEKLİK-1 (GÖREV YÜKÜ) :";
             this.labelYukseklik1GYText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -713,10 +714,10 @@
             this.labelBasinc2TVALUE.AutoSize = true;
             this.labelBasinc2TVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelBasinc2TVALUE.ForeColor = System.Drawing.Color.Black;
-            this.labelBasinc2TVALUE.Location = new System.Drawing.Point(314, 160);
+            this.labelBasinc2TVALUE.Location = new System.Drawing.Point(242, 160);
             this.labelBasinc2TVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelBasinc2TVALUE.Name = "labelBasinc2TVALUE";
-            this.labelBasinc2TVALUE.Size = new System.Drawing.Size(231, 32);
+            this.labelBasinc2TVALUE.Size = new System.Drawing.Size(303, 32);
             this.labelBasinc2TVALUE.TabIndex = 11;
             this.labelBasinc2TVALUE.Text = "####";
             this.labelBasinc2TVALUE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -730,7 +731,7 @@
             this.labelBasinc2TText.Location = new System.Drawing.Point(0, 160);
             this.labelBasinc2TText.Margin = new System.Windows.Forms.Padding(0);
             this.labelBasinc2TText.Name = "labelBasinc2TText";
-            this.labelBasinc2TText.Size = new System.Drawing.Size(314, 32);
+            this.labelBasinc2TText.Size = new System.Drawing.Size(242, 32);
             this.labelBasinc2TText.TabIndex = 10;
             this.labelBasinc2TText.Text = "BASINÇ-2 (TAŞIYICI) :";
             this.labelBasinc2TText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -740,10 +741,10 @@
             this.labelBasinc1GYVALUE.AutoSize = true;
             this.labelBasinc1GYVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelBasinc1GYVALUE.ForeColor = System.Drawing.Color.Black;
-            this.labelBasinc1GYVALUE.Location = new System.Drawing.Point(314, 128);
+            this.labelBasinc1GYVALUE.Location = new System.Drawing.Point(242, 128);
             this.labelBasinc1GYVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelBasinc1GYVALUE.Name = "labelBasinc1GYVALUE";
-            this.labelBasinc1GYVALUE.Size = new System.Drawing.Size(231, 32);
+            this.labelBasinc1GYVALUE.Size = new System.Drawing.Size(303, 32);
             this.labelBasinc1GYVALUE.TabIndex = 9;
             this.labelBasinc1GYVALUE.Text = "####";
             this.labelBasinc1GYVALUE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -757,7 +758,7 @@
             this.labelBasinc1GYText.Location = new System.Drawing.Point(0, 128);
             this.labelBasinc1GYText.Margin = new System.Windows.Forms.Padding(0);
             this.labelBasinc1GYText.Name = "labelBasinc1GYText";
-            this.labelBasinc1GYText.Size = new System.Drawing.Size(314, 32);
+            this.labelBasinc1GYText.Size = new System.Drawing.Size(242, 32);
             this.labelBasinc1GYText.TabIndex = 8;
             this.labelBasinc1GYText.Text = "BASINÇ-1 (GÖREV YÜKÜ) :";
             this.labelBasinc1GYText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -767,10 +768,10 @@
             this.labelGondermeSaatiVALUE.AutoSize = true;
             this.labelGondermeSaatiVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelGondermeSaatiVALUE.ForeColor = System.Drawing.Color.Black;
-            this.labelGondermeSaatiVALUE.Location = new System.Drawing.Point(314, 96);
+            this.labelGondermeSaatiVALUE.Location = new System.Drawing.Point(242, 98);
             this.labelGondermeSaatiVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelGondermeSaatiVALUE.Name = "labelGondermeSaatiVALUE";
-            this.labelGondermeSaatiVALUE.Size = new System.Drawing.Size(231, 32);
+            this.labelGondermeSaatiVALUE.Size = new System.Drawing.Size(303, 30);
             this.labelGondermeSaatiVALUE.TabIndex = 7;
             this.labelGondermeSaatiVALUE.Text = "####";
             this.labelGondermeSaatiVALUE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -781,10 +782,10 @@
             this.labelGondermeSaatiText.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelGondermeSaatiText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelGondermeSaatiText.ForeColor = System.Drawing.Color.Black;
-            this.labelGondermeSaatiText.Location = new System.Drawing.Point(0, 96);
+            this.labelGondermeSaatiText.Location = new System.Drawing.Point(0, 98);
             this.labelGondermeSaatiText.Margin = new System.Windows.Forms.Padding(0);
             this.labelGondermeSaatiText.Name = "labelGondermeSaatiText";
-            this.labelGondermeSaatiText.Size = new System.Drawing.Size(314, 32);
+            this.labelGondermeSaatiText.Size = new System.Drawing.Size(242, 30);
             this.labelGondermeSaatiText.TabIndex = 6;
             this.labelGondermeSaatiText.Text = "GÖNDERME SAATİ :";
             this.labelGondermeSaatiText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -794,10 +795,10 @@
             this.labelHataKoduVALUE.AutoSize = true;
             this.labelHataKoduVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelHataKoduVALUE.ForeColor = System.Drawing.Color.Black;
-            this.labelHataKoduVALUE.Location = new System.Drawing.Point(314, 64);
+            this.labelHataKoduVALUE.Location = new System.Drawing.Point(242, 64);
             this.labelHataKoduVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelHataKoduVALUE.Name = "labelHataKoduVALUE";
-            this.labelHataKoduVALUE.Size = new System.Drawing.Size(231, 32);
+            this.labelHataKoduVALUE.Size = new System.Drawing.Size(303, 34);
             this.labelHataKoduVALUE.TabIndex = 5;
             this.labelHataKoduVALUE.Text = "####";
             this.labelHataKoduVALUE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -811,7 +812,7 @@
             this.labelHataKoduText.Location = new System.Drawing.Point(0, 64);
             this.labelHataKoduText.Margin = new System.Windows.Forms.Padding(0);
             this.labelHataKoduText.Name = "labelHataKoduText";
-            this.labelHataKoduText.Size = new System.Drawing.Size(314, 32);
+            this.labelHataKoduText.Size = new System.Drawing.Size(242, 34);
             this.labelHataKoduText.TabIndex = 4;
             this.labelHataKoduText.Text = "HATA KODU :";
             this.labelHataKoduText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -821,10 +822,10 @@
             this.labelUyduStatusuVALUE.AutoSize = true;
             this.labelUyduStatusuVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelUyduStatusuVALUE.ForeColor = System.Drawing.Color.Black;
-            this.labelUyduStatusuVALUE.Location = new System.Drawing.Point(314, 32);
+            this.labelUyduStatusuVALUE.Location = new System.Drawing.Point(242, 32);
             this.labelUyduStatusuVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelUyduStatusuVALUE.Name = "labelUyduStatusuVALUE";
-            this.labelUyduStatusuVALUE.Size = new System.Drawing.Size(231, 32);
+            this.labelUyduStatusuVALUE.Size = new System.Drawing.Size(303, 32);
             this.labelUyduStatusuVALUE.TabIndex = 3;
             this.labelUyduStatusuVALUE.Text = "####";
             this.labelUyduStatusuVALUE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -838,7 +839,7 @@
             this.labelUyduStatusuText.Location = new System.Drawing.Point(0, 32);
             this.labelUyduStatusuText.Margin = new System.Windows.Forms.Padding(0);
             this.labelUyduStatusuText.Name = "labelUyduStatusuText";
-            this.labelUyduStatusuText.Size = new System.Drawing.Size(314, 32);
+            this.labelUyduStatusuText.Size = new System.Drawing.Size(242, 32);
             this.labelUyduStatusuText.TabIndex = 2;
             this.labelUyduStatusuText.Text = "UYDU STATÜSÜ :";
             this.labelUyduStatusuText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -848,10 +849,10 @@
             this.labelPaketNoVALUE.AutoSize = true;
             this.labelPaketNoVALUE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelPaketNoVALUE.ForeColor = System.Drawing.Color.Black;
-            this.labelPaketNoVALUE.Location = new System.Drawing.Point(314, 0);
+            this.labelPaketNoVALUE.Location = new System.Drawing.Point(242, 0);
             this.labelPaketNoVALUE.Margin = new System.Windows.Forms.Padding(0);
             this.labelPaketNoVALUE.Name = "labelPaketNoVALUE";
-            this.labelPaketNoVALUE.Size = new System.Drawing.Size(231, 32);
+            this.labelPaketNoVALUE.Size = new System.Drawing.Size(303, 32);
             this.labelPaketNoVALUE.TabIndex = 1;
             this.labelPaketNoVALUE.Text = "####";
             this.labelPaketNoVALUE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -865,7 +866,7 @@
             this.labelPaketNoText.Location = new System.Drawing.Point(0, 0);
             this.labelPaketNoText.Margin = new System.Windows.Forms.Padding(0);
             this.labelPaketNoText.Name = "labelPaketNoText";
-            this.labelPaketNoText.Size = new System.Drawing.Size(314, 32);
+            this.labelPaketNoText.Size = new System.Drawing.Size(242, 32);
             this.labelPaketNoText.TabIndex = 0;
             this.labelPaketNoText.Text = "PAKET NUMARASI :";
             this.labelPaketNoText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -909,67 +910,67 @@
             // 
             // chartPilGerilimi
             // 
-            chartArea17.Name = "ChartArea1";
-            this.chartPilGerilimi.ChartAreas.Add(chartArea17);
+            chartArea1.Name = "ChartArea1";
+            this.chartPilGerilimi.ChartAreas.Add(chartArea1);
             this.chartPilGerilimi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartPilGerilimi.Location = new System.Drawing.Point(548, 514);
             this.chartPilGerilimi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartPilGerilimi.Name = "chartPilGerilimi";
-            series17.ChartArea = "ChartArea1";
-            series17.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series17.Name = "pilGerilimi";
-            this.chartPilGerilimi.Series.Add(series17);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.Name = "pilGerilimi";
+            this.chartPilGerilimi.Series.Add(series1);
             this.chartPilGerilimi.Size = new System.Drawing.Size(539, 125);
             this.chartPilGerilimi.TabIndex = 33;
             this.chartPilGerilimi.Text = "chart8";
             // 
             // chartSicaklik
             // 
-            chartArea18.Name = "ChartArea1";
-            this.chartSicaklik.ChartAreas.Add(chartArea18);
+            chartArea2.Name = "ChartArea1";
+            this.chartSicaklik.ChartAreas.Add(chartArea2);
             this.chartSicaklik.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartSicaklik.Location = new System.Drawing.Point(3, 514);
             this.chartSicaklik.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartSicaklik.Name = "chartSicaklik";
             this.chartSicaklik.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SemiTransparent;
-            series18.ChartArea = "ChartArea1";
-            series18.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series18.Name = "sicaklik";
-            this.chartSicaklik.Series.Add(series18);
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series2.Name = "sicaklik";
+            this.chartSicaklik.Series.Add(series2);
             this.chartSicaklik.Size = new System.Drawing.Size(539, 125);
             this.chartSicaklik.TabIndex = 32;
             this.chartSicaklik.Text = "chart7";
             // 
             // chartInisGizi
             // 
-            chartArea19.Name = "ChartArea1";
-            this.chartInisGizi.ChartAreas.Add(chartArea19);
+            chartArea3.Name = "ChartArea1";
+            this.chartInisGizi.ChartAreas.Add(chartArea3);
             this.chartInisGizi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartInisGizi.Location = new System.Drawing.Point(548, 354);
             this.chartInisGizi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartInisGizi.Name = "chartInisGizi";
             this.chartInisGizi.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series19.ChartArea = "ChartArea1";
-            series19.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series19.Name = "inisHizi";
-            this.chartInisGizi.Series.Add(series19);
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series3.Name = "inisHizi";
+            this.chartInisGizi.Series.Add(series3);
             this.chartInisGizi.Size = new System.Drawing.Size(539, 124);
             this.chartInisGizi.TabIndex = 31;
             this.chartInisGizi.Text = "chart6";
             // 
             // chartIrtifaFarki
             // 
-            chartArea20.Name = "ChartArea1";
-            this.chartIrtifaFarki.ChartAreas.Add(chartArea20);
+            chartArea4.Name = "ChartArea1";
+            this.chartIrtifaFarki.ChartAreas.Add(chartArea4);
             this.chartIrtifaFarki.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartIrtifaFarki.Location = new System.Drawing.Point(3, 354);
             this.chartIrtifaFarki.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartIrtifaFarki.Name = "chartIrtifaFarki";
             this.chartIrtifaFarki.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
-            series20.ChartArea = "ChartArea1";
-            series20.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series20.Name = "irtifaFarki";
-            this.chartIrtifaFarki.Series.Add(series20);
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series4.Name = "irtifaFarki";
+            this.chartIrtifaFarki.Series.Add(series4);
             this.chartIrtifaFarki.Size = new System.Drawing.Size(539, 124);
             this.chartIrtifaFarki.TabIndex = 30;
             this.chartIrtifaFarki.Text = "chart5";
@@ -978,51 +979,51 @@
             // 
             this.chartYukseklik2.BackSecondaryColor = System.Drawing.Color.Transparent;
             this.chartYukseklik2.BorderSkin.BackColor = System.Drawing.Color.DarkGreen;
-            chartArea21.Name = "ChartArea1";
-            this.chartYukseklik2.ChartAreas.Add(chartArea21);
+            chartArea5.Name = "ChartArea1";
+            this.chartYukseklik2.ChartAreas.Add(chartArea5);
             this.chartYukseklik2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartYukseklik2.Location = new System.Drawing.Point(549, 197);
             this.chartYukseklik2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.chartYukseklik2.Name = "chartYukseklik2";
             this.chartYukseklik2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series21.ChartArea = "ChartArea1";
-            series21.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series21.Name = "yukseklik2";
-            this.chartYukseklik2.Series.Add(series21);
+            series5.ChartArea = "ChartArea1";
+            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series5.Name = "yukseklik2";
+            this.chartYukseklik2.Series.Add(series5);
             this.chartYukseklik2.Size = new System.Drawing.Size(537, 118);
             this.chartYukseklik2.TabIndex = 29;
             this.chartYukseklik2.Text = "chart4";
             // 
             // chartYukseklik1
             // 
-            chartArea22.Name = "ChartArea1";
-            this.chartYukseklik1.ChartAreas.Add(chartArea22);
+            chartArea6.Name = "ChartArea1";
+            this.chartYukseklik1.ChartAreas.Add(chartArea6);
             this.chartYukseklik1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartYukseklik1.Location = new System.Drawing.Point(4, 197);
             this.chartYukseklik1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.chartYukseklik1.Name = "chartYukseklik1";
             this.chartYukseklik1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series22.ChartArea = "ChartArea1";
-            series22.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series22.Name = "yukseklik1";
-            this.chartYukseklik1.Series.Add(series22);
+            series6.ChartArea = "ChartArea1";
+            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series6.Name = "yukseklik1";
+            this.chartYukseklik1.Series.Add(series6);
             this.chartYukseklik1.Size = new System.Drawing.Size(537, 118);
             this.chartYukseklik1.TabIndex = 28;
             this.chartYukseklik1.Text = "chart3";
             // 
             // chartBasinc2
             // 
-            chartArea23.Name = "ChartArea1";
-            this.chartBasinc2.ChartAreas.Add(chartArea23);
+            chartArea7.Name = "ChartArea1";
+            this.chartBasinc2.ChartAreas.Add(chartArea7);
             this.chartBasinc2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartBasinc2.Location = new System.Drawing.Point(548, 34);
             this.chartBasinc2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartBasinc2.Name = "chartBasinc2";
             this.chartBasinc2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
-            series23.ChartArea = "ChartArea1";
-            series23.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series23.Name = "basinc2";
-            this.chartBasinc2.Series.Add(series23);
+            series7.ChartArea = "ChartArea1";
+            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series7.Name = "basinc2";
+            this.chartBasinc2.Series.Add(series7);
             this.chartBasinc2.Size = new System.Drawing.Size(539, 124);
             this.chartBasinc2.TabIndex = 27;
             this.chartBasinc2.Text = "chart2";
@@ -1141,17 +1142,17 @@
             // 
             // chartBasinc1
             // 
-            chartArea24.Name = "ChartArea1";
-            this.chartBasinc1.ChartAreas.Add(chartArea24);
+            chartArea8.Name = "ChartArea1";
+            this.chartBasinc1.ChartAreas.Add(chartArea8);
             this.chartBasinc1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartBasinc1.Location = new System.Drawing.Point(3, 34);
             this.chartBasinc1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartBasinc1.Name = "chartBasinc1";
             this.chartBasinc1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
-            series24.ChartArea = "ChartArea1";
-            series24.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series24.Name = "basinc1";
-            this.chartBasinc1.Series.Add(series24);
+            series8.ChartArea = "ChartArea1";
+            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series8.Name = "basinc1";
+            this.chartBasinc1.Series.Add(series8);
             this.chartBasinc1.Size = new System.Drawing.Size(539, 124);
             this.chartBasinc1.TabIndex = 26;
             this.chartBasinc1.Text = "chart1";
@@ -1885,17 +1886,34 @@
             // 
             // tableLayoutPanel12
             // 
-            this.tableLayoutPanel12.ColumnCount = 1;
-            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 84.67742F));
+            this.tableLayoutPanel12.ColumnCount = 2;
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel12.Controls.Add(this.buttonFtpBaglantiTest, 0, 0);
             this.tableLayoutPanel12.Controls.Add(this.btnDosyaSec, 0, 0);
             this.tableLayoutPanel12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel12.Location = new System.Drawing.Point(4, 139);
             this.tableLayoutPanel12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tableLayoutPanel12.Name = "tableLayoutPanel12";
             this.tableLayoutPanel12.RowCount = 1;
-            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel12.Size = new System.Drawing.Size(248, 61);
             this.tableLayoutPanel12.TabIndex = 69;
+            // 
+            // buttonFtpBaglantiTest
+            // 
+            this.buttonFtpBaglantiTest.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonFtpBaglantiTest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonFtpBaglantiTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.buttonFtpBaglantiTest.ForeColor = System.Drawing.Color.Black;
+            this.buttonFtpBaglantiTest.Location = new System.Drawing.Point(128, 5);
+            this.buttonFtpBaglantiTest.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonFtpBaglantiTest.Name = "buttonFtpBaglantiTest";
+            this.buttonFtpBaglantiTest.Size = new System.Drawing.Size(116, 51);
+            this.buttonFtpBaglantiTest.TabIndex = 68;
+            this.buttonFtpBaglantiTest.Text = "FtpTest";
+            this.buttonFtpBaglantiTest.UseVisualStyleBackColor = true;
+            this.buttonFtpBaglantiTest.Click += new System.EventHandler(this.buttonFtpBaglantiTest_Click);
             // 
             // btnDosyaSec
             // 
@@ -1906,7 +1924,7 @@
             this.btnDosyaSec.Location = new System.Drawing.Point(4, 5);
             this.btnDosyaSec.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnDosyaSec.Name = "btnDosyaSec";
-            this.btnDosyaSec.Size = new System.Drawing.Size(240, 51);
+            this.btnDosyaSec.Size = new System.Drawing.Size(116, 51);
             this.btnDosyaSec.TabIndex = 57;
             this.btnDosyaSec.Text = "DOSYA SEÇ";
             this.btnDosyaSec.UseVisualStyleBackColor = true;
@@ -2028,7 +2046,7 @@
             this.button30.Name = "button30";
             this.button30.Size = new System.Drawing.Size(72, 70);
             this.button30.TabIndex = 67;
-            this.button30.Text = "ftpTest";
+            this.button30.Text = "ftpAtildi";
             this.button30.UseVisualStyleBackColor = true;
             this.button30.Click += new System.EventHandler(this.button30_Click);
             // 
@@ -2412,6 +2430,7 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel14;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Label labelFtpStatus;
+        private System.Windows.Forms.Button buttonFtpBaglantiTest;
     }
 }
 
