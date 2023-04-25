@@ -41,11 +41,13 @@ namespace _2023MUYGCS
         Thread readThread = new Thread(Read);
         public string ftpStatus = "%0";
         public string gonderilenKomut = "";
-        int x = 0, y = 0, z = 0;
-        bool cx = false, cy = false, cz = false;
-        datas ds1 = new datas(); datas ds2 = new datas(); datas ds3 = new datas();
-        Color renk1 = Color.Black, renk2 = Color.DarkGray;
+        public string ftpicinFileNamePath = "";
+        public string ftpicinFileFullPath = "";
+  
+        static string ftpPingState = "";
 
+        double x = 0, y = 0, z = 0;
+        bool cx = false, cy = false, cz = false;
         public Form1()
         {
             InitializeComponent();
@@ -61,29 +63,14 @@ namespace _2023MUYGCS
             VideoCaptureDevices = new FilterInfoCollection(FilterCategory.VideoInputDevice);
             captureDevice = new VideoCaptureDeviceForm();
 
-            GL.ClearColor(Color.FromArgb(152, 180, 209));//Color.FromArgb(152, 180, 209)
-            timerXYZ.Interval = 1;
-            hesapla(x, z, y, 4, ds1);
-            hesapla(x, z, y, 1.5f, ds2);
-            hesapla(x, z, y, 0.07f, ds3);
-            List<datas> datalar = new List<datas>(2);
-            datalar.Add(ds1);
-            datalar.Add(ds2);
-            datalar.Add(ds3);
+            
 
             backgroundWorker1.WorkerSupportsCancellation = true;
 
-            
+            GL.ClearColor(Color.FromArgb(110, 133, 221));//Color.FromArgb(143, 212, 150) Color.White
+            timerXYZ.Interval = 10;
         }
-        void hesapla(float x, float y, float z, float radius, datas data)
-        {
-            for (int i = 0; i < 360; i++)
-            {
-                data.array[i, 0] = (float)(x + Math.Cos(i) * radius);
-                data.array[i, 1] = (float)(y + Math.Sin(i) * radius);
-            }
-
-        }
+      
         static void MyThreadFunction(CancellationToken token)
         {
  
@@ -97,7 +84,7 @@ namespace _2023MUYGCS
                 }
 
                 Console.WriteLine("Thread is running");
-                string ipAddress = "192.168.1.1"; // ping atılacak IP adresi
+                string ipAddress = "192.168.4.3"; // ping atılacak IP adresi
 
                 Ping pingSender = new Ping();
 
@@ -107,15 +94,36 @@ namespace _2023MUYGCS
 
                     if (reply.Status == IPStatus.Success)
                     {
-                        Console.WriteLine("--------------------------------Ping başarılı: " + reply.RoundtripTime + " ms");
-                        //buttonFtpBaglantiTest.BackColor = Color.DarkGreen;
-                       // buttonFtpBaglantiTest.Text = "Baglanti var";
+                        Console.WriteLine("+++++++++++++++++++++++++++++++++4Ping başarılı: " + reply.RoundtripTime + " ms");
+                    
+                        ftpPingState = "Ping: Basarılı";
+                    }
+                    else if (reply.Status == IPStatus.TimedOut)
+                    {
+                      
+                        ftpPingState = "Ping: Timedout";
+                    }
+                   else  if (reply.Status == IPStatus.DestinationHostUnreachable)
+                    {
+                       
+                        ftpPingState = "Ping: ip erisemedi";
+                    }
+                   else if (reply.Status == IPStatus.DestinationPortUnreachable)
+                    {
+
+                        ftpPingState = "Ping: ip baglanamadı";
+                    }
+                   else  if (reply.Status == IPStatus.DestinationNetworkUnreachable)
+                    {
+
+                        ftpPingState = "Ping: ağa erisemedi";
                     }
                     else
                     {
                         Console.WriteLine("--------------------------------------Ping başarısız: " + reply.Status);
-                       // buttonFtpBaglantiTest.BackColor = Color.DarkRed;
-                      //  buttonFtpBaglantiTest.Text = "Baglanti yok";
+                        // buttonFtpBaglantiTest.BackColor = Color.DarkRed;
+                        //  buttonFtpBaglantiTest.Text = "Baglanti yok";
+                        ftpPingState = "Ping: error";
                     }
                 }
                 catch (Exception)
@@ -126,34 +134,7 @@ namespace _2023MUYGCS
                 Thread.Sleep(1000);
             }
         }
-        void kapak(float x, float y, float z, Color renk, datas ds)
-        {
-            GL.Enable(EnableCap.Blend);
-            GL.Begin(PrimitiveType.TriangleFan);
-            GL.Color4(renk);
-            GL.Vertex3(x, y, z);
-            for (int i = 0; i < 360; i++)
-            {
-                renk_ataması(i);
-                GL.Vertex3(ds.array[i, 0], y, ds.array[i, 1]);
-            }
-            GL.End();
-            GL.Disable(EnableCap.Blend);
-        }
-        void Koni(float x, float y1, float y2, float z, datas dsp1, datas dsp2)
-        {
-            GL.Begin(PrimitiveType.Triangles);
-            GL.Color4(Color.Black); //red
-
-            for (int i = 0; i < 360; i++)
-            {
-                if (i < 180)
-                    renk_ataması(i);
-                GL.Vertex3(dsp1.array[i, 0], y1, dsp1.array[i, 1]);
-                GL.Vertex3(dsp2.array[i, 0], y2, dsp2.array[i, 1]);
-            }
-            GL.End();
-        }
+      
         public void serialPortHazirla()
         {
             _serialPort = new SerialPort();
@@ -244,6 +225,7 @@ namespace _2023MUYGCS
             {
                 try
                 {
+                    
                     gelenTelemetriVerisi = _serialPort.ReadLine();
                     title = gelenTelemetriVerisi;
                     Console.WriteLine(gelenTelemetriVerisi);
@@ -441,18 +423,22 @@ namespace _2023MUYGCS
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+
+
             if (csvVeriKaydedilsinmi)
             {
-                buttonCsvKaydet.ForeColor = Color.DarkGreen;
+                buttonCsvKaydet.BackColor = Color.DarkGreen;
 
             }
             else
             {
-                buttonCsvKaydet.ForeColor = Color.DarkRed;
+                buttonCsvKaydet.BackColor = Color.DarkRed;
             }
+            
             Console.WriteLine("Thread durumu: " + readThread.ThreadState);
-            this.Text = " Model uydu takımı Yer istasyonu :  " + title + "\t \t { " + gonderilenKomut + " } \t Debug:" + tryCatchDurumu;
+            this.Text = " Model uydu takımı Yer istasyonu :  " + title + "\t \t { " + gonderilenKomut + " } \t Debug:" + tryCatchDurumu + ftpPingState;
             gonderilenKomut = "";
+            ftpPingState = "";
             Console.WriteLine(telemetri.ftpGeldimi);
             if (ftpStatus == "OK")
             {
@@ -472,6 +458,20 @@ namespace _2023MUYGCS
             labelFtpStatus.Text = ftpStatus;
             if (_continue)
             {
+
+                if (cx == false || cy == false || cz == false)
+                {
+                    cx = true; cy = true; cz = true;
+                }
+                else
+                {
+                    cx = false; cy = false; cz = false;
+                    timerXYZ.Start();
+                    // btnX.Text = "Uydu duruşunu göster ";
+                }
+
+
+
                 GrafikCizdir();
                 // sagdaki labeller
                 labelPaketNoVALUE.Text = telemetri.paketNo;
@@ -580,7 +580,8 @@ namespace _2023MUYGCS
                     Console.WriteLine("Hata kodu (" + telemetri.hataKodu + ")");
                 }
 
-                if (cx == false)
+               /*
+                * if (cx == false)
                     cx = true;
                 else
                     cx = false;
@@ -593,12 +594,15 @@ namespace _2023MUYGCS
                     cz = true;
                 else
                     cz = false;
+
+                */
+
                 timer1.Start();
                 Zamanlayici.Start();
 
 
 
-                //  ShowCenter
+            
                 try
                 {
                     gmap.Position = new GMap.NET.PointLatLng(Convert.ToDouble(telemetri.gps1Lat.Replace('.', ',')), Convert.ToDouble(telemetri.gps1Long.Replace('.', ',')));
@@ -754,10 +758,10 @@ namespace _2023MUYGCS
             try
             {
 
-                x = Convert.ToInt32(telemetri.roll);
-                y = Convert.ToInt32(telemetri.pitch);
-                z = Convert.ToInt32(telemetri.yaw);
-                glControl1.Invalidate();
+               // x = Convert.ToInt32(telemetri.roll);
+               // y = Convert.ToInt32(telemetri.pitch);
+               // z = Convert.ToInt32(telemetri.yaw);
+               // glControl1.Invalidate();
 
 
             }
@@ -772,53 +776,213 @@ namespace _2023MUYGCS
             GL.ClearColor(0.0f, 0.0f, 0.0f, 0.0f);
             GL.Enable(EnableCap.DepthTest);
         }
-        private void renk_ataması(int step)
-        {
-            if (step < 45)
-                GL.Color3(Color.White);
-            else if (step < 90)
-                GL.Color3(Color.Black);
-            else if (step < 135)
-                GL.Color3(Color.Red);
-            else if (step < 180)
-                GL.Color3(Color.Yellow);
-            else if (step < 225)
-                GL.Color3(Color.Orange);
-            else if (step < 270)
-                GL.Color3(Color.Blue);
-            else if (step < 315)
-                GL.Color3(Color.Cyan);
-            else if (step < 360)
-                GL.Color3(Color.Purple);
-        }
 
+
+        private void silindir(float step, float topla, float radius, float dikey1, float dikey2)
+        {
+            float eski_step = 0.1f;
+            GL.Begin(BeginMode.Quads);
+            while (step <= 360)
+            {
+                if (step < 45)
+                    GL.Color3(Color.FromArgb(255, 0, 0));
+                else if (step < 90)
+                    GL.Color3(Color.FromArgb(0, 0, 0));
+                else if (step < 135)
+                    GL.Color3(Color.FromArgb(255, 0, 0));
+                else if (step < 180)
+                    GL.Color3(Color.FromArgb(0, 0, 0));
+                else if (step < 225)
+                    GL.Color3(Color.FromArgb(255, 0, 0));
+                else if (step < 270)
+                    GL.Color3(Color.FromArgb(0, 0, 0));
+                else if (step < 315)
+                    GL.Color3(Color.FromArgb(255, 0, 0));
+                else if (step < 360)
+                    GL.Color3(Color.FromArgb(0, 0, 0));
+
+
+                float ciz1_x = (float)(radius * Math.Cos(step * Math.PI / 180F));
+                float ciz1_y = (float)(radius * Math.Sin(step * Math.PI / 180F));
+                GL.Vertex3(ciz1_x, dikey1, ciz1_y);
+
+                float ciz2_x = (float)(radius * Math.Cos((step + 2) * Math.PI / 180F));
+                float ciz2_y = (float)(radius * Math.Sin((step + 2) * Math.PI / 180F));
+                GL.Vertex3(ciz2_x, dikey1, ciz2_y);
+
+                GL.Vertex3(ciz1_x, dikey2, ciz1_y);
+                GL.Vertex3(ciz2_x, dikey2, ciz2_y);
+                step += topla;
+            }
+            GL.End();
+            GL.Begin(BeginMode.Lines);
+            step = eski_step;
+            topla = step;
+            while (step <= 180)// UST KAPAK
+            {
+                if (step < 45)
+                    GL.Color3(Color.FromArgb(255, 1, 1));
+                else if (step < 90)
+                    GL.Color3(Color.FromArgb(0, 0, 0));
+                else if (step < 135)
+                    GL.Color3(Color.FromArgb(255, 1, 1));
+                else if (step < 180)
+                    GL.Color3(Color.FromArgb(0, 0, 0));
+                else if (step < 225)
+                    GL.Color3(Color.FromArgb(255, 1, 1));
+                else if (step < 270)
+                    GL.Color3(Color.FromArgb(0, 0, 0));
+                else if (step < 315)
+                    GL.Color3(Color.FromArgb(255, 1, 1));
+                else if (step < 360)
+                    GL.Color3(Color.FromArgb(0, 0, 0));
+
+
+                float ciz1_x = (float)(radius * Math.Cos(step * Math.PI / 180F));
+                float ciz1_y = (float)(radius * Math.Sin(step * Math.PI / 180F));
+                GL.Vertex3(ciz1_x, dikey1, ciz1_y);
+
+                float ciz2_x = (float)(radius * Math.Cos((step + 180) * Math.PI / 180F));
+                float ciz2_y = (float)(radius * Math.Sin((step + 180) * Math.PI / 180F));
+                GL.Vertex3(ciz2_x, dikey1, ciz2_y);
+
+                GL.Vertex3(ciz1_x, dikey1, ciz1_y);
+                GL.Vertex3(ciz2_x, dikey1, ciz2_y);
+                step += topla;
+            }
+            step = eski_step;
+            topla = step;
+            while (step <= 180)//ALT KAPAK
+            {
+                if (step < 45)
+                    GL.Color3(Color.FromArgb(255, 1, 1));
+                else if (step < 90)
+                    GL.Color3(Color.FromArgb(0, 0, 0));
+                else if (step < 135)
+                    GL.Color3(Color.FromArgb(255, 1, 1));
+                else if (step < 180)
+                    GL.Color3(Color.FromArgb(0, 0, 0));
+                else if (step < 225)
+                    GL.Color3(Color.FromArgb(255, 1, 1));
+                else if (step < 270)
+                    GL.Color3(Color.FromArgb(0, 0, 0));
+                else if (step < 315)
+                    GL.Color3(Color.FromArgb(255, 1, 1));
+                else if (step < 360)
+                    GL.Color3(Color.FromArgb(0, 0, 0));
+
+                float ciz1_x = (float)(radius * Math.Cos(step * Math.PI / 180F));
+                float ciz1_y = (float)(radius * Math.Sin(step * Math.PI / 180F));
+                GL.Vertex3(ciz1_x, dikey2, ciz1_y);
+
+                float ciz2_x = (float)(radius * Math.Cos((step + 180) * Math.PI / 180F));
+                float ciz2_y = (float)(radius * Math.Sin((step + 180) * Math.PI / 180F));
+                GL.Vertex3(ciz2_x, dikey2, ciz2_y);
+
+                GL.Vertex3(ciz1_x, dikey2, ciz1_y);
+                GL.Vertex3(ciz2_x, dikey2, ciz2_y);
+                step += topla;
+            }
+            GL.End();
+        }
+        private void koni(float step, float topla, float radius1, float radius2, float dikey1, float dikey2)
+        {
+            float eski_step = 0.1f;
+            GL.Begin(BeginMode.Lines);//Y EKSEN CIZIM DAİRENİN
+            while (step <= 360)
+            {
+                if (step < 45)
+                    GL.Color3(0.0, 0.0, 0.0);
+                else if (step < 90)
+                    GL.Color3(1.0, 0.0, 0.0);
+                else if (step < 135)
+                    GL.Color3(0.0, 0.0, 0.0);
+                else if (step < 180)
+                    GL.Color3(1.0, 0.0, 0.0);
+                else if (step < 225)
+                    GL.Color3(0.0, 0.0, 0.0);
+                else if (step < 270)
+                    GL.Color3(1.0, 0.0, 0.0);
+                else if (step < 315)
+                    GL.Color3(0.0, 0.0, 0.0);
+                else if (step < 360)
+                    GL.Color3(1.0, 0.0, 0.0);
+
+
+                float ciz1_x = (float)(radius1 * Math.Cos(step * Math.PI / 180F));
+                float ciz1_y = (float)(radius1 * Math.Sin(step * Math.PI / 180F));
+                GL.Vertex3(ciz1_x, dikey1, ciz1_y);
+
+                float ciz2_x = (float)(radius2 * Math.Cos(step * Math.PI / 180F));
+                float ciz2_y = (float)(radius2 * Math.Sin(step * Math.PI / 180F));
+                GL.Vertex3(ciz2_x, dikey2, ciz2_y);
+                step += topla;
+            }
+            GL.End();
+
+            GL.Begin(BeginMode.Lines);
+            step = eski_step;
+            topla = step;
+            while (step <= 180)// UST KAPAK
+            {
+                if (step < 45)
+                    GL.Color3(Color.FromArgb(0, 0, 0));
+                else if (step < 90)
+                    GL.Color3(Color.FromArgb(0, 0, 0));
+                else if (step < 135)
+                    GL.Color3(Color.FromArgb(0, 0, 0));
+                else if (step < 180)
+                    GL.Color3(Color.FromArgb(0, 0, 0));
+                else if (step < 225)
+                    GL.Color3(Color.FromArgb(0, 0, 0));
+                else if (step < 270)
+                    GL.Color3(Color.FromArgb(0, 0, 0));
+                else if (step < 315)
+                    GL.Color3(Color.FromArgb(0, 0, 0));
+                else if (step < 360)
+                    GL.Color3(Color.FromArgb(0, 0, 0));
+
+
+                float ciz1_x = (float)(radius2 * Math.Cos(step * Math.PI / 180F));
+                float ciz1_y = (float)(radius2 * Math.Sin(step * Math.PI / 180F));
+                GL.Vertex3(ciz1_x, dikey2, ciz1_y);
+
+                float ciz2_x = (float)(radius2 * Math.Cos((step + 180) * Math.PI / 180F));
+                float ciz2_y = (float)(radius2 * Math.Sin((step + 180) * Math.PI / 180F));
+                GL.Vertex3(ciz2_x, dikey2, ciz2_y);
+
+                GL.Vertex3(ciz1_x, dikey2, ciz1_y);
+                GL.Vertex3(ciz2_x, dikey2, ciz2_y);
+                step += topla;
+            }
+            step = eski_step;
+            topla = step;
+            GL.End();
+        }
         private void Pervane(float yukseklik, float uzunluk, float kalinlik, float egiklik)
         {
             float radius = 10, angle = 45.0f;
             GL.Begin(BeginMode.Quads);
 
-
-
-
-            GL.Color3(Color.FromArgb(152, 180, 209));
+            GL.Color3(Color.Black);
             GL.Vertex3(uzunluk, yukseklik, kalinlik);
             GL.Vertex3(uzunluk, yukseklik + egiklik, -kalinlik);
-            GL.Vertex3(0, yukseklik + egiklik, -kalinlik);
-            GL.Vertex3(0, yukseklik, kalinlik);
+            GL.Vertex3(0.0, yukseklik + egiklik, -kalinlik);
+            GL.Vertex3(0.0, yukseklik, kalinlik);
 
-            GL.Color3(Color.FromArgb(152, 180, 209));
+            GL.Color3(Color.Black);
             GL.Vertex3(-uzunluk, yukseklik + egiklik, kalinlik);
             GL.Vertex3(-uzunluk, yukseklik, -kalinlik);
-            GL.Vertex3(0, yukseklik, -kalinlik);
-            GL.Vertex3(0, yukseklik + egiklik, kalinlik);
+            GL.Vertex3(0.0, yukseklik, -kalinlik);
+            GL.Vertex3(0.0, yukseklik + egiklik, kalinlik);
 
-            GL.Color3(Color.White);
+            GL.Color3(Color.Black);
             GL.Vertex3(kalinlik, yukseklik, -uzunluk);
             GL.Vertex3(-kalinlik, yukseklik + egiklik, -uzunluk);
             GL.Vertex3(-kalinlik, yukseklik + egiklik, 0.0);//+
             GL.Vertex3(kalinlik, yukseklik, 0.0);//-
 
-            GL.Color3(Color.White);
+            GL.Color3(Color.Black);
             GL.Vertex3(kalinlik, yukseklik + egiklik, +uzunluk);
             GL.Vertex3(-kalinlik, yukseklik, +uzunluk);
             GL.Vertex3(-kalinlik, yukseklik, 0.0);
@@ -826,6 +990,7 @@ namespace _2023MUYGCS
             GL.End();
 
         }
+
 
         struct FtpSetting
         {
@@ -837,6 +1002,8 @@ namespace _2023MUYGCS
         }
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
+             
+
             string fileName = ((FtpSetting)e.Argument).FileName;
             string fullName = ((FtpSetting)e.Argument).FullName;
             string userName = ((FtpSetting)e.Argument).Username;
@@ -845,6 +1012,7 @@ namespace _2023MUYGCS
             FtpWebRequest request = (FtpWebRequest)WebRequest.Create(new Uri(string.Format("{0}/{1}", server, fileName)));
             request.Method = WebRequestMethods.Ftp.UploadFile;
             request.Credentials = new NetworkCredential(userName, password);
+          //  request.Timeout = 500000;
             try
             {
                 Stream ftpStream = request.GetRequestStream();
@@ -865,6 +1033,11 @@ namespace _2023MUYGCS
                         double percentage = read / total * 100;
                         backgroundWorker1.ReportProgress((int)percentage);
                     }
+                    else
+                    {
+                        Console.WriteLine("Debug: yiptaloldu");
+                        e.Cancel = true;
+                    }
 
 
                 }
@@ -872,10 +1045,11 @@ namespace _2023MUYGCS
                 fs.Close();
                 ftpStream.Close();
             }
-            catch (Exception hata)
+            catch (Exception err)
             {
+                
 
-
+                Console.WriteLine("Debug: ne oldi ftp yukleme "+err);
 
                 ftpStatus = "Bağlanamadı";
                 Console.WriteLine("Ftp Status" + ftpStatus);
@@ -922,6 +1096,14 @@ namespace _2023MUYGCS
             progressBar1.Update();
         }
 
+        private void Worker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            // İşlem tamamlandıktan sonra, worker örneğini yeniden başlatın
+            if (!e.Cancelled)
+            {
+                backgroundWorker1.RunWorkerAsync();
+            }
+        }
         private void buttonRecStart_Click(object sender, EventArgs e)
         {
             captureDevice = new VideoCaptureDeviceForm();
@@ -958,7 +1140,31 @@ namespace _2023MUYGCS
                 }
             }
         }
+        /*
+        private void StartBackgroundWorker()
+        {
+            if (backgroundWorker1 == null)
+            {
+                backgroundWorker1 = new BackgroundWorker();
+                backgroundWorker1.WorkerSupportsCancellation = true;
+                backgroundWorker1.DoWork += backgroundWorker1_DoWork;
+                backgroundWorker1.RunWorkerCompleted += Worker_RunWorkerCompleted;
+            }
 
+            if (!backgroundWorker1.IsBusy)
+            {
+                backgroundWorker1.RunWorkerAsync();
+            }
+        }
+
+        private void StopBackgroundWorker()
+        {
+            if (backgroundWorker1 != null && backgroundWorker1.IsBusy)
+            {
+                backgroundWorker1.CancelAsync();
+            }
+        }
+        */
         private void buttonRecStop_Click(object sender, EventArgs e)
         {
             if (buttonRecStop.Text == "Kaydı durdur")
@@ -1069,7 +1275,7 @@ namespace _2023MUYGCS
             if (ftpStatus != "Bağlanamadı")
             {
                 ftpStatus = "OK";
-                if (ftpStatus == "OK")
+                if (ftpStatus == "OK" && _continue)
                 {
 
                     _serialPort.Write("v");
@@ -1080,6 +1286,16 @@ namespace _2023MUYGCS
                 }
 
             }
+            else {
+
+             //   backgroundWorker1.RunWorkerAsync(_inputParameter);
+            }
+
+            if (!e.Cancelled && ftpStatus != "OK")
+            {
+                backgroundWorker1.RunWorkerAsync();
+            }
+
         }
 
         private void btnDosyaSec_Click(object sender, EventArgs e)
@@ -1089,7 +1305,7 @@ namespace _2023MUYGCS
             using (OpenFileDialog ofd = new OpenFileDialog() { Multiselect = true, ValidateNames = true, Filter = "All files|*.*" })
             {
 
-
+               
                 if (ofd.ShowDialog() == DialogResult.OK)
                 {
                     FileInfo fi = new FileInfo(ofd.FileName);
@@ -1102,10 +1318,22 @@ namespace _2023MUYGCS
                   _inputParameter.Password = "108484Yg.//";
                   _inputParameter.Server = "ftp://mt-sauron-da.guzelhosting.com:21";
                   */
+                   
                     _inputParameter.FileName = fi.Name;
                     _inputParameter.FullName = fi.FullName;
-                    backgroundWorker1.RunWorkerAsync(_inputParameter);
-                }
+                    ftpicinFileNamePath = fi.Name;
+                    ftpicinFileFullPath = fi.FullName;
+                    try
+                    {
+                        backgroundWorker1.RunWorkerAsync(_inputParameter);
+                    }
+                    catch (Exception err)
+                    {
+
+                        Console.WriteLine(err);
+                    }
+                  
+                } 
             }
         }
 
@@ -1114,39 +1342,78 @@ namespace _2023MUYGCS
 
         private void timerXYZ_Tick(object sender, EventArgs e)
         {
-            if (cx == true)
-            {
-                if (x < 360)
-                    x += 5;
-                else
-                    x = 0;
+            /*
+             if (cy == true)
+             {
+                 //roll
+                 if (y < 360)
+                     y = Convert.ToDouble(telemetri.roll);
+                 else
+                     y = 0;
                 // lblX.Text = x.ToString();
-            }
-            if (cy == true)
-            {
-                if (y < 360)
-                    y += 5;
-                else
-                    y = 0;
+             }
+             if (cx == true)
+             {
+                 //pitch
+                 if (x < 360)
+                     x = Convert.ToDouble(telemetri.pitch);
+                 else
+                     x = 0;
                 // lblY.Text = y.ToString();
-            }
-            if (cz == true)
+             }
+             if (cz == true)
+             {
+                 //yaw
+                 if (z < 360)
+                     z = Convert.ToDouble(telemetri.yaw);
+                 else
+                     z = 0;
+               //  lblZ.Text = z.ToString();
+             }
+             glControl1.Invalidate();
+            */
+
+            try
             {
-                if (z < 360)
-                    z += 5;
-                else
-                    z = 0;
-                //  lblZ.Text = z.ToString();
+                y = Convert.ToDouble(telemetri.roll);
+
+                //  y = 0;
+               // lblX.Text = x.ToString();
+
+
+
+                x = Convert.ToDouble(telemetri.pitch);
+
+                //    x = 0;
+              //  lblY.Text = y.ToString();
+
+
+
+                z = Convert.ToDouble(telemetri.yaw);
+
+                //      z = 0;
+               // lblZ.Text = z.ToString();
+
+                glControl1.Invalidate();
             }
-            glControl1.Invalidate();
+            catch (Exception err)
+            {
+
+               // lblRefresh.Text = "" + err;
+            }
+
+
+
+
         }
 
         private void glControl1_Paint(object sender, PaintEventArgs e)
         {
-            int step = 1;//Adım genişliği çözünürlük
-            int topla = step;//Tanpon 
-            float radius = 4.0f;//Yarıçağ Modle Uydunun
-            GL.Clear(ClearBufferMask.ColorBufferBit);//Buffer temizlenmez ise görüntüler üst üste bine o yüzden temizliyoruz.
+
+            float step = 1.0f;
+            float topla = step;
+            float radius = 4.0f;
+            GL.Clear(ClearBufferMask.ColorBufferBit);
             GL.Clear(ClearBufferMask.DepthBufferBit);
 
             Matrix4 perspective = Matrix4.CreatePerspectiveFieldOfView(1.04f, 4 / 3, 1, 10000);
@@ -1161,29 +1428,24 @@ namespace _2023MUYGCS
             GL.Enable(EnableCap.DepthTest);
             GL.DepthFunc(DepthFunction.Less);
 
-            //Asagidaki fonksiyonlar ile nesneyi hareket ettirmemizi sağlıyor.
+
             GL.Rotate(x, 1.0, 0.0, 0.0);
             GL.Rotate(z, 0.0, 1.0, 0.0);
             GL.Rotate(y, 0.0, 0.0, 1.0);
 
-            Koni(0, -5, +3, 0, ds1, ds1); //  en orta koni
-                                          // Koni(0, -5, -10, 0, ds1, ds2); // az alt
-                                          //kapak(0, -10, 0, Color.Green, ds2);
-                                          //  Koni(0, +3, +5, 0, ds1, ds2);
-                                          //  kapak(0, +5, 0, Color.Green, ds2);
-                                          // Koni(0, +5, +9, 0, ds3, ds3);
 
+            silindir(step, topla, radius, 3, -5);
+            koni(0.01f, 0.01f, radius, 3.0f, 3, 5);//Ust koni
+            koni(0.01f, 0.01f, radius, 2.0f, -5.0f, -10.0f);//Alt koni
+            silindir(0.01f, topla, 0.07f, 9, 3);// rotor      
 
-            //Pervane(Yükseklik,Pervane Uzunluğu,Pervane Genişliği,Pervane açısı)
-            Pervane(-6.0f, 7.0f, 0.3f, 0.3f);
-            // Pervane(7.0f, 7.0f, 0.3f, 0.3f);
+            silindir(0.01f, topla, 0.2f, 9, 9.3f);
+            Pervane(9.0f, 7.0f, 0.3f, 0.3f);
 
-            //Çizim Fonksiyonları
+            silindir(0.01f, topla, 0.2f, 7.3f, 7f);
+            Pervane(7.0f, 7.0f, 0.3f, 0.3f);
 
-
-
-            //// AŞAĞIDA X, Y, Z EKSEN CİZGELERİ ÇİZDİRİLİYOR
-            GL.Begin(PrimitiveType.Lines);
+            GL.Begin(BeginMode.Lines);
 
             GL.Color3(Color.FromArgb(250, 0, 0));
             GL.Vertex3(-1000, 0, 0);
@@ -1193,20 +1455,16 @@ namespace _2023MUYGCS
             GL.Vertex3(0, 0, -1000);
             GL.Vertex3(0, 0, 1000);
 
-            //  GL.Color3(Color.FromArgb(0, 0, 0));
-            // GL.Vertex3(0, 1000, 0);
-            // GL.Vertex3(0, -1000, 0);
+            GL.Color3(Color.FromArgb(0, 0, 0));
+            GL.Vertex3(0, 1000, 0);
+            GL.Vertex3(0, -1000, 0);
 
             GL.End();
-            //GraphicsContext.CurrentContext.VSync = true;
+
             glControl1.SwapBuffers();
         }
-        GMapOverlay markersGorevYuku = new GMapOverlay("markersGorevYuku");
+       GMapOverlay markersGorevYuku = new GMapOverlay("markersGorevYuku");
 
     }
-    public class datas
-    {
-        public int id;
-        public float[,] array = new float[360, 2];
-    }
+   
 }
